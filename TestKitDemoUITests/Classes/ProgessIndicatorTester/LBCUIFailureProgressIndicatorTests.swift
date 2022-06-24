@@ -10,7 +10,10 @@ import XCTest
 @testable import TestKit
 
 final class LBCUIFailureProgressIndicatorTests: LBCUITestCase{
-    private var homePageType: HomePageType = .homePageWithProgessView
+    override func setUp() {
+        self.homePageType = .homePageWithProgessView
+        super.setUp()
+    }
 
     func testGetWrongProgessView() {
         // GIVEN
@@ -41,11 +44,5 @@ final class LBCUIFailureProgressIndicatorTests: LBCUITestCase{
 
     }
 
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
 
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
 }

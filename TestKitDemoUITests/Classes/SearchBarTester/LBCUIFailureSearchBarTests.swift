@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureSearchBarTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithSearchBar
+    override func setUp() {
+        self.homePageType = .homePageWithSearchBar
+        super.setUp()
+    }
 
     func test_SearchTextField_wrongIdentifier() {
         self.startApp()
@@ -28,13 +31,4 @@ final class LBCUIFailureSearchBarTests: LBCUITestCase {
                 .getTextField(with: "searchBarIdentifier")
         }
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

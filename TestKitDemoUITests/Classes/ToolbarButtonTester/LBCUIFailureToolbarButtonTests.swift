@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureToolbarButtonTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithToolbar
+    override func setUp() {
+        self.homePageType = .homePageWithToolbar
+        super.setUp()
+    }
 
     func test_ToolbarButton_WrongIdentifier() {
         self.startApp()
@@ -40,13 +43,4 @@ final class LBCUIFailureToolbarButtonTests: LBCUITestCase {
                 .validate(value: "XXX")
         }
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

@@ -10,7 +10,11 @@ import XCTest
 @testable import TestKit
 
 final class LBCUIFailureTabBarItemTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithTabBar
+
+    override func setUp() {
+        self.homePageType = .homePageWithTabBar
+        super.setUp()
+    }
 
     func test_get_tabBarItem_with_wrong_identifier() {
         // GIVEN
@@ -77,13 +81,5 @@ final class LBCUIFailureTabBarItemTests: LBCUITestCase {
                 .validateState(isSelected: true)
         }
 
-    }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 }

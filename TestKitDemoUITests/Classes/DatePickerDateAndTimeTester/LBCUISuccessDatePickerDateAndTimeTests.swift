@@ -10,7 +10,11 @@ import XCTest
 @testable import TestKit
 
 final class LBCUISuccessDatePickerDateAndTimeTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithDatePicker
+
+    override func setUp() {
+        self.homePageType = .homePageWithDatePicker
+        super.setUp()
+    }
 
     func testGetDatePicker() {
         self.startApp()
@@ -29,11 +33,5 @@ final class LBCUISuccessDatePickerDateAndTimeTests: LBCUITestCase {
             .validate(.meridiem(type: .am))
     }
 
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
 
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
 }

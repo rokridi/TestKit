@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessImageTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithImage
+    override func setUp() {
+        self.homePageType = .homePageWithImage
+        super.setUp()
+    }
 
     func test_get_image() {
         self.startApp()
@@ -19,13 +22,4 @@ final class LBCUISuccessImageTests: LBCUITestCase {
             .getImage(with: "imageIdentifier")
 
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

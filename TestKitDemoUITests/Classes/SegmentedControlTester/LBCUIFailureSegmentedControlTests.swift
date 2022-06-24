@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureSegmentedControlTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithSegmentedControl
+    override func setUp() {
+        self.homePageType = .homePageWithSegmentedControl
+        super.setUp()
+    }
 
     func test_GetSegmentedControlElement_WrongIdenfitier() {
         self.startApp()
@@ -47,13 +50,4 @@ final class LBCUIFailureSegmentedControlTests: LBCUITestCase {
                 .validate(selectionState: true, at: 1)
         }
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

@@ -10,7 +10,11 @@ import XCTest
 @testable import TestKit
 
 class LBCUIFailureSwitchTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithSwitch
+
+    override func setUp() {
+        self.homePageType = .homePageWithSwitch
+        super.setUp()
+    }
 
     func testGetSwitchElementWithWrongIdenfitier() {
         // GIVEN
@@ -54,13 +58,5 @@ class LBCUIFailureSwitchTests: LBCUITestCase {
                 .toggle()
                 .validate(state: true)
         }
-    }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 }

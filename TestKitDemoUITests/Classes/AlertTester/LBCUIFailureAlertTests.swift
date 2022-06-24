@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureAlertTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithAlert
+    override func setUp() {
+        self.homePageType = .homePageWithAlert
+        super.setUp()
+    }
 
     func test_GetAlert_WrongIdentifier() {
         self.startApp()
@@ -48,13 +51,4 @@ final class LBCUIFailureAlertTests: LBCUITestCase {
         }
 
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessStepperTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithStepper
+    override func setUp() {
+        self.homePageType = .homePageWithStepper
+        super.setUp()
+    }
 
     func test_Stepper_Increment_And_ValidateValue() {
         self.startApp()
@@ -30,13 +33,4 @@ final class LBCUISuccessStepperTests: LBCUITestCase {
             .decrement()
             .validate(value: 9.0, throughLabel: "stepperLabelIdentifier")
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureActionSheetTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithActionSheet
+    override func setUp() {
+        self.homePageType = .homePageWithActionSheet
+        super.setUp()
+    }
 
     func test_GetActionSheet_WrongIdentifier() {
         self.startApp()
@@ -55,13 +58,4 @@ final class LBCUIFailureActionSheetTests: LBCUITestCase {
                 .tapOnAction(withLabel: "wrongLabel")
         }
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

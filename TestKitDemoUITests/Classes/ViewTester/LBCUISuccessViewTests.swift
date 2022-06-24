@@ -10,7 +10,10 @@ import XCTest
 @testable import TestKit
 
 final class LBCUISuccessViewTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithView
+    override func setUp() {
+        self.homePageType = .homePageWithView
+        super.setUp()
+    }
 
     func test_stackView_content() {
         self.startApp()
@@ -68,11 +71,5 @@ final class LBCUISuccessViewTests: LBCUITestCase {
         label.validate(value: "Swipe Right Action")
     }
 
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
 
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
 }

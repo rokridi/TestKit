@@ -13,7 +13,10 @@ import XCTest
 
 final class LBCUISuccessCustomPickerViewTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithCustomPickerView
+    override func setUp() {
+        self.homePageType = .homePageWithCustomPickerView
+        super.setUp()
+    }
 
     func test_custom_picker_view() {
         self.startApp()
@@ -25,14 +28,6 @@ final class LBCUISuccessCustomPickerViewTests: LBCUITestCase {
             .move(toTextValue: "ITEM 2-3", atIndex: 1)
             .validate(textValue: "ITEM 1-3", atIndex: 0)
             .validate(textValue: "ITEM 2-3", atIndex: 1)
-    }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 
 }

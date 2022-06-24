@@ -10,7 +10,11 @@ import XCTest
 @testable import TestKit
 
 final class LBCUIFailurePageIndicatorTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithPageIndicator
+
+    override func setUp() {
+        self.homePageType = .homePageWithPageIndicator
+        super.setUp()
+    }
 
     func testWrongPageIndicator() {
         // GIVEN
@@ -57,11 +61,5 @@ final class LBCUIFailurePageIndicatorTests: LBCUITestCase {
 
     }
 
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
 
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
 }

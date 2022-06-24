@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureImageTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithImage
+    override func setUp() {
+        self.homePageType = .homePageWithImage
+        super.setUp()
+    }
 
     func test_get_image_wrong_identifier() {
         self.startApp()
@@ -20,13 +23,4 @@ final class LBCUIFailureImageTests: LBCUITestCase {
                 .getImage(with: "wrongIdentifier")
         }
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureCollectionViewTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithCollectionView
+    override func setUp() {
+        self.homePageType = .homePageWithCollectionView
+        super.setUp()
+    }
 
     func test_CollectionView_WrongIdentifier() {
         self.startApp()
@@ -118,13 +121,5 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
                 .getCollectionView(with: "collectionViewIdentifier")
                 .dragAndDropCell(with: "wrongCellIdentifier", to: "wrongCellIdentifier")
         }
-    }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 }

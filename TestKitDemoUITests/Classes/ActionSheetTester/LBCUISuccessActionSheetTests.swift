@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessActionSheetTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithActionSheet
+    override func setUp() {
+        self.homePageType = .homePageWithActionSheet
+        super.setUp()
+    }
 
     func test_ActionSheet_AssertButtons() {
         self.startApp()
@@ -38,13 +41,4 @@ final class LBCUISuccessActionSheetTests: LBCUITestCase {
             .validate(element: .message("message CBA"))
             .tapOnAction(withLabel: "Action 2")
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureCellTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithTableViewNormalMode
+    override func setUp() {
+        self.homePageType = .homePageWithTableViewNormalMode
+        super.setUp()
+    }
 
     func test_Cell_WrongIdentifier() {
         self.homePageType = .homePageWithTableViewNormalMode
@@ -135,13 +138,4 @@ final class LBCUIFailureCellTests: LBCUITestCase {
         XCTExpectFailure()
         self.tester.getCell(boundBy: 99)
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

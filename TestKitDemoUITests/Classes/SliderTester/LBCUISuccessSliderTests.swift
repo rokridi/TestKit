@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessSliderTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithSlider
+    override func setUp() {
+        self.homePageType = .homePageWithSlider
+        super.setUp()
+    }
 
     func test_Slider_SlideToValue_ValidateValue() {
         self.startApp()
@@ -20,13 +23,4 @@ final class LBCUISuccessSliderTests: LBCUITestCase {
             .slide(toValue: 80.0)
             .validate(value: 80.0)
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

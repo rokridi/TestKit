@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessActivityIndicatorTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithActivityIndicator
+    override func setUp() {
+        self.homePageType = .homePageWithActivityIndicator
+        super.setUp()
+    }
 
     func testGetActivityIndicator_WithCorrectIdentifier_ShouldSucceed() {
         self.startApp()
@@ -19,13 +22,4 @@ final class LBCUISuccessActivityIndicatorTests: LBCUITestCase {
             .getActivityIndicator(with: "activityIndicatorIdentifier")
 
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

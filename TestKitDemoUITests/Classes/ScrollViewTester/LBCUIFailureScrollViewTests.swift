@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureScrollViewTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithScrollView
+    override func setUp() {
+        self.homePageType = .homePageWithScrollView
+        super.setUp()
+    }
 
     func test_GetScrollView_WrongIdentifier() {
         self.startApp()
@@ -20,13 +23,4 @@ final class LBCUIFailureScrollViewTests: LBCUITestCase {
                 .getScrollView(with: "wrongIdentifier")
         }
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

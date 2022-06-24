@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessCollectionViewTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithCollectionView
+    override func setUp() {
+        self.homePageType = .homePageWithCollectionView
+        super.setUp()
+    }
 
     func test_CollectionView_Validate_And_Tap_Cells() {
         self.startApp()
@@ -58,13 +61,4 @@ final class LBCUISuccessCollectionViewTests: LBCUITestCase {
 
         _ = self.tester.getCell(with: "cell_New_Zero")
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

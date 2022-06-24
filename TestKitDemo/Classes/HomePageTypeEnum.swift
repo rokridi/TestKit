@@ -6,8 +6,7 @@
 //  Copyright © 2021 Leboncoin. All rights reserved.
 //
 
-enum HomePageType: String {
-    case empty = "empty"
+enum HomePageType: String, CaseIterable {
     case homePageWithActivityIndicator = "homePageWithActivityIndicator"
     case homePageWithAlert = "homePageWithAlert"
     case homePageWithActionSheet = "homePageWithActionSheet"
@@ -43,5 +42,4 @@ enum HomePageType: String {
     case homePageWithView = "homePageWithView"
     case homePageWithWebView = "homePageWithWebView"
     case homePageWithLink = "homePageWithLink"
-    case none
 }

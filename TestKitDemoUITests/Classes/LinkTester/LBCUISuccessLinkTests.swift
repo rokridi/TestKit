@@ -10,7 +10,11 @@ import XCTest
 @testable import TestKit
 
 final class LBCUISuccessLinkTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithLink
+
+    override func setUp() {
+        self.homePageType = .homePageWithLink
+        super.setUp()
+    }
 
     func testLink_ShouldDisplayLabel_GivenDefaultTapMethod() {
         self.startApp()
@@ -60,13 +64,5 @@ final class LBCUISuccessLinkTests: LBCUITestCase {
         self.tester
             .getLabel(with: "labelIdentifier")
             .validate(value: "Link tapped!")
-    }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 }

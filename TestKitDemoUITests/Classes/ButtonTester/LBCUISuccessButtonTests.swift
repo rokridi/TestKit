@@ -10,7 +10,11 @@ import XCTest
 @testable import TestKit
 
 final class LBCUISuccessButtonTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithButton
+
+    override func setUp() {
+        self.homePageType = .homePageWithButton
+        super.setUp()
+    }
 
     func testButton() {
         // GIVEN
@@ -28,13 +32,5 @@ final class LBCUISuccessButtonTests: LBCUITestCase {
         self.tester.getButton(with: "disableButtonIdentifier")
             .validate(value: "DISABLE BUTTON")
             .validate(isEnabled: false)
-    }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 }

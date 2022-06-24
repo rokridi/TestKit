@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessAlertTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithAlert
+    override func setUp() {
+        self.homePageType = .homePageWithAlert
+        super.setUp()
+    }
 
     func test_Alert_TapOnAction1() {
         self.startApp()
@@ -30,13 +33,4 @@ final class LBCUISuccessAlertTests: LBCUITestCase {
             .validate(element: .message("message CBA"))
             .tapOnAction(withLabel: "Action 2")
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

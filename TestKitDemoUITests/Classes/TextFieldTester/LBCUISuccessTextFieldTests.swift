@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessTextFieldTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithTextField
+    override func setUp() {
+        self.homePageType = .homePageWithTextField
+        super.setUp()
+    }
 
     func test_TextField() {
         self.startApp()
@@ -49,13 +52,4 @@ final class LBCUISuccessTextFieldTests: LBCUITestCase {
             .fill(with: "firstname@host.com")
             .validateFormat(with: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

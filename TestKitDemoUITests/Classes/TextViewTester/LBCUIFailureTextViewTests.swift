@@ -10,7 +10,11 @@ import XCTest
 @testable import TestKit
 
 final class LBCUIFailureTextViewTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithTextView
+
+    override func setUp() {
+        self.homePageType = .homePageWithTextView
+        super.setUp()
+    }
 
     func test_textView_wrongIdentifier() {
         self.startApp()
@@ -64,11 +68,5 @@ final class LBCUIFailureTextViewTests: LBCUITestCase {
     }
 
 
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
 
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
 }

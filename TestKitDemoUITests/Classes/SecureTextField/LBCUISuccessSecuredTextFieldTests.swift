@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessSecuredTextFieldTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithSecuredTextField
+    override func setUp() {
+        self.homePageType = .homePageWithSecuredTextField
+        super.setUp()
+    }
 
     func test_SecuredTextField() {
         self.startApp()
@@ -24,13 +27,4 @@ final class LBCUISuccessSecuredTextFieldTests: LBCUITestCase {
         securedTextField.clearText()
         label.validate(value: "")
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

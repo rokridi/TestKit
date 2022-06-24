@@ -11,6 +11,11 @@ import XCTest
 
 final class LBCUIFailureUIControlTests: LBCUITestCase {
 
+    override func setUp() {
+        self.homePageType = .homePageWithUIControl
+        super.setUp()
+    }
+
     func test_uicontrols_wrong_identifiers() {
         self.startApp()
         XCTExpectFailure {
@@ -32,13 +37,5 @@ final class LBCUIFailureUIControlTests: LBCUITestCase {
             self.tester.getView(with: "selectedControldentifier")
                 .validate(state: .unselected)
         }
-    }
-
-    override func testingHomePageKey() -> String? {
-        return HomePageType.homePageWithUIControl.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 }

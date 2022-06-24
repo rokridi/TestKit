@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureMapTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithMap
+    override func setUp() {
+        self.homePageType = .homePageWithMap
+        super.setUp()
+    }
 
     func test_map_wrongIdentifier() {
         self.startApp()
@@ -59,13 +62,4 @@ final class LBCUIFailureMapTests: LBCUITestCase {
             label.validate(value: "INITIAL REGION")
         }
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

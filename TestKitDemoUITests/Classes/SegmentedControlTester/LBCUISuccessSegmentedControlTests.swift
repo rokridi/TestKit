@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessSegmentedControlTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithSegmentedControl
+    override func setUp() {
+        self.homePageType = .homePageWithSegmentedControl
+        super.setUp()
+    }
 
     func test_SegmentedControl_Tap_AtIndex_ValidateTextValue_ValidateSelectionState() {
         self.startApp()
@@ -24,13 +27,4 @@ final class LBCUISuccessSegmentedControlTests: LBCUITestCase {
             .validate(selectionState: true, at: 1)
             .validate(selectionState: false, at: 0)
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

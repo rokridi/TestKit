@@ -10,7 +10,11 @@ import XCTest
 @testable import TestKit
 
 final class LBCUISuccessWebViewTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithWebView
+
+    override func setUp() {
+        self.homePageType = .homePageWithWebView
+        super.setUp()
+    }
 
     func testWebView() {
         self.startApp()
@@ -18,13 +22,5 @@ final class LBCUISuccessWebViewTests: LBCUITestCase {
             .validate(staticText: "Paragraph Title")
             .tap(onLinkText: "Lien externe")
             .validate(staticText: "Page 2")
-    }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 }

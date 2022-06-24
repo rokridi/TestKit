@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureStepperTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithStepper
+    override func setUp() {
+        self.homePageType = .homePageWithStepper
+        super.setUp()
+    }
 
     func test_GetStepperElement_WrongIdentifier() {
         self.startApp()
@@ -36,14 +39,6 @@ final class LBCUIFailureStepperTests: LBCUITestCase {
                 .getStepper(with: "stepperIdentifier")
                 .validate(value: 80.0, throughLabel: "wrongStepperLabelIdentifier")
         }
-    }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 
 }

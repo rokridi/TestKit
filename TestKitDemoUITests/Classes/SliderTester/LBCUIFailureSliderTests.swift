@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureSliderTests: LBCUITestCase {
 
-    private let homePageType: HomePageType = .homePageWithSlider
+    override func setUp() {
+        self.homePageType = .homePageWithSlider
+        super.setUp()
+    }
 
     func test_Slider_WrongIdentifier() {
         self.startApp()
@@ -38,13 +41,4 @@ final class LBCUIFailureSliderTests: LBCUITestCase {
                 .validate(value: 45.0)
         }
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

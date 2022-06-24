@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessPickerTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithPicker
+    override func setUp() {
+        self.homePageType = .homePageWithPicker
+        super.setUp()
+    }
 
     func test_Picker() {
         self.startApp()
@@ -24,13 +27,4 @@ final class LBCUISuccessPickerTests: LBCUITestCase {
             .validate(textValue: "First")
 
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

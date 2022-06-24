@@ -10,8 +10,11 @@ import XCTest
 @testable import TestKit
 
 final class LBCUIFailureNavigationBarButtonTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithNavigationBar
 
+    override func setUp() {
+        self.homePageType = .homePageWithNavigationBar
+        super.setUp()
+    }
 
     func test_get_navigationBarButton_WrongIdentifier() {
         // GIVEN
@@ -59,11 +62,5 @@ final class LBCUIFailureNavigationBarButtonTests: LBCUITestCase {
 
     }
 
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
 
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
 }

@@ -10,7 +10,11 @@ import XCTest
 @testable import TestKit
 
 final class LBCUIFailureLinkTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithLink
+
+    override func setUp() {
+        self.homePageType = .homePageWithLink
+        super.setUp()
+    }
 
     func test_link_wrongIdentifier() {
         self.startApp()
@@ -38,13 +42,5 @@ final class LBCUIFailureLinkTests: LBCUITestCase {
             self.tester
                 .getLabel(with: "labelIdentifier")
         }
-    }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 }

@@ -11,11 +11,9 @@ import XCTest
 
 final class LBCUISuccessScrollViewTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithScrollView
-
     override func setUp() {
+        self.homePageType = .homePageWithScrollView
         super.setUp()
-        self.continueAfterFailure = true
     }
 
     func test_ScrollView() {
@@ -42,13 +40,4 @@ final class LBCUISuccessScrollViewTests: LBCUITestCase {
 
         self.tester.getLabel(with: "new.label")
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

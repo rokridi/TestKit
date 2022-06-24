@@ -11,6 +11,11 @@ import XCTest
 
 final class LBCUISuccessUIControlTests: LBCUITestCase {
 
+    override func setUp() {
+        self.homePageType = .homePageWithUIControl
+        super.setUp()
+    }
+
     func test_uicontrols() {
         self.startApp()
         self.tester.getView(with: "enableControldentifier")
@@ -22,13 +27,5 @@ final class LBCUISuccessUIControlTests: LBCUITestCase {
         self.tester.getView(with: "selectedControldentifier")
             .validate(state: .selected)
             .validate(state: .enable)
-    }
-
-    override func testingHomePageKey() -> String? {
-        return HomePageType.homePageWithUIControl.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 }

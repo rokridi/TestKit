@@ -10,7 +10,10 @@ import XCTest
 @testable import TestKit
 
 final class LBCUIFailureDatePickerCountDownTimerTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithDatePicker
+    override func setUp() {
+        self.homePageType = .homePageWithDatePicker
+        super.setUp()
+    }
 
     func testGetDatePicker_WrongIdentifier() {
         self.startApp()
@@ -55,11 +58,5 @@ final class LBCUIFailureDatePickerCountDownTimerTests: LBCUITestCase {
         }
     }
 
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
 
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
 }

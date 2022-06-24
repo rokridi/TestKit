@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessMapTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithMap
+    override func setUp() {
+        self.homePageType = .homePageWithMap
+        super.setUp()
+    }
 
     func test_map_actions() {
         self.startApp()
@@ -35,13 +38,4 @@ final class LBCUISuccessMapTests: LBCUITestCase {
         label.validate(value: "REGION DID CHANGE")
 
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

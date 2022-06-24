@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureSecuredTextFieldTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithSecuredTextField
+    override func setUp() {
+        self.homePageType = .homePageWithSecuredTextField
+        super.setUp()
+    }
 
     func test_SecuredTextField_wrongIdentifier() {
         self.startApp()
@@ -30,13 +33,4 @@ final class LBCUIFailureSecuredTextFieldTests: LBCUITestCase {
         }
 
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

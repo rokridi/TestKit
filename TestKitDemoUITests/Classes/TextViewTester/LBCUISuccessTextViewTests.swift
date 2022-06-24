@@ -10,7 +10,11 @@ import XCTest
 @testable import TestKit
 
 final class LBCUISuccessTextViewTests: LBCUITestCase {
-    private var homePageType: HomePageType = .homePageWithTextView
+
+    override func setUp() {
+        self.homePageType = .homePageWithTextView
+        super.setUp()
+    }
 
     func testTextView() {
         self.startApp()
@@ -30,13 +34,5 @@ final class LBCUISuccessTextViewTests: LBCUITestCase {
             .getTextView(with: "textViewIdentifier")
             .focus()
         XCTAssert(self.app.keyboards.count > 0)
-    }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
     }
 }

@@ -11,59 +11,6 @@
 		8E2B640428660A9D005BD42A /* TestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2B63F928660A9D005BD42A /* TestKit.framework */; };
 		8E2B640928660A9D005BD42A /* TestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B640828660A9D005BD42A /* TestKitTests.swift */; };
 		8E2B640A28660A9D005BD42A /* TestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2B63FC28660A9D005BD42A /* TestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E2B647728660CB9005BD42A /* LBCProgressIndicatorTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B641928660CB9005BD42A /* LBCProgressIndicatorTester.swift */; };
-		8E2B647828660CB9005BD42A /* LBCTabBarTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B641A28660CB9005BD42A /* LBCTabBarTester.swift */; };
-		8E2B647928660CB9005BD42A /* LBCStepperTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B641B28660CB9005BD42A /* LBCStepperTester.swift */; };
-		8E2B647A28660CB9005BD42A /* LBCDatePickerDateTypeTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B641C28660CB9005BD42A /* LBCDatePickerDateTypeTester.swift */; };
-		8E2B647B28660CB9005BD42A /* LBCNavigationBarButtonTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B641D28660CB9005BD42A /* LBCNavigationBarButtonTester.swift */; };
-		8E2B647C28660CB9005BD42A /* LBCTabBarItemTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B641E28660CB9005BD42A /* LBCTabBarItemTester.swift */; };
-		8E2B647D28660CB9005BD42A /* LBCAlertTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B641F28660CB9005BD42A /* LBCAlertTester.swift */; };
-		8E2B647E28660CB9005BD42A /* LBCActionSheetTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642028660CB9005BD42A /* LBCActionSheetTester.swift */; };
-		8E2B647F28660CB9005BD42A /* LBCMapTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642128660CB9005BD42A /* LBCMapTester.swift */; };
-		8E2B648028660CB9005BD42A /* LBCTextViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642228660CB9005BD42A /* LBCTextViewTester.swift */; };
-		8E2B648128660CB9005BD42A /* LBCPageIndicatorTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642328660CB9005BD42A /* LBCPageIndicatorTester.swift */; };
-		8E2B648228660CB9005BD42A /* LBCSliderTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642428660CB9005BD42A /* LBCSliderTester.swift */; };
-		8E2B648328660CB9005BD42A /* LBCLinkTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642528660CB9005BD42A /* LBCLinkTester.swift */; };
-		8E2B648428660CB9005BD42A /* LBCViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642628660CB9005BD42A /* LBCViewTester.swift */; };
-		8E2B648528660CB9005BD42A /* LBCSecuredTextFieldTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642728660CB9005BD42A /* LBCSecuredTextFieldTester.swift */; };
-		8E2B648628660CB9005BD42A /* LBCButtonTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642828660CB9005BD42A /* LBCButtonTester.swift */; };
-		8E2B648728660CB9005BD42A /* LBCCollectionViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642928660CB9005BD42A /* LBCCollectionViewTester.swift */; };
-		8E2B648828660CB9005BD42A /* LBCToolbarTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642A28660CB9005BD42A /* LBCToolbarTester.swift */; };
-		8E2B648928660CB9005BD42A /* LBCDatePickerDateAndTimeTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642B28660CB9005BD42A /* LBCDatePickerDateAndTimeTester.swift */; };
-		8E2B648A28660CB9005BD42A /* LBCSearchBarTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642C28660CB9005BD42A /* LBCSearchBarTester.swift */; };
-		8E2B648B28660CB9005BD42A /* LBCPickerTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642D28660CB9005BD42A /* LBCPickerTester.swift */; };
-		8E2B648C28660CB9005BD42A /* LBCLabelTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642E28660CB9005BD42A /* LBCLabelTester.swift */; };
-		8E2B648D28660CB9005BD42A /* LBCSegmentedControlTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B642F28660CB9005BD42A /* LBCSegmentedControlTester.swift */; };
-		8E2B648E28660CB9005BD42A /* LBCNavigationBarTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643028660CB9005BD42A /* LBCNavigationBarTester.swift */; };
-		8E2B648F28660CB9005BD42A /* LBCDatePickerCountDownTimerTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643128660CB9005BD42A /* LBCDatePickerCountDownTimerTester.swift */; };
-		8E2B649028660CB9005BD42A /* LBCTableViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643228660CB9005BD42A /* LBCTableViewTester.swift */; };
-		8E2B649128660CB9005BD42A /* LBCUIElementTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643328660CB9005BD42A /* LBCUIElementTester.swift */; };
-		8E2B649228660CB9005BD42A /* LBCScrollViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643428660CB9005BD42A /* LBCScrollViewTester.swift */; };
-		8E2B649328660CB9005BD42A /* LBCWebViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643528660CB9005BD42A /* LBCWebViewTester.swift */; };
-		8E2B649428660CB9005BD42A /* LBCImageTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643628660CB9005BD42A /* LBCImageTester.swift */; };
-		8E2B649528660CB9005BD42A /* LBCCellTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643728660CB9005BD42A /* LBCCellTester.swift */; };
-		8E2B649628660CB9005BD42A /* LBCDatePickerTimeTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643828660CB9005BD42A /* LBCDatePickerTimeTester.swift */; };
-		8E2B649728660CB9005BD42A /* LBCScrollBarTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643928660CB9005BD42A /* LBCScrollBarTester.swift */; };
-		8E2B649828660CB9005BD42A /* LBCActivityIndicatorTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643A28660CB9005BD42A /* LBCActivityIndicatorTester.swift */; };
-		8E2B649928660CB9005BD42A /* LBCToolbarButtonTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643B28660CB9005BD42A /* LBCToolbarButtonTester.swift */; };
-		8E2B649A28660CB9005BD42A /* LBCSwitchTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643C28660CB9005BD42A /* LBCSwitchTester.swift */; };
-		8E2B649B28660CB9005BD42A /* LBCTextFieldTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643D28660CB9005BD42A /* LBCTextFieldTester.swift */; };
-		8E2B649D28660CB9005BD42A /* LBCUITester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B643F28660CB9005BD42A /* LBCUITester.swift */; };
-		8E2B649F28660CB9005BD42A /* LBCUIElementCellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B644228660CB9005BD42A /* LBCUIElementCellState.swift */; };
-		8E2B64A028660CB9005BD42A /* LBCUIElementTapPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B644328660CB9005BD42A /* LBCUIElementTapPosition.swift */; };
-		8E2B64A128660CB9005BD42A /* LBCUIElementDateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B644428660CB9005BD42A /* LBCUIElementDateComponent.swift */; };
-		8E2B64A228660CB9005BD42A /* LBCUITypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B644528660CB9005BD42A /* LBCUITypeAliases.swift */; };
-		8E2B64A328660CB9005BD42A /* LBCUIElementViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B644628660CB9005BD42A /* LBCUIElementViewState.swift */; };
-		8E2B64A428660CB9005BD42A /* LBCUIElementSwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B644728660CB9005BD42A /* LBCUIElementSwipeDirection.swift */; };
-		8E2B64A528660CB9005BD42A /* LBCUIElementCellSwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B644828660CB9005BD42A /* LBCUIElementCellSwipeDirection.swift */; };
-		8E2B64A628660CB9005BD42A /* LBCUITestCaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B644928660CB9005BD42A /* LBCUITestCaseHelper.swift */; };
-		8E2B64B128660CB9005BD42A /* LBCUIElementProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B645B28660CB9005BD42A /* LBCUIElementProvider.swift */; };
-		8E2B64B228660CB9005BD42A /* LBCScrollableTesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B645C28660CB9005BD42A /* LBCScrollableTesterProtocol.swift */; };
-		8E2B64B428660CB9005BD42A /* LBCUITesterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B645E28660CB9005BD42A /* LBCUITesterProtocols.swift */; };
-		8E2B64BB28660CB9005BD42A /* LBCTestTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B646728660CB9005BD42A /* LBCTestTimeout.swift */; };
-		8E2B64C228660CB9005BD42A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B646F28660CB9005BD42A /* String+Extensions.swift */; };
-		8E2B64C328660CB9005BD42A /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B647028660CB9005BD42A /* XCUIElement+Extensions.swift */; };
-		8E2B64CA28661422005BD42A /* LBCTestTimeoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B646A28660CB9005BD42A /* LBCTestTimeoutTests.swift */; };
 		8E2B64D9286614AE005BD42A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2B64D7286614AE005BD42A /* Main.storyboard */; };
 		8E2B64DB286614B1005BD42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E2B64DA286614B1005BD42A /* Assets.xcassets */; };
 		8E2B64DE286614B1005BD42A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2B64DC286614B1005BD42A /* LaunchScreen.storyboard */; };
@@ -100,20 +47,10 @@
 		8E2B654A28661589005BD42A /* ViewControllerWithPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B652128661589005BD42A /* ViewControllerWithPicker.swift */; };
 		8E2B654B28661589005BD42A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B652228661589005BD42A /* AppDelegate.swift */; };
 		8E2B654C28661589005BD42A /* ViewControllerWithPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B652328661589005BD42A /* ViewControllerWithPageIndicator.swift */; };
-		8E2B654D28661589005BD42A /* LBCEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B652428661589005BD42A /* LBCEmptyViewController.swift */; };
 		8E2B654E28661589005BD42A /* ViewControllerWithProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B652528661589005BD42A /* ViewControllerWithProgressView.swift */; };
 		8E2B654F28661589005BD42A /* ViewControllerWithSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B652628661589005BD42A /* ViewControllerWithSegmentedControl.swift */; };
 		8E2B655128661589005BD42A /* ViewControllerWithCustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B652828661589005BD42A /* ViewControllerWithCustomPickerView.swift */; };
 		8E2B655228661589005BD42A /* ViewControllerWithDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B652928661589005BD42A /* ViewControllerWithDatePicker.swift */; };
-		8E2B65592866175D005BD42A /* LBCTestKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65542866175D005BD42A /* LBCTestKitService.swift */; };
-		8E2B655A2866175D005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65552866175D005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift */; };
-		8E2B655B2866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65562866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift */; };
-		8E2B655C2866175D005BD42A /* LBCTestKitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65572866175D005BD42A /* LBCTestKitServiceProtocol.swift */; };
-		8E2B655D2866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65582866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift */; };
-		8E2B655F28661B1A005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65552866175D005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift */; };
-		8E2B656028661B1A005BD42A /* LBCTestKitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65572866175D005BD42A /* LBCTestKitServiceProtocol.swift */; };
-		8E2B656128661B1A005BD42A /* LBCTestKitConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65582866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift */; };
-		8E2B656228661B1A005BD42A /* LBCTestKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65542866175D005BD42A /* LBCTestKitService.swift */; };
 		8E2B65DD28661CB9005BD42A /* LBCUISuccessDatePickerTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656528661CB9005BD42A /* LBCUISuccessDatePickerTimeTests.swift */; };
 		8E2B65DE28661CB9005BD42A /* LBCUIFailureDatePickerTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656628661CB9005BD42A /* LBCUIFailureDatePickerTimeTests.swift */; };
 		8E2B65DF28661CB9005BD42A /* LBCUISuccessSecuredTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656828661CB9005BD42A /* LBCUISuccessSecuredTextFieldTests.swift */; };
@@ -189,7 +126,62 @@
 		8E2B662A28661CB9005BD42A /* LBCUIFailureCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65DB28661CB9005BD42A /* LBCUIFailureCellTests.swift */; };
 		8E2B662B28661CB9005BD42A /* LBCUISucessCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65DC28661CB9005BD42A /* LBCUISucessCellTests.swift */; };
 		8E2B662E28661D9C005BD42A /* HomePageTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B650D28661589005BD42A /* HomePageTypeEnum.swift */; };
-		8E2B663028662062005BD42A /* LBCTestKitConfigurationObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65562866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift */; };
+		8E2B668128662A28005BD42A /* LBCProgressIndicatorTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B663928662A28005BD42A /* LBCProgressIndicatorTester.swift */; };
+		8E2B668228662A28005BD42A /* LBCTabBarTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B663A28662A28005BD42A /* LBCTabBarTester.swift */; };
+		8E2B668328662A28005BD42A /* LBCStepperTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B663B28662A28005BD42A /* LBCStepperTester.swift */; };
+		8E2B668428662A28005BD42A /* LBCDatePickerDateTypeTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B663C28662A28005BD42A /* LBCDatePickerDateTypeTester.swift */; };
+		8E2B668528662A28005BD42A /* LBCNavigationBarButtonTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B663D28662A28005BD42A /* LBCNavigationBarButtonTester.swift */; };
+		8E2B668628662A28005BD42A /* LBCTabBarItemTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B663E28662A28005BD42A /* LBCTabBarItemTester.swift */; };
+		8E2B668728662A28005BD42A /* LBCAlertTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B663F28662A28005BD42A /* LBCAlertTester.swift */; };
+		8E2B668828662A28005BD42A /* LBCActionSheetTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664028662A28005BD42A /* LBCActionSheetTester.swift */; };
+		8E2B668928662A28005BD42A /* LBCMapTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664128662A28005BD42A /* LBCMapTester.swift */; };
+		8E2B668A28662A28005BD42A /* LBCTextViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664228662A28005BD42A /* LBCTextViewTester.swift */; };
+		8E2B668B28662A28005BD42A /* LBCPageIndicatorTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664328662A28005BD42A /* LBCPageIndicatorTester.swift */; };
+		8E2B668C28662A28005BD42A /* LBCSliderTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664428662A28005BD42A /* LBCSliderTester.swift */; };
+		8E2B668D28662A28005BD42A /* LBCLinkTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664528662A28005BD42A /* LBCLinkTester.swift */; };
+		8E2B668E28662A28005BD42A /* LBCViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664628662A28005BD42A /* LBCViewTester.swift */; };
+		8E2B668F28662A28005BD42A /* LBCSecuredTextFieldTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664728662A28005BD42A /* LBCSecuredTextFieldTester.swift */; };
+		8E2B669028662A28005BD42A /* LBCButtonTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664828662A28005BD42A /* LBCButtonTester.swift */; };
+		8E2B669128662A28005BD42A /* LBCCollectionViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664928662A28005BD42A /* LBCCollectionViewTester.swift */; };
+		8E2B669228662A28005BD42A /* LBCToolbarTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664A28662A28005BD42A /* LBCToolbarTester.swift */; };
+		8E2B669328662A28005BD42A /* LBCDatePickerDateAndTimeTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664B28662A28005BD42A /* LBCDatePickerDateAndTimeTester.swift */; };
+		8E2B669428662A28005BD42A /* LBCSearchBarTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664C28662A28005BD42A /* LBCSearchBarTester.swift */; };
+		8E2B669528662A28005BD42A /* LBCPickerTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664D28662A28005BD42A /* LBCPickerTester.swift */; };
+		8E2B669628662A28005BD42A /* LBCLabelTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664E28662A28005BD42A /* LBCLabelTester.swift */; };
+		8E2B669728662A28005BD42A /* LBCSegmentedControlTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B664F28662A28005BD42A /* LBCSegmentedControlTester.swift */; };
+		8E2B669828662A28005BD42A /* LBCNavigationBarTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665028662A28005BD42A /* LBCNavigationBarTester.swift */; };
+		8E2B669928662A28005BD42A /* LBCDatePickerCountDownTimerTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665128662A28005BD42A /* LBCDatePickerCountDownTimerTester.swift */; };
+		8E2B669A28662A28005BD42A /* LBCTableViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665228662A28005BD42A /* LBCTableViewTester.swift */; };
+		8E2B669B28662A28005BD42A /* LBCUIElementTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665328662A28005BD42A /* LBCUIElementTester.swift */; };
+		8E2B669C28662A28005BD42A /* LBCScrollViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665428662A28005BD42A /* LBCScrollViewTester.swift */; };
+		8E2B669D28662A28005BD42A /* LBCWebViewTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665528662A28005BD42A /* LBCWebViewTester.swift */; };
+		8E2B669E28662A28005BD42A /* LBCImageTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665628662A28005BD42A /* LBCImageTester.swift */; };
+		8E2B669F28662A28005BD42A /* LBCCellTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665728662A28005BD42A /* LBCCellTester.swift */; };
+		8E2B66A028662A28005BD42A /* LBCDatePickerTimeTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665828662A28005BD42A /* LBCDatePickerTimeTester.swift */; };
+		8E2B66A128662A28005BD42A /* LBCScrollBarTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665928662A28005BD42A /* LBCScrollBarTester.swift */; };
+		8E2B66A228662A28005BD42A /* LBCActivityIndicatorTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665A28662A28005BD42A /* LBCActivityIndicatorTester.swift */; };
+		8E2B66A328662A28005BD42A /* LBCToolbarButtonTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665B28662A28005BD42A /* LBCToolbarButtonTester.swift */; };
+		8E2B66A428662A28005BD42A /* LBCSwitchTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665C28662A28005BD42A /* LBCSwitchTester.swift */; };
+		8E2B66A528662A28005BD42A /* LBCTextFieldTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665D28662A28005BD42A /* LBCTextFieldTester.swift */; };
+		8E2B66A628662A28005BD42A /* LBCUITesterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665E28662A28005BD42A /* LBCUITesterHelper.swift */; };
+		8E2B66A728662A28005BD42A /* LBCUITester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B665F28662A28005BD42A /* LBCUITester.swift */; };
+		8E2B66A828662A28005BD42A /* LBCDefaultTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B666028662A28005BD42A /* LBCDefaultTester.swift */; };
+		8E2B66A928662A28005BD42A /* LBCUIElementCellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B666228662A28005BD42A /* LBCUIElementCellState.swift */; };
+		8E2B66AA28662A28005BD42A /* LBCUIElementTapPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B666328662A28005BD42A /* LBCUIElementTapPosition.swift */; };
+		8E2B66AB28662A28005BD42A /* LBCUIElementDateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B666428662A28005BD42A /* LBCUIElementDateComponent.swift */; };
+		8E2B66AC28662A28005BD42A /* LBCUITypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B666528662A28005BD42A /* LBCUITypeAliases.swift */; };
+		8E2B66AD28662A28005BD42A /* LBCUIElementViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B666628662A28005BD42A /* LBCUIElementViewState.swift */; };
+		8E2B66AE28662A28005BD42A /* LBCUIElementSwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B666728662A28005BD42A /* LBCUIElementSwipeDirection.swift */; };
+		8E2B66AF28662A28005BD42A /* LBCUIElementCellSwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B666828662A28005BD42A /* LBCUIElementCellSwipeDirection.swift */; };
+		8E2B66B028662A28005BD42A /* LBCUITestCaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B666928662A28005BD42A /* LBCUITestCaseHelper.swift */; };
+		8E2B66B128662A28005BD42A /* LBCUIElementProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B667128662A28005BD42A /* LBCUIElementProvider.swift */; };
+		8E2B66B228662A28005BD42A /* LBCScrollableTesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B667228662A28005BD42A /* LBCScrollableTesterProtocol.swift */; };
+		8E2B66B428662A28005BD42A /* LBCUITesterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B667428662A28005BD42A /* LBCUITesterProtocols.swift */; };
+		8E2B66BA28662A28005BD42A /* LBCTestTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B667C28662A28005BD42A /* LBCTestTimeout.swift */; };
+		8E2B66BB28662A28005BD42A /* LBCTestTimeoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B667D28662A28005BD42A /* LBCTestTimeoutTests.swift */; };
+		8E2B66BC28662A28005BD42A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B667F28662A28005BD42A /* String+Extensions.swift */; };
+		8E2B66BD28662A28005BD42A /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B668028662A28005BD42A /* XCUIElement+Extensions.swift */; };
+		8E2B66CA28662C80005BD42A /* TestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2B63F928660A9D005BD42A /* TestKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,59 +214,6 @@
 		8E2B63FD28660A9D005BD42A /* TestKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TestKit.docc; sourceTree = "<group>"; };
 		8E2B640328660A9D005BD42A /* TestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2B640828660A9D005BD42A /* TestKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestKitTests.swift; sourceTree = "<group>"; };
-		8E2B641928660CB9005BD42A /* LBCProgressIndicatorTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCProgressIndicatorTester.swift; sourceTree = "<group>"; };
-		8E2B641A28660CB9005BD42A /* LBCTabBarTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTabBarTester.swift; sourceTree = "<group>"; };
-		8E2B641B28660CB9005BD42A /* LBCStepperTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCStepperTester.swift; sourceTree = "<group>"; };
-		8E2B641C28660CB9005BD42A /* LBCDatePickerDateTypeTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCDatePickerDateTypeTester.swift; sourceTree = "<group>"; };
-		8E2B641D28660CB9005BD42A /* LBCNavigationBarButtonTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCNavigationBarButtonTester.swift; sourceTree = "<group>"; };
-		8E2B641E28660CB9005BD42A /* LBCTabBarItemTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTabBarItemTester.swift; sourceTree = "<group>"; };
-		8E2B641F28660CB9005BD42A /* LBCAlertTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCAlertTester.swift; sourceTree = "<group>"; };
-		8E2B642028660CB9005BD42A /* LBCActionSheetTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCActionSheetTester.swift; sourceTree = "<group>"; };
-		8E2B642128660CB9005BD42A /* LBCMapTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCMapTester.swift; sourceTree = "<group>"; };
-		8E2B642228660CB9005BD42A /* LBCTextViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTextViewTester.swift; sourceTree = "<group>"; };
-		8E2B642328660CB9005BD42A /* LBCPageIndicatorTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCPageIndicatorTester.swift; sourceTree = "<group>"; };
-		8E2B642428660CB9005BD42A /* LBCSliderTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCSliderTester.swift; sourceTree = "<group>"; };
-		8E2B642528660CB9005BD42A /* LBCLinkTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCLinkTester.swift; sourceTree = "<group>"; };
-		8E2B642628660CB9005BD42A /* LBCViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCViewTester.swift; sourceTree = "<group>"; };
-		8E2B642728660CB9005BD42A /* LBCSecuredTextFieldTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCSecuredTextFieldTester.swift; sourceTree = "<group>"; };
-		8E2B642828660CB9005BD42A /* LBCButtonTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCButtonTester.swift; sourceTree = "<group>"; };
-		8E2B642928660CB9005BD42A /* LBCCollectionViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCCollectionViewTester.swift; sourceTree = "<group>"; };
-		8E2B642A28660CB9005BD42A /* LBCToolbarTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCToolbarTester.swift; sourceTree = "<group>"; };
-		8E2B642B28660CB9005BD42A /* LBCDatePickerDateAndTimeTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCDatePickerDateAndTimeTester.swift; sourceTree = "<group>"; };
-		8E2B642C28660CB9005BD42A /* LBCSearchBarTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCSearchBarTester.swift; sourceTree = "<group>"; };
-		8E2B642D28660CB9005BD42A /* LBCPickerTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCPickerTester.swift; sourceTree = "<group>"; };
-		8E2B642E28660CB9005BD42A /* LBCLabelTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCLabelTester.swift; sourceTree = "<group>"; };
-		8E2B642F28660CB9005BD42A /* LBCSegmentedControlTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCSegmentedControlTester.swift; sourceTree = "<group>"; };
-		8E2B643028660CB9005BD42A /* LBCNavigationBarTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCNavigationBarTester.swift; sourceTree = "<group>"; };
-		8E2B643128660CB9005BD42A /* LBCDatePickerCountDownTimerTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCDatePickerCountDownTimerTester.swift; sourceTree = "<group>"; };
-		8E2B643228660CB9005BD42A /* LBCTableViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTableViewTester.swift; sourceTree = "<group>"; };
-		8E2B643328660CB9005BD42A /* LBCUIElementTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementTester.swift; sourceTree = "<group>"; };
-		8E2B643428660CB9005BD42A /* LBCScrollViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCScrollViewTester.swift; sourceTree = "<group>"; };
-		8E2B643528660CB9005BD42A /* LBCWebViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCWebViewTester.swift; sourceTree = "<group>"; };
-		8E2B643628660CB9005BD42A /* LBCImageTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCImageTester.swift; sourceTree = "<group>"; };
-		8E2B643728660CB9005BD42A /* LBCCellTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCCellTester.swift; sourceTree = "<group>"; };
-		8E2B643828660CB9005BD42A /* LBCDatePickerTimeTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCDatePickerTimeTester.swift; sourceTree = "<group>"; };
-		8E2B643928660CB9005BD42A /* LBCScrollBarTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCScrollBarTester.swift; sourceTree = "<group>"; };
-		8E2B643A28660CB9005BD42A /* LBCActivityIndicatorTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCActivityIndicatorTester.swift; sourceTree = "<group>"; };
-		8E2B643B28660CB9005BD42A /* LBCToolbarButtonTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCToolbarButtonTester.swift; sourceTree = "<group>"; };
-		8E2B643C28660CB9005BD42A /* LBCSwitchTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCSwitchTester.swift; sourceTree = "<group>"; };
-		8E2B643D28660CB9005BD42A /* LBCTextFieldTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTextFieldTester.swift; sourceTree = "<group>"; };
-		8E2B643F28660CB9005BD42A /* LBCUITester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITester.swift; sourceTree = "<group>"; };
-		8E2B644228660CB9005BD42A /* LBCUIElementCellState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementCellState.swift; sourceTree = "<group>"; };
-		8E2B644328660CB9005BD42A /* LBCUIElementTapPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementTapPosition.swift; sourceTree = "<group>"; };
-		8E2B644428660CB9005BD42A /* LBCUIElementDateComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementDateComponent.swift; sourceTree = "<group>"; };
-		8E2B644528660CB9005BD42A /* LBCUITypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITypeAliases.swift; sourceTree = "<group>"; };
-		8E2B644628660CB9005BD42A /* LBCUIElementViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementViewState.swift; sourceTree = "<group>"; };
-		8E2B644728660CB9005BD42A /* LBCUIElementSwipeDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementSwipeDirection.swift; sourceTree = "<group>"; };
-		8E2B644828660CB9005BD42A /* LBCUIElementCellSwipeDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementCellSwipeDirection.swift; sourceTree = "<group>"; };
-		8E2B644928660CB9005BD42A /* LBCUITestCaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITestCaseHelper.swift; sourceTree = "<group>"; };
-		8E2B645B28660CB9005BD42A /* LBCUIElementProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementProvider.swift; sourceTree = "<group>"; };
-		8E2B645C28660CB9005BD42A /* LBCScrollableTesterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCScrollableTesterProtocol.swift; sourceTree = "<group>"; };
-		8E2B645E28660CB9005BD42A /* LBCUITesterProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITesterProtocols.swift; sourceTree = "<group>"; };
-		8E2B646728660CB9005BD42A /* LBCTestTimeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestTimeout.swift; sourceTree = "<group>"; };
-		8E2B646A28660CB9005BD42A /* LBCTestTimeoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestTimeoutTests.swift; sourceTree = "<group>"; };
-		8E2B646F28660CB9005BD42A /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		8E2B647028660CB9005BD42A /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
 		8E2B64CF286614AE005BD42A /* TestKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2B64D8286614AE005BD42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E2B64DA286614B1005BD42A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -314,16 +253,10 @@
 		8E2B652128661589005BD42A /* ViewControllerWithPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithPicker.swift; sourceTree = "<group>"; };
 		8E2B652228661589005BD42A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E2B652328661589005BD42A /* ViewControllerWithPageIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithPageIndicator.swift; sourceTree = "<group>"; };
-		8E2B652428661589005BD42A /* LBCEmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCEmptyViewController.swift; sourceTree = "<group>"; };
 		8E2B652528661589005BD42A /* ViewControllerWithProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithProgressView.swift; sourceTree = "<group>"; };
 		8E2B652628661589005BD42A /* ViewControllerWithSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithSegmentedControl.swift; sourceTree = "<group>"; };
 		8E2B652828661589005BD42A /* ViewControllerWithCustomPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithCustomPickerView.swift; sourceTree = "<group>"; };
 		8E2B652928661589005BD42A /* ViewControllerWithDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithDatePicker.swift; sourceTree = "<group>"; };
-		8E2B65542866175D005BD42A /* LBCTestKitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestKitService.swift; sourceTree = "<group>"; };
-		8E2B65552866175D005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestKitUITestsConfiguratorProtocol.swift; sourceTree = "<group>"; };
-		8E2B65562866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestKitConfigurationObjectProtocol.swift; sourceTree = "<group>"; };
-		8E2B65572866175D005BD42A /* LBCTestKitServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestKitServiceProtocol.swift; sourceTree = "<group>"; };
-		8E2B65582866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestKitConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		8E2B656528661CB9005BD42A /* LBCUISuccessDatePickerTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessDatePickerTimeTests.swift; sourceTree = "<group>"; };
 		8E2B656628661CB9005BD42A /* LBCUIFailureDatePickerTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureDatePickerTimeTests.swift; sourceTree = "<group>"; };
 		8E2B656828661CB9005BD42A /* LBCUISuccessSecuredTextFieldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessSecuredTextFieldTests.swift; sourceTree = "<group>"; };
@@ -398,6 +331,61 @@
 		8E2B65D928661CB9005BD42A /* LBCUIFailureTabBarItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureTabBarItemTests.swift; sourceTree = "<group>"; };
 		8E2B65DB28661CB9005BD42A /* LBCUIFailureCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureCellTests.swift; sourceTree = "<group>"; };
 		8E2B65DC28661CB9005BD42A /* LBCUISucessCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISucessCellTests.swift; sourceTree = "<group>"; };
+		8E2B663928662A28005BD42A /* LBCProgressIndicatorTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCProgressIndicatorTester.swift; sourceTree = "<group>"; };
+		8E2B663A28662A28005BD42A /* LBCTabBarTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTabBarTester.swift; sourceTree = "<group>"; };
+		8E2B663B28662A28005BD42A /* LBCStepperTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCStepperTester.swift; sourceTree = "<group>"; };
+		8E2B663C28662A28005BD42A /* LBCDatePickerDateTypeTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCDatePickerDateTypeTester.swift; sourceTree = "<group>"; };
+		8E2B663D28662A28005BD42A /* LBCNavigationBarButtonTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCNavigationBarButtonTester.swift; sourceTree = "<group>"; };
+		8E2B663E28662A28005BD42A /* LBCTabBarItemTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTabBarItemTester.swift; sourceTree = "<group>"; };
+		8E2B663F28662A28005BD42A /* LBCAlertTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCAlertTester.swift; sourceTree = "<group>"; };
+		8E2B664028662A28005BD42A /* LBCActionSheetTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCActionSheetTester.swift; sourceTree = "<group>"; };
+		8E2B664128662A28005BD42A /* LBCMapTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCMapTester.swift; sourceTree = "<group>"; };
+		8E2B664228662A28005BD42A /* LBCTextViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTextViewTester.swift; sourceTree = "<group>"; };
+		8E2B664328662A28005BD42A /* LBCPageIndicatorTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCPageIndicatorTester.swift; sourceTree = "<group>"; };
+		8E2B664428662A28005BD42A /* LBCSliderTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCSliderTester.swift; sourceTree = "<group>"; };
+		8E2B664528662A28005BD42A /* LBCLinkTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCLinkTester.swift; sourceTree = "<group>"; };
+		8E2B664628662A28005BD42A /* LBCViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCViewTester.swift; sourceTree = "<group>"; };
+		8E2B664728662A28005BD42A /* LBCSecuredTextFieldTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCSecuredTextFieldTester.swift; sourceTree = "<group>"; };
+		8E2B664828662A28005BD42A /* LBCButtonTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCButtonTester.swift; sourceTree = "<group>"; };
+		8E2B664928662A28005BD42A /* LBCCollectionViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCCollectionViewTester.swift; sourceTree = "<group>"; };
+		8E2B664A28662A28005BD42A /* LBCToolbarTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCToolbarTester.swift; sourceTree = "<group>"; };
+		8E2B664B28662A28005BD42A /* LBCDatePickerDateAndTimeTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCDatePickerDateAndTimeTester.swift; sourceTree = "<group>"; };
+		8E2B664C28662A28005BD42A /* LBCSearchBarTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCSearchBarTester.swift; sourceTree = "<group>"; };
+		8E2B664D28662A28005BD42A /* LBCPickerTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCPickerTester.swift; sourceTree = "<group>"; };
+		8E2B664E28662A28005BD42A /* LBCLabelTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCLabelTester.swift; sourceTree = "<group>"; };
+		8E2B664F28662A28005BD42A /* LBCSegmentedControlTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCSegmentedControlTester.swift; sourceTree = "<group>"; };
+		8E2B665028662A28005BD42A /* LBCNavigationBarTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCNavigationBarTester.swift; sourceTree = "<group>"; };
+		8E2B665128662A28005BD42A /* LBCDatePickerCountDownTimerTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCDatePickerCountDownTimerTester.swift; sourceTree = "<group>"; };
+		8E2B665228662A28005BD42A /* LBCTableViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTableViewTester.swift; sourceTree = "<group>"; };
+		8E2B665328662A28005BD42A /* LBCUIElementTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementTester.swift; sourceTree = "<group>"; };
+		8E2B665428662A28005BD42A /* LBCScrollViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCScrollViewTester.swift; sourceTree = "<group>"; };
+		8E2B665528662A28005BD42A /* LBCWebViewTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCWebViewTester.swift; sourceTree = "<group>"; };
+		8E2B665628662A28005BD42A /* LBCImageTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCImageTester.swift; sourceTree = "<group>"; };
+		8E2B665728662A28005BD42A /* LBCCellTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCCellTester.swift; sourceTree = "<group>"; };
+		8E2B665828662A28005BD42A /* LBCDatePickerTimeTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCDatePickerTimeTester.swift; sourceTree = "<group>"; };
+		8E2B665928662A28005BD42A /* LBCScrollBarTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCScrollBarTester.swift; sourceTree = "<group>"; };
+		8E2B665A28662A28005BD42A /* LBCActivityIndicatorTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCActivityIndicatorTester.swift; sourceTree = "<group>"; };
+		8E2B665B28662A28005BD42A /* LBCToolbarButtonTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCToolbarButtonTester.swift; sourceTree = "<group>"; };
+		8E2B665C28662A28005BD42A /* LBCSwitchTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCSwitchTester.swift; sourceTree = "<group>"; };
+		8E2B665D28662A28005BD42A /* LBCTextFieldTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTextFieldTester.swift; sourceTree = "<group>"; };
+		8E2B665E28662A28005BD42A /* LBCUITesterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITesterHelper.swift; sourceTree = "<group>"; };
+		8E2B665F28662A28005BD42A /* LBCUITester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITester.swift; sourceTree = "<group>"; };
+		8E2B666028662A28005BD42A /* LBCDefaultTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCDefaultTester.swift; sourceTree = "<group>"; };
+		8E2B666228662A28005BD42A /* LBCUIElementCellState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementCellState.swift; sourceTree = "<group>"; };
+		8E2B666328662A28005BD42A /* LBCUIElementTapPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementTapPosition.swift; sourceTree = "<group>"; };
+		8E2B666428662A28005BD42A /* LBCUIElementDateComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementDateComponent.swift; sourceTree = "<group>"; };
+		8E2B666528662A28005BD42A /* LBCUITypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITypeAliases.swift; sourceTree = "<group>"; };
+		8E2B666628662A28005BD42A /* LBCUIElementViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementViewState.swift; sourceTree = "<group>"; };
+		8E2B666728662A28005BD42A /* LBCUIElementSwipeDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementSwipeDirection.swift; sourceTree = "<group>"; };
+		8E2B666828662A28005BD42A /* LBCUIElementCellSwipeDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementCellSwipeDirection.swift; sourceTree = "<group>"; };
+		8E2B666928662A28005BD42A /* LBCUITestCaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITestCaseHelper.swift; sourceTree = "<group>"; };
+		8E2B667128662A28005BD42A /* LBCUIElementProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIElementProvider.swift; sourceTree = "<group>"; };
+		8E2B667228662A28005BD42A /* LBCScrollableTesterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCScrollableTesterProtocol.swift; sourceTree = "<group>"; };
+		8E2B667428662A28005BD42A /* LBCUITesterProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITesterProtocols.swift; sourceTree = "<group>"; };
+		8E2B667C28662A28005BD42A /* LBCTestTimeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestTimeout.swift; sourceTree = "<group>"; };
+		8E2B667D28662A28005BD42A /* LBCTestTimeoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestTimeoutTests.swift; sourceTree = "<group>"; };
+		8E2B667F28662A28005BD42A /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		8E2B668028662A28005BD42A /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +415,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2B66CA28662C80005BD42A /* TestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +430,7 @@
 				8E2B64D0286614AE005BD42A /* TestKitDemo */,
 				8E2B64F1286614B1005BD42A /* TestKitDemoUITests */,
 				8E2B63FA28660A9D005BD42A /* Products */,
+				8E2B66C928662C80005BD42A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -458,7 +448,7 @@
 		8E2B63FB28660A9D005BD42A /* TestKit */ = {
 			isa = PBXGroup;
 			children = (
-				8E2B641528660CB9005BD42A /* Classes */,
+				8E2B663528662A28005BD42A /* Classes */,
 				8E2B63FC28660A9D005BD42A /* TestKit.h */,
 				8E2B63FD28660A9D005BD42A /* TestKit.docc */,
 			);
@@ -471,123 +461,6 @@
 				8E2B640828660A9D005BD42A /* TestKitTests.swift */,
 			);
 			path = TestKitTests;
-			sourceTree = "<group>";
-		};
-		8E2B641528660CB9005BD42A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8E2B65532866175D005BD42A /* Configuration */,
-				8E2B641628660CB9005BD42A /* UI */,
-				8E2B646528660CB9005BD42A /* Unit */,
-				8E2B646C28660CB9005BD42A /* Extensions */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		8E2B641628660CB9005BD42A /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				8E2B644928660CB9005BD42A /* LBCUITestCaseHelper.swift */,
-				8E2B641728660CB9005BD42A /* Testers */,
-				8E2B644128660CB9005BD42A /* Models */,
-				8E2B645A28660CB9005BD42A /* Protocols */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		8E2B641728660CB9005BD42A /* Testers */ = {
-			isa = PBXGroup;
-			children = (
-				8E2B641828660CB9005BD42A /* UIKitTesters */,
-				8E2B643F28660CB9005BD42A /* LBCUITester.swift */,
-			);
-			path = Testers;
-			sourceTree = "<group>";
-		};
-		8E2B641828660CB9005BD42A /* UIKitTesters */ = {
-			isa = PBXGroup;
-			children = (
-				8E2B641928660CB9005BD42A /* LBCProgressIndicatorTester.swift */,
-				8E2B641A28660CB9005BD42A /* LBCTabBarTester.swift */,
-				8E2B641B28660CB9005BD42A /* LBCStepperTester.swift */,
-				8E2B641C28660CB9005BD42A /* LBCDatePickerDateTypeTester.swift */,
-				8E2B641D28660CB9005BD42A /* LBCNavigationBarButtonTester.swift */,
-				8E2B641E28660CB9005BD42A /* LBCTabBarItemTester.swift */,
-				8E2B641F28660CB9005BD42A /* LBCAlertTester.swift */,
-				8E2B642028660CB9005BD42A /* LBCActionSheetTester.swift */,
-				8E2B642128660CB9005BD42A /* LBCMapTester.swift */,
-				8E2B642228660CB9005BD42A /* LBCTextViewTester.swift */,
-				8E2B642328660CB9005BD42A /* LBCPageIndicatorTester.swift */,
-				8E2B642428660CB9005BD42A /* LBCSliderTester.swift */,
-				8E2B642528660CB9005BD42A /* LBCLinkTester.swift */,
-				8E2B642628660CB9005BD42A /* LBCViewTester.swift */,
-				8E2B642728660CB9005BD42A /* LBCSecuredTextFieldTester.swift */,
-				8E2B642828660CB9005BD42A /* LBCButtonTester.swift */,
-				8E2B642928660CB9005BD42A /* LBCCollectionViewTester.swift */,
-				8E2B642A28660CB9005BD42A /* LBCToolbarTester.swift */,
-				8E2B642B28660CB9005BD42A /* LBCDatePickerDateAndTimeTester.swift */,
-				8E2B642C28660CB9005BD42A /* LBCSearchBarTester.swift */,
-				8E2B642D28660CB9005BD42A /* LBCPickerTester.swift */,
-				8E2B642E28660CB9005BD42A /* LBCLabelTester.swift */,
-				8E2B642F28660CB9005BD42A /* LBCSegmentedControlTester.swift */,
-				8E2B643028660CB9005BD42A /* LBCNavigationBarTester.swift */,
-				8E2B643128660CB9005BD42A /* LBCDatePickerCountDownTimerTester.swift */,
-				8E2B643228660CB9005BD42A /* LBCTableViewTester.swift */,
-				8E2B643328660CB9005BD42A /* LBCUIElementTester.swift */,
-				8E2B643428660CB9005BD42A /* LBCScrollViewTester.swift */,
-				8E2B643528660CB9005BD42A /* LBCWebViewTester.swift */,
-				8E2B643628660CB9005BD42A /* LBCImageTester.swift */,
-				8E2B643728660CB9005BD42A /* LBCCellTester.swift */,
-				8E2B643828660CB9005BD42A /* LBCDatePickerTimeTester.swift */,
-				8E2B643928660CB9005BD42A /* LBCScrollBarTester.swift */,
-				8E2B643A28660CB9005BD42A /* LBCActivityIndicatorTester.swift */,
-				8E2B643B28660CB9005BD42A /* LBCToolbarButtonTester.swift */,
-				8E2B643C28660CB9005BD42A /* LBCSwitchTester.swift */,
-				8E2B643D28660CB9005BD42A /* LBCTextFieldTester.swift */,
-			);
-			path = UIKitTesters;
-			sourceTree = "<group>";
-		};
-		8E2B644128660CB9005BD42A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8E2B644228660CB9005BD42A /* LBCUIElementCellState.swift */,
-				8E2B644328660CB9005BD42A /* LBCUIElementTapPosition.swift */,
-				8E2B644428660CB9005BD42A /* LBCUIElementDateComponent.swift */,
-				8E2B644528660CB9005BD42A /* LBCUITypeAliases.swift */,
-				8E2B644628660CB9005BD42A /* LBCUIElementViewState.swift */,
-				8E2B644728660CB9005BD42A /* LBCUIElementSwipeDirection.swift */,
-				8E2B644828660CB9005BD42A /* LBCUIElementCellSwipeDirection.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8E2B645A28660CB9005BD42A /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				8E2B645B28660CB9005BD42A /* LBCUIElementProvider.swift */,
-				8E2B645C28660CB9005BD42A /* LBCScrollableTesterProtocol.swift */,
-				8E2B645E28660CB9005BD42A /* LBCUITesterProtocols.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		8E2B646528660CB9005BD42A /* Unit */ = {
-			isa = PBXGroup;
-			children = (
-				8E2B646728660CB9005BD42A /* LBCTestTimeout.swift */,
-				8E2B646A28660CB9005BD42A /* LBCTestTimeoutTests.swift */,
-			);
-			path = Unit;
-			sourceTree = "<group>";
-		};
-		8E2B646C28660CB9005BD42A /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				8E2B646F28660CB9005BD42A /* String+Extensions.swift */,
-				8E2B647028660CB9005BD42A /* XCUIElement+Extensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8E2B64D0286614AE005BD42A /* TestKitDemo */ = {
@@ -654,25 +527,12 @@
 				8E2B652028661589005BD42A /* ViewControllerWithSearchBar.swift */,
 				8E2B652128661589005BD42A /* ViewControllerWithPicker.swift */,
 				8E2B652328661589005BD42A /* ViewControllerWithPageIndicator.swift */,
-				8E2B652428661589005BD42A /* LBCEmptyViewController.swift */,
 				8E2B652528661589005BD42A /* ViewControllerWithProgressView.swift */,
 				8E2B652628661589005BD42A /* ViewControllerWithSegmentedControl.swift */,
 				8E2B652828661589005BD42A /* ViewControllerWithCustomPickerView.swift */,
 				8E2B652928661589005BD42A /* ViewControllerWithDatePicker.swift */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		8E2B65532866175D005BD42A /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				8E2B65542866175D005BD42A /* LBCTestKitService.swift */,
-				8E2B65552866175D005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift */,
-				8E2B65562866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift */,
-				8E2B65572866175D005BD42A /* LBCTestKitServiceProtocol.swift */,
-				8E2B65582866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift */,
-			);
-			path = Configuration;
 			sourceTree = "<group>";
 		};
 		8E2B656328661CB9005BD42A /* Classes */ = {
@@ -1044,6 +904,131 @@
 			path = CellTester;
 			sourceTree = "<group>";
 		};
+		8E2B663528662A28005BD42A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B663628662A28005BD42A /* UI */,
+				8E2B667B28662A28005BD42A /* Unit */,
+				8E2B667E28662A28005BD42A /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8E2B663628662A28005BD42A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B663728662A28005BD42A /* Testers */,
+				8E2B666128662A28005BD42A /* Models */,
+				8E2B666928662A28005BD42A /* LBCUITestCaseHelper.swift */,
+				8E2B667028662A28005BD42A /* Protocols */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8E2B663728662A28005BD42A /* Testers */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B663828662A28005BD42A /* UIKitTesters */,
+				8E2B665E28662A28005BD42A /* LBCUITesterHelper.swift */,
+				8E2B665F28662A28005BD42A /* LBCUITester.swift */,
+				8E2B666028662A28005BD42A /* LBCDefaultTester.swift */,
+			);
+			path = Testers;
+			sourceTree = "<group>";
+		};
+		8E2B663828662A28005BD42A /* UIKitTesters */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B663928662A28005BD42A /* LBCProgressIndicatorTester.swift */,
+				8E2B663A28662A28005BD42A /* LBCTabBarTester.swift */,
+				8E2B663B28662A28005BD42A /* LBCStepperTester.swift */,
+				8E2B663C28662A28005BD42A /* LBCDatePickerDateTypeTester.swift */,
+				8E2B663D28662A28005BD42A /* LBCNavigationBarButtonTester.swift */,
+				8E2B663E28662A28005BD42A /* LBCTabBarItemTester.swift */,
+				8E2B663F28662A28005BD42A /* LBCAlertTester.swift */,
+				8E2B664028662A28005BD42A /* LBCActionSheetTester.swift */,
+				8E2B664128662A28005BD42A /* LBCMapTester.swift */,
+				8E2B664228662A28005BD42A /* LBCTextViewTester.swift */,
+				8E2B664328662A28005BD42A /* LBCPageIndicatorTester.swift */,
+				8E2B664428662A28005BD42A /* LBCSliderTester.swift */,
+				8E2B664528662A28005BD42A /* LBCLinkTester.swift */,
+				8E2B664628662A28005BD42A /* LBCViewTester.swift */,
+				8E2B664728662A28005BD42A /* LBCSecuredTextFieldTester.swift */,
+				8E2B664828662A28005BD42A /* LBCButtonTester.swift */,
+				8E2B664928662A28005BD42A /* LBCCollectionViewTester.swift */,
+				8E2B664A28662A28005BD42A /* LBCToolbarTester.swift */,
+				8E2B664B28662A28005BD42A /* LBCDatePickerDateAndTimeTester.swift */,
+				8E2B664C28662A28005BD42A /* LBCSearchBarTester.swift */,
+				8E2B664D28662A28005BD42A /* LBCPickerTester.swift */,
+				8E2B664E28662A28005BD42A /* LBCLabelTester.swift */,
+				8E2B664F28662A28005BD42A /* LBCSegmentedControlTester.swift */,
+				8E2B665028662A28005BD42A /* LBCNavigationBarTester.swift */,
+				8E2B665128662A28005BD42A /* LBCDatePickerCountDownTimerTester.swift */,
+				8E2B665228662A28005BD42A /* LBCTableViewTester.swift */,
+				8E2B665328662A28005BD42A /* LBCUIElementTester.swift */,
+				8E2B665428662A28005BD42A /* LBCScrollViewTester.swift */,
+				8E2B665528662A28005BD42A /* LBCWebViewTester.swift */,
+				8E2B665628662A28005BD42A /* LBCImageTester.swift */,
+				8E2B665728662A28005BD42A /* LBCCellTester.swift */,
+				8E2B665828662A28005BD42A /* LBCDatePickerTimeTester.swift */,
+				8E2B665928662A28005BD42A /* LBCScrollBarTester.swift */,
+				8E2B665A28662A28005BD42A /* LBCActivityIndicatorTester.swift */,
+				8E2B665B28662A28005BD42A /* LBCToolbarButtonTester.swift */,
+				8E2B665C28662A28005BD42A /* LBCSwitchTester.swift */,
+				8E2B665D28662A28005BD42A /* LBCTextFieldTester.swift */,
+			);
+			path = UIKitTesters;
+			sourceTree = "<group>";
+		};
+		8E2B666128662A28005BD42A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B666228662A28005BD42A /* LBCUIElementCellState.swift */,
+				8E2B666328662A28005BD42A /* LBCUIElementTapPosition.swift */,
+				8E2B666428662A28005BD42A /* LBCUIElementDateComponent.swift */,
+				8E2B666528662A28005BD42A /* LBCUITypeAliases.swift */,
+				8E2B666628662A28005BD42A /* LBCUIElementViewState.swift */,
+				8E2B666728662A28005BD42A /* LBCUIElementSwipeDirection.swift */,
+				8E2B666828662A28005BD42A /* LBCUIElementCellSwipeDirection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E2B667028662A28005BD42A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B667128662A28005BD42A /* LBCUIElementProvider.swift */,
+				8E2B667228662A28005BD42A /* LBCScrollableTesterProtocol.swift */,
+				8E2B667428662A28005BD42A /* LBCUITesterProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8E2B667B28662A28005BD42A /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B667C28662A28005BD42A /* LBCTestTimeout.swift */,
+				8E2B667D28662A28005BD42A /* LBCTestTimeoutTests.swift */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		8E2B667E28662A28005BD42A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B667F28662A28005BD42A /* String+Extensions.swift */,
+				8E2B668028662A28005BD42A /* XCUIElement+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E2B66C928662C80005BD42A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1217,64 +1202,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E2B64C228660CB9005BD42A /* String+Extensions.swift in Sources */,
-				8E2B647C28660CB9005BD42A /* LBCTabBarItemTester.swift in Sources */,
-				8E2B655C2866175D005BD42A /* LBCTestKitServiceProtocol.swift in Sources */,
-				8E2B655A2866175D005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift in Sources */,
-				8E2B649028660CB9005BD42A /* LBCTableViewTester.swift in Sources */,
-				8E2B648A28660CB9005BD42A /* LBCSearchBarTester.swift in Sources */,
-				8E2B647928660CB9005BD42A /* LBCStepperTester.swift in Sources */,
-				8E2B647728660CB9005BD42A /* LBCProgressIndicatorTester.swift in Sources */,
-				8E2B64B128660CB9005BD42A /* LBCUIElementProvider.swift in Sources */,
-				8E2B649228660CB9005BD42A /* LBCScrollViewTester.swift in Sources */,
-				8E2B647B28660CB9005BD42A /* LBCNavigationBarButtonTester.swift in Sources */,
-				8E2B648328660CB9005BD42A /* LBCLinkTester.swift in Sources */,
-				8E2B648728660CB9005BD42A /* LBCCollectionViewTester.swift in Sources */,
-				8E2B647828660CB9005BD42A /* LBCTabBarTester.swift in Sources */,
-				8E2B64C328660CB9005BD42A /* XCUIElement+Extensions.swift in Sources */,
-				8E2B649D28660CB9005BD42A /* LBCUITester.swift in Sources */,
-				8E2B649328660CB9005BD42A /* LBCWebViewTester.swift in Sources */,
-				8E2B64A028660CB9005BD42A /* LBCUIElementTapPosition.swift in Sources */,
-				8E2B65592866175D005BD42A /* LBCTestKitService.swift in Sources */,
-				8E2B648F28660CB9005BD42A /* LBCDatePickerCountDownTimerTester.swift in Sources */,
-				8E2B648528660CB9005BD42A /* LBCSecuredTextFieldTester.swift in Sources */,
-				8E2B649A28660CB9005BD42A /* LBCSwitchTester.swift in Sources */,
+				8E2B668628662A28005BD42A /* LBCTabBarItemTester.swift in Sources */,
+				8E2B669A28662A28005BD42A /* LBCTableViewTester.swift in Sources */,
+				8E2B66BB28662A28005BD42A /* LBCTestTimeoutTests.swift in Sources */,
+				8E2B669428662A28005BD42A /* LBCSearchBarTester.swift in Sources */,
+				8E2B668328662A28005BD42A /* LBCStepperTester.swift in Sources */,
+				8E2B66BD28662A28005BD42A /* XCUIElement+Extensions.swift in Sources */,
+				8E2B668128662A28005BD42A /* LBCProgressIndicatorTester.swift in Sources */,
+				8E2B669C28662A28005BD42A /* LBCScrollViewTester.swift in Sources */,
+				8E2B668528662A28005BD42A /* LBCNavigationBarButtonTester.swift in Sources */,
+				8E2B668D28662A28005BD42A /* LBCLinkTester.swift in Sources */,
+				8E2B669128662A28005BD42A /* LBCCollectionViewTester.swift in Sources */,
+				8E2B668228662A28005BD42A /* LBCTabBarTester.swift in Sources */,
+				8E2B66A728662A28005BD42A /* LBCUITester.swift in Sources */,
+				8E2B669D28662A28005BD42A /* LBCWebViewTester.swift in Sources */,
+				8E2B66BA28662A28005BD42A /* LBCTestTimeout.swift in Sources */,
+				8E2B66AA28662A28005BD42A /* LBCUIElementTapPosition.swift in Sources */,
+				8E2B669928662A28005BD42A /* LBCDatePickerCountDownTimerTester.swift in Sources */,
+				8E2B668F28662A28005BD42A /* LBCSecuredTextFieldTester.swift in Sources */,
+				8E2B66A428662A28005BD42A /* LBCSwitchTester.swift in Sources */,
 				8E2B63FE28660A9D005BD42A /* TestKit.docc in Sources */,
-				8E2B64A528660CB9005BD42A /* LBCUIElementCellSwipeDirection.swift in Sources */,
-				8E2B648628660CB9005BD42A /* LBCButtonTester.swift in Sources */,
-				8E2B647E28660CB9005BD42A /* LBCActionSheetTester.swift in Sources */,
-				8E2B648E28660CB9005BD42A /* LBCNavigationBarTester.swift in Sources */,
-				8E2B64A128660CB9005BD42A /* LBCUIElementDateComponent.swift in Sources */,
-				8E2B648428660CB9005BD42A /* LBCViewTester.swift in Sources */,
-				8E2B647A28660CB9005BD42A /* LBCDatePickerDateTypeTester.swift in Sources */,
-				8E2B647D28660CB9005BD42A /* LBCAlertTester.swift in Sources */,
-				8E2B64B228660CB9005BD42A /* LBCScrollableTesterProtocol.swift in Sources */,
-				8E2B648D28660CB9005BD42A /* LBCSegmentedControlTester.swift in Sources */,
-				8E2B655B2866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift in Sources */,
-				8E2B649428660CB9005BD42A /* LBCImageTester.swift in Sources */,
-				8E2B64B428660CB9005BD42A /* LBCUITesterProtocols.swift in Sources */,
-				8E2B649528660CB9005BD42A /* LBCCellTester.swift in Sources */,
-				8E2B648128660CB9005BD42A /* LBCPageIndicatorTester.swift in Sources */,
-				8E2B649828660CB9005BD42A /* LBCActivityIndicatorTester.swift in Sources */,
-				8E2B648B28660CB9005BD42A /* LBCPickerTester.swift in Sources */,
-				8E2B64A628660CB9005BD42A /* LBCUITestCaseHelper.swift in Sources */,
-				8E2B649928660CB9005BD42A /* LBCToolbarButtonTester.swift in Sources */,
-				8E2B649B28660CB9005BD42A /* LBCTextFieldTester.swift in Sources */,
-				8E2B648928660CB9005BD42A /* LBCDatePickerDateAndTimeTester.swift in Sources */,
-				8E2B648828660CB9005BD42A /* LBCToolbarTester.swift in Sources */,
-				8E2B648228660CB9005BD42A /* LBCSliderTester.swift in Sources */,
-				8E2B64BB28660CB9005BD42A /* LBCTestTimeout.swift in Sources */,
-				8E2B648028660CB9005BD42A /* LBCTextViewTester.swift in Sources */,
-				8E2B648C28660CB9005BD42A /* LBCLabelTester.swift in Sources */,
-				8E2B647F28660CB9005BD42A /* LBCMapTester.swift in Sources */,
-				8E2B649628660CB9005BD42A /* LBCDatePickerTimeTester.swift in Sources */,
-				8E2B655D2866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift in Sources */,
-				8E2B64A328660CB9005BD42A /* LBCUIElementViewState.swift in Sources */,
-				8E2B649128660CB9005BD42A /* LBCUIElementTester.swift in Sources */,
-				8E2B649F28660CB9005BD42A /* LBCUIElementCellState.swift in Sources */,
-				8E2B64A428660CB9005BD42A /* LBCUIElementSwipeDirection.swift in Sources */,
-				8E2B64A228660CB9005BD42A /* LBCUITypeAliases.swift in Sources */,
-				8E2B649728660CB9005BD42A /* LBCScrollBarTester.swift in Sources */,
+				8E2B66AF28662A28005BD42A /* LBCUIElementCellSwipeDirection.swift in Sources */,
+				8E2B669028662A28005BD42A /* LBCButtonTester.swift in Sources */,
+				8E2B668828662A28005BD42A /* LBCActionSheetTester.swift in Sources */,
+				8E2B66B428662A28005BD42A /* LBCUITesterProtocols.swift in Sources */,
+				8E2B669828662A28005BD42A /* LBCNavigationBarTester.swift in Sources */,
+				8E2B66AB28662A28005BD42A /* LBCUIElementDateComponent.swift in Sources */,
+				8E2B668E28662A28005BD42A /* LBCViewTester.swift in Sources */,
+				8E2B668428662A28005BD42A /* LBCDatePickerDateTypeTester.swift in Sources */,
+				8E2B668728662A28005BD42A /* LBCAlertTester.swift in Sources */,
+				8E2B66B128662A28005BD42A /* LBCUIElementProvider.swift in Sources */,
+				8E2B66A828662A28005BD42A /* LBCDefaultTester.swift in Sources */,
+				8E2B669728662A28005BD42A /* LBCSegmentedControlTester.swift in Sources */,
+				8E2B669E28662A28005BD42A /* LBCImageTester.swift in Sources */,
+				8E2B669F28662A28005BD42A /* LBCCellTester.swift in Sources */,
+				8E2B66BC28662A28005BD42A /* String+Extensions.swift in Sources */,
+				8E2B668B28662A28005BD42A /* LBCPageIndicatorTester.swift in Sources */,
+				8E2B66A228662A28005BD42A /* LBCActivityIndicatorTester.swift in Sources */,
+				8E2B669528662A28005BD42A /* LBCPickerTester.swift in Sources */,
+				8E2B66B228662A28005BD42A /* LBCScrollableTesterProtocol.swift in Sources */,
+				8E2B66B028662A28005BD42A /* LBCUITestCaseHelper.swift in Sources */,
+				8E2B66A328662A28005BD42A /* LBCToolbarButtonTester.swift in Sources */,
+				8E2B66A528662A28005BD42A /* LBCTextFieldTester.swift in Sources */,
+				8E2B669328662A28005BD42A /* LBCDatePickerDateAndTimeTester.swift in Sources */,
+				8E2B669228662A28005BD42A /* LBCToolbarTester.swift in Sources */,
+				8E2B66A628662A28005BD42A /* LBCUITesterHelper.swift in Sources */,
+				8E2B668C28662A28005BD42A /* LBCSliderTester.swift in Sources */,
+				8E2B668A28662A28005BD42A /* LBCTextViewTester.swift in Sources */,
+				8E2B669628662A28005BD42A /* LBCLabelTester.swift in Sources */,
+				8E2B668928662A28005BD42A /* LBCMapTester.swift in Sources */,
+				8E2B66A028662A28005BD42A /* LBCDatePickerTimeTester.swift in Sources */,
+				8E2B66AD28662A28005BD42A /* LBCUIElementViewState.swift in Sources */,
+				8E2B669B28662A28005BD42A /* LBCUIElementTester.swift in Sources */,
+				8E2B66A928662A28005BD42A /* LBCUIElementCellState.swift in Sources */,
+				8E2B66AE28662A28005BD42A /* LBCUIElementSwipeDirection.swift in Sources */,
+				8E2B66AC28662A28005BD42A /* LBCUITypeAliases.swift in Sources */,
+				8E2B66A128662A28005BD42A /* LBCScrollBarTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1283,7 +1266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E2B640928660A9D005BD42A /* TestKitTests.swift in Sources */,
-				8E2B64CA28661422005BD42A /* LBCTestTimeoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1300,17 +1282,14 @@
 				8E2B653728661589005BD42A /* ViewControllerWithAlert.swift in Sources */,
 				8E2B654028661589005BD42A /* ViewControllerWithView.swift in Sources */,
 				8E2B654428661589005BD42A /* ViewControllerWithTabBar.swift in Sources */,
-				8E2B655F28661B1A005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift in Sources */,
 				8E2B653F28661589005BD42A /* ViewControllerWithScrollView.swift in Sources */,
 				8E2B654E28661589005BD42A /* ViewControllerWithProgressView.swift in Sources */,
-				8E2B656228661B1A005BD42A /* LBCTestKitService.swift in Sources */,
 				8E2B653A28661589005BD42A /* ViewControllerWithStepper.swift in Sources */,
 				8E2B654828661589005BD42A /* ViewControllerWithTextView.swift in Sources */,
 				8E2B655228661589005BD42A /* ViewControllerWithDatePicker.swift in Sources */,
 				8E2B652F28661589005BD42A /* ViewControllerWithSecuredTextField.swift in Sources */,
 				8E2B653328661589005BD42A /* ViewControllerWithUIControl.swift in Sources */,
 				8E2B652D28661589005BD42A /* ViewControllerWithSlider.swift in Sources */,
-				8E2B656128661B1A005BD42A /* LBCTestKitConfiguratorProtocol.swift in Sources */,
 				8E2B653428661589005BD42A /* ViewControllerWithImage.swift in Sources */,
 				8E2B654B28661589005BD42A /* AppDelegate.swift in Sources */,
 				8E2B654228661589005BD42A /* ViewControllerWithToolbar.swift in Sources */,
@@ -1319,9 +1298,7 @@
 				8E2B654928661589005BD42A /* ViewControllerWithSearchBar.swift in Sources */,
 				8E2B653928661589005BD42A /* ViewControllerWithTableView.swift in Sources */,
 				8E2B653D28661589005BD42A /* ViewControllerWithNavigationBar.swift in Sources */,
-				8E2B654D28661589005BD42A /* LBCEmptyViewController.swift in Sources */,
 				8E2B654328661589005BD42A /* ViewControllerWithActionSheet.swift in Sources */,
-				8E2B663028662062005BD42A /* LBCTestKitConfigurationObjectProtocol.swift in Sources */,
 				8E2B654C28661589005BD42A /* ViewControllerWithPageIndicator.swift in Sources */,
 				8E2B653128661589005BD42A /* ViewControllerWithMap.swift in Sources */,
 				8E2B653528661589005BD42A /* ViewControllerWithSwitch.swift in Sources */,
@@ -1329,7 +1306,6 @@
 				8E2B653B28661589005BD42A /* ViewControllerWithLabel.swift in Sources */,
 				8E2B654628661589005BD42A /* ViewControllerWithCollectionView.swift in Sources */,
 				8E2B655128661589005BD42A /* ViewControllerWithCustomPickerView.swift in Sources */,
-				8E2B656028661B1A005BD42A /* LBCTestKitServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

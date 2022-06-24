@@ -11,20 +11,14 @@ import XCTest
 
 final class LBCUISuccessToolbarTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithToolbar
+    override func setUp() {
+        self.homePageType = .homePageWithToolbar
+        super.setUp()
+    }
 
     func test_Toolbar() {
         self.startApp()
         self.tester
             .getToolbar(with: "toolbarIdentifier")
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUISuccessCellTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithTableViewNormalMode
+    override func setUp() {
+        self.homePageType = .homePageWithTableViewNormalMode
+        super.setUp()
+    }
 
     func test_Cell_ValidateCellWithLabel_DeleteWithButton() {
         self.homePageType = .homePageWithTableViewEditMode
@@ -64,13 +67,4 @@ final class LBCUISuccessCellTests: LBCUITestCase {
         self.tester.getCell(boundBy: 3)
             .validate(state: .selected)
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }

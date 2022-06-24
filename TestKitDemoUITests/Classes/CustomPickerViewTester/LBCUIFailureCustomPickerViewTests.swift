@@ -11,7 +11,10 @@ import XCTest
 
 final class LBCUIFailureCustomPickerViewTests: LBCUITestCase {
 
-    private var homePageType: HomePageType = .homePageWithCustomPickerView
+    override func setUp() {
+        self.homePageType = .homePageWithCustomPickerView
+        super.setUp()
+    }
 
     func test_picker_wrong_identifier() {
         self.startApp()
@@ -40,13 +43,4 @@ final class LBCUIFailureCustomPickerViewTests: LBCUITestCase {
                 .validate(textValue: "ITEM 1-3", atIndex: 0)
         }
     }
-
-    override func testingHomePageKey() -> String? {
-        return self.homePageType.rawValue
-    }
-
-    override func shouldAutoStartApp() -> Bool {
-        return false
-    }
-
 }
