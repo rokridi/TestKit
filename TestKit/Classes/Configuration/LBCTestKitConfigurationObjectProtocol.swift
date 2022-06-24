@@ -10,11 +10,11 @@ import UIKit
 
 /// Protocol to use to pass configuration objects from LBCUITestCases to instances implementing LBCTestingConfiguratorProtocol
 /// This protocol will replace LBCUITestsConfigurationProtocol from Definition
-protocol LBCTestKitConfigurationObjectProtocol: Codable {
+public protocol LBCTestKitConfigurationObjectProtocol: Codable {
 
 }
 
-extension LBCTestKitConfigurationObjectProtocol {
+public extension LBCTestKitConfigurationObjectProtocol {
     func encodeToBase64String() -> String? {
         return try? JSONEncoder().encode(self).base64EncodedString()
     }

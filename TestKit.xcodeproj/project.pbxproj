@@ -110,11 +110,86 @@
 		8E2B655B2866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65562866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift */; };
 		8E2B655C2866175D005BD42A /* LBCTestKitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65572866175D005BD42A /* LBCTestKitServiceProtocol.swift */; };
 		8E2B655D2866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65582866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift */; };
-		8E2B655E28661B1A005BD42A /* LBCTestKitConfigurationObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65562866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift */; };
 		8E2B655F28661B1A005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65552866175D005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift */; };
 		8E2B656028661B1A005BD42A /* LBCTestKitServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65572866175D005BD42A /* LBCTestKitServiceProtocol.swift */; };
 		8E2B656128661B1A005BD42A /* LBCTestKitConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65582866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift */; };
 		8E2B656228661B1A005BD42A /* LBCTestKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65542866175D005BD42A /* LBCTestKitService.swift */; };
+		8E2B65DD28661CB9005BD42A /* LBCUISuccessDatePickerTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656528661CB9005BD42A /* LBCUISuccessDatePickerTimeTests.swift */; };
+		8E2B65DE28661CB9005BD42A /* LBCUIFailureDatePickerTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656628661CB9005BD42A /* LBCUIFailureDatePickerTimeTests.swift */; };
+		8E2B65DF28661CB9005BD42A /* LBCUISuccessSecuredTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656828661CB9005BD42A /* LBCUISuccessSecuredTextFieldTests.swift */; };
+		8E2B65E028661CB9005BD42A /* LBCUIFailureSecuredTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656928661CB9005BD42A /* LBCUIFailureSecuredTextFieldTests.swift */; };
+		8E2B65E128661CB9005BD42A /* LBCUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656A28661CB9005BD42A /* LBCUITestCase.swift */; };
+		8E2B65E228661CB9005BD42A /* LBCUISuccessStepperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656C28661CB9005BD42A /* LBCUISuccessStepperTests.swift */; };
+		8E2B65E328661CB9005BD42A /* LBCUIFailureStepperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656D28661CB9005BD42A /* LBCUIFailureStepperTests.swift */; };
+		8E2B65E428661CB9005BD42A /* LBCUISuccessPageIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B656F28661CB9005BD42A /* LBCUISuccessPageIndicatorTests.swift */; };
+		8E2B65E528661CB9005BD42A /* LBCUIFailurePageIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657028661CB9005BD42A /* LBCUIFailurePageIndicatorTests.swift */; };
+		8E2B65E628661CB9005BD42A /* LBCUISuccessMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657228661CB9005BD42A /* LBCUISuccessMapTests.swift */; };
+		8E2B65E728661CB9005BD42A /* LBCUIFailureMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657328661CB9005BD42A /* LBCUIFailureMapTests.swift */; };
+		8E2B65E828661CB9005BD42A /* LBCUISuccessToolbarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657528661CB9005BD42A /* LBCUISuccessToolbarButtonTests.swift */; };
+		8E2B65E928661CB9005BD42A /* LBCUIFailureToolbarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657628661CB9005BD42A /* LBCUIFailureToolbarButtonTests.swift */; };
+		8E2B65EA28661CB9005BD42A /* LBCUISuccessButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657828661CB9005BD42A /* LBCUISuccessButtonTests.swift */; };
+		8E2B65EB28661CB9005BD42A /* LBCUIFailureButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657928661CB9005BD42A /* LBCUIFailureButtonTests.swift */; };
+		8E2B65EC28661CB9005BD42A /* LBCUISuccessUIControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657B28661CB9005BD42A /* LBCUISuccessUIControlTests.swift */; };
+		8E2B65ED28661CB9005BD42A /* LBCUIFailureUIControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657C28661CB9005BD42A /* LBCUIFailureUIControlTests.swift */; };
+		8E2B65EE28661CB9005BD42A /* LBCUIFailureTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657E28661CB9005BD42A /* LBCUIFailureTableViewTests.swift */; };
+		8E2B65EF28661CB9005BD42A /* LBCUISuccessTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B657F28661CB9005BD42A /* LBCUISuccessTableViewTests.swift */; };
+		8E2B65F028661CB9005BD42A /* LBCUIFailureActionSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658128661CB9005BD42A /* LBCUIFailureActionSheetTests.swift */; };
+		8E2B65F128661CB9005BD42A /* LBCUISuccessActionSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658228661CB9005BD42A /* LBCUISuccessActionSheetTests.swift */; };
+		8E2B65F228661CB9005BD42A /* LBCUISuccessSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658428661CB9005BD42A /* LBCUISuccessSwitchTests.swift */; };
+		8E2B65F328661CB9005BD42A /* LBCUIFailureSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658528661CB9005BD42A /* LBCUIFailureSwitchTests.swift */; };
+		8E2B65F428661CB9005BD42A /* LBCUISuccessTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658728661CB9005BD42A /* LBCUISuccessTextFieldTests.swift */; };
+		8E2B65F528661CB9005BD42A /* LBCUIFailureTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658828661CB9005BD42A /* LBCUIFailureTextFieldTests.swift */; };
+		8E2B65F628661CB9005BD42A /* LBCUISuccessWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658A28661CB9005BD42A /* LBCUISuccessWebViewTests.swift */; };
+		8E2B65F728661CB9005BD42A /* LBCUIFailureWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658B28661CB9005BD42A /* LBCUIFailureWebViewTests.swift */; };
+		8E2B65F828661CB9005BD42A /* LBCUITesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658C28661CB9005BD42A /* LBCUITesterTests.swift */; };
+		8E2B65F928661CB9005BD42A /* LBCUIFailureScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658E28661CB9005BD42A /* LBCUIFailureScrollViewTests.swift */; };
+		8E2B65FA28661CB9005BD42A /* LBCUISuccessScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B658F28661CB9005BD42A /* LBCUISuccessScrollViewTests.swift */; };
+		8E2B65FB28661CB9005BD42A /* LBCUISuccessSliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B659128661CB9005BD42A /* LBCUISuccessSliderTests.swift */; };
+		8E2B65FC28661CB9005BD42A /* LBCUIFailureSliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B659228661CB9005BD42A /* LBCUIFailureSliderTests.swift */; };
+		8E2B65FD28661CB9005BD42A /* LBCUIFailureTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B659428661CB9005BD42A /* LBCUIFailureTextViewTests.swift */; };
+		8E2B65FE28661CB9005BD42A /* LBCUISuccessTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B659528661CB9005BD42A /* LBCUISuccessTextViewTests.swift */; };
+		8E2B65FF28661CB9005BD42A /* LBCUIFailureLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B659728661CB9005BD42A /* LBCUIFailureLinkTests.swift */; };
+		8E2B660028661CB9005BD42A /* LBCUISuccessLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B659828661CB9005BD42A /* LBCUISuccessLinkTests.swift */; };
+		8E2B660128661CB9005BD42A /* LBCUIFailureNavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B659A28661CB9005BD42A /* LBCUIFailureNavigationBarTests.swift */; };
+		8E2B660228661CB9005BD42A /* LBCUISuccessNavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B659B28661CB9005BD42A /* LBCUISuccessNavigationBarTests.swift */; };
+		8E2B660328661CB9005BD42A /* LBCUISuccessProgressIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B659D28661CB9005BD42A /* LBCUISuccessProgressIndicatorTests.swift */; };
+		8E2B660428661CB9005BD42A /* LBCUIFailureProgressIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B659E28661CB9005BD42A /* LBCUIFailureProgressIndicatorTests.swift */; };
+		8E2B660A28661CB9005BD42A /* LBCUIFailureActivityIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65AB28661CB9005BD42A /* LBCUIFailureActivityIndicatorTests.swift */; };
+		8E2B660B28661CB9005BD42A /* LBCUISuccessActivityIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65AC28661CB9005BD42A /* LBCUISuccessActivityIndicatorTests.swift */; };
+		8E2B660C28661CB9005BD42A /* LBCUISuccessSearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65AE28661CB9005BD42A /* LBCUISuccessSearchBarTests.swift */; };
+		8E2B660D28661CB9005BD42A /* LBCUIFailureSearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65AF28661CB9005BD42A /* LBCUIFailureSearchBarTests.swift */; };
+		8E2B660E28661CB9005BD42A /* LBCUISuccessDatePickerDateAndTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65B128661CB9005BD42A /* LBCUISuccessDatePickerDateAndTimeTests.swift */; };
+		8E2B660F28661CB9005BD42A /* LBCUIFailureDatePickerDateAndTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65B228661CB9005BD42A /* LBCUIFailureDatePickerDateAndTimeTests.swift */; };
+		8E2B661028661CB9005BD42A /* LBCUIFailureSegmentedControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65B428661CB9005BD42A /* LBCUIFailureSegmentedControlTests.swift */; };
+		8E2B661128661CB9005BD42A /* LBCUISuccessSegmentedControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65B528661CB9005BD42A /* LBCUISuccessSegmentedControlTests.swift */; };
+		8E2B661228661CB9005BD42A /* LBCUIFailureImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65B728661CB9005BD42A /* LBCUIFailureImageTests.swift */; };
+		8E2B661328661CB9005BD42A /* LBCUISuccessImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65B828661CB9005BD42A /* LBCUISuccessImageTests.swift */; };
+		8E2B661428661CB9005BD42A /* LBCUISuccessDatePickerCountDownTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65BA28661CB9005BD42A /* LBCUISuccessDatePickerCountDownTimerTests.swift */; };
+		8E2B661528661CB9005BD42A /* LBCUIFailureDatePickerCountDownTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65BB28661CB9005BD42A /* LBCUIFailureDatePickerCountDownTimerTests.swift */; };
+		8E2B661628661CB9005BD42A /* LBCUIFailureCustomPickerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65BD28661CB9005BD42A /* LBCUIFailureCustomPickerViewTests.swift */; };
+		8E2B661728661CB9005BD42A /* LBCUISuccessCustomPickerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65BE28661CB9005BD42A /* LBCUISuccessCustomPickerViewTests.swift */; };
+		8E2B661828661CB9005BD42A /* LBCUIFailureDatePickerDateTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65C028661CB9005BD42A /* LBCUIFailureDatePickerDateTypeTests.swift */; };
+		8E2B661928661CB9005BD42A /* LBCUISuccessDatePickerDateTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65C128661CB9005BD42A /* LBCUISuccessDatePickerDateTypeTests.swift */; };
+		8E2B661A28661CB9005BD42A /* LBCUISuccessPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65C328661CB9005BD42A /* LBCUISuccessPickerTests.swift */; };
+		8E2B661B28661CB9005BD42A /* LBCUIFailurePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65C428661CB9005BD42A /* LBCUIFailurePickerTests.swift */; };
+		8E2B661C28661CB9005BD42A /* LBCUIFailureAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65C628661CB9005BD42A /* LBCUIFailureAlertTests.swift */; };
+		8E2B661D28661CB9005BD42A /* LBCUISuccessAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65C728661CB9005BD42A /* LBCUISuccessAlertTests.swift */; };
+		8E2B661E28661CB9005BD42A /* LBCUISuccessToolbarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65C928661CB9005BD42A /* LBCUISuccessToolbarTests.swift */; };
+		8E2B661F28661CB9005BD42A /* LBCUIFailureToolbarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65CA28661CB9005BD42A /* LBCUIFailureToolbarTests.swift */; };
+		8E2B662028661CB9005BD42A /* LBCUIFailureTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65CC28661CB9005BD42A /* LBCUIFailureTabBarTests.swift */; };
+		8E2B662128661CB9005BD42A /* LBCUISuccessTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65CD28661CB9005BD42A /* LBCUISuccessTabBarTests.swift */; };
+		8E2B662228661CB9005BD42A /* LBCUIFailureNavigationBarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65CF28661CB9005BD42A /* LBCUIFailureNavigationBarButtonTests.swift */; };
+		8E2B662328661CB9005BD42A /* LBCUISuccessNavigationBarButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65D028661CB9005BD42A /* LBCUISuccessNavigationBarButtonTests.swift */; };
+		8E2B662428661CB9005BD42A /* LBCUIFailureViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65D228661CB9005BD42A /* LBCUIFailureViewTests.swift */; };
+		8E2B662528661CB9005BD42A /* LBCUISuccessViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65D328661CB9005BD42A /* LBCUISuccessViewTests.swift */; };
+		8E2B662628661CB9005BD42A /* LBCUISuccessCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65D528661CB9005BD42A /* LBCUISuccessCollectionViewTests.swift */; };
+		8E2B662728661CB9005BD42A /* LBCUIFailureCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65D628661CB9005BD42A /* LBCUIFailureCollectionViewTests.swift */; };
+		8E2B662828661CB9005BD42A /* LBCUISuccessTabBarItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65D828661CB9005BD42A /* LBCUISuccessTabBarItemTests.swift */; };
+		8E2B662928661CB9005BD42A /* LBCUIFailureTabBarItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65D928661CB9005BD42A /* LBCUIFailureTabBarItemTests.swift */; };
+		8E2B662A28661CB9005BD42A /* LBCUIFailureCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65DB28661CB9005BD42A /* LBCUIFailureCellTests.swift */; };
+		8E2B662B28661CB9005BD42A /* LBCUISucessCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65DC28661CB9005BD42A /* LBCUISucessCellTests.swift */; };
+		8E2B662E28661D9C005BD42A /* HomePageTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B650D28661589005BD42A /* HomePageTypeEnum.swift */; };
+		8E2B663028662062005BD42A /* LBCTestKitConfigurationObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B65562866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +206,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8E2B64CE286614AE005BD42A;
 			remoteInfo = TestKitDemo;
+		};
+		8E2B662C28661D4F005BD42A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E2B63F028660A9D005BD42A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E2B63F828660A9D005BD42A;
+			remoteInfo = TestKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -242,6 +324,80 @@
 		8E2B65562866175D005BD42A /* LBCTestKitConfigurationObjectProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestKitConfigurationObjectProtocol.swift; sourceTree = "<group>"; };
 		8E2B65572866175D005BD42A /* LBCTestKitServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestKitServiceProtocol.swift; sourceTree = "<group>"; };
 		8E2B65582866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCTestKitConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		8E2B656528661CB9005BD42A /* LBCUISuccessDatePickerTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessDatePickerTimeTests.swift; sourceTree = "<group>"; };
+		8E2B656628661CB9005BD42A /* LBCUIFailureDatePickerTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureDatePickerTimeTests.swift; sourceTree = "<group>"; };
+		8E2B656828661CB9005BD42A /* LBCUISuccessSecuredTextFieldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessSecuredTextFieldTests.swift; sourceTree = "<group>"; };
+		8E2B656928661CB9005BD42A /* LBCUIFailureSecuredTextFieldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureSecuredTextFieldTests.swift; sourceTree = "<group>"; };
+		8E2B656A28661CB9005BD42A /* LBCUITestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITestCase.swift; sourceTree = "<group>"; };
+		8E2B656C28661CB9005BD42A /* LBCUISuccessStepperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessStepperTests.swift; sourceTree = "<group>"; };
+		8E2B656D28661CB9005BD42A /* LBCUIFailureStepperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureStepperTests.swift; sourceTree = "<group>"; };
+		8E2B656F28661CB9005BD42A /* LBCUISuccessPageIndicatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessPageIndicatorTests.swift; sourceTree = "<group>"; };
+		8E2B657028661CB9005BD42A /* LBCUIFailurePageIndicatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailurePageIndicatorTests.swift; sourceTree = "<group>"; };
+		8E2B657228661CB9005BD42A /* LBCUISuccessMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessMapTests.swift; sourceTree = "<group>"; };
+		8E2B657328661CB9005BD42A /* LBCUIFailureMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureMapTests.swift; sourceTree = "<group>"; };
+		8E2B657528661CB9005BD42A /* LBCUISuccessToolbarButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessToolbarButtonTests.swift; sourceTree = "<group>"; };
+		8E2B657628661CB9005BD42A /* LBCUIFailureToolbarButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureToolbarButtonTests.swift; sourceTree = "<group>"; };
+		8E2B657828661CB9005BD42A /* LBCUISuccessButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessButtonTests.swift; sourceTree = "<group>"; };
+		8E2B657928661CB9005BD42A /* LBCUIFailureButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureButtonTests.swift; sourceTree = "<group>"; };
+		8E2B657B28661CB9005BD42A /* LBCUISuccessUIControlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessUIControlTests.swift; sourceTree = "<group>"; };
+		8E2B657C28661CB9005BD42A /* LBCUIFailureUIControlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureUIControlTests.swift; sourceTree = "<group>"; };
+		8E2B657E28661CB9005BD42A /* LBCUIFailureTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureTableViewTests.swift; sourceTree = "<group>"; };
+		8E2B657F28661CB9005BD42A /* LBCUISuccessTableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessTableViewTests.swift; sourceTree = "<group>"; };
+		8E2B658128661CB9005BD42A /* LBCUIFailureActionSheetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureActionSheetTests.swift; sourceTree = "<group>"; };
+		8E2B658228661CB9005BD42A /* LBCUISuccessActionSheetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessActionSheetTests.swift; sourceTree = "<group>"; };
+		8E2B658428661CB9005BD42A /* LBCUISuccessSwitchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessSwitchTests.swift; sourceTree = "<group>"; };
+		8E2B658528661CB9005BD42A /* LBCUIFailureSwitchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureSwitchTests.swift; sourceTree = "<group>"; };
+		8E2B658728661CB9005BD42A /* LBCUISuccessTextFieldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessTextFieldTests.swift; sourceTree = "<group>"; };
+		8E2B658828661CB9005BD42A /* LBCUIFailureTextFieldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureTextFieldTests.swift; sourceTree = "<group>"; };
+		8E2B658A28661CB9005BD42A /* LBCUISuccessWebViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessWebViewTests.swift; sourceTree = "<group>"; };
+		8E2B658B28661CB9005BD42A /* LBCUIFailureWebViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureWebViewTests.swift; sourceTree = "<group>"; };
+		8E2B658C28661CB9005BD42A /* LBCUITesterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUITesterTests.swift; sourceTree = "<group>"; };
+		8E2B658E28661CB9005BD42A /* LBCUIFailureScrollViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureScrollViewTests.swift; sourceTree = "<group>"; };
+		8E2B658F28661CB9005BD42A /* LBCUISuccessScrollViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessScrollViewTests.swift; sourceTree = "<group>"; };
+		8E2B659128661CB9005BD42A /* LBCUISuccessSliderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessSliderTests.swift; sourceTree = "<group>"; };
+		8E2B659228661CB9005BD42A /* LBCUIFailureSliderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureSliderTests.swift; sourceTree = "<group>"; };
+		8E2B659428661CB9005BD42A /* LBCUIFailureTextViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureTextViewTests.swift; sourceTree = "<group>"; };
+		8E2B659528661CB9005BD42A /* LBCUISuccessTextViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessTextViewTests.swift; sourceTree = "<group>"; };
+		8E2B659728661CB9005BD42A /* LBCUIFailureLinkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureLinkTests.swift; sourceTree = "<group>"; };
+		8E2B659828661CB9005BD42A /* LBCUISuccessLinkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessLinkTests.swift; sourceTree = "<group>"; };
+		8E2B659A28661CB9005BD42A /* LBCUIFailureNavigationBarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureNavigationBarTests.swift; sourceTree = "<group>"; };
+		8E2B659B28661CB9005BD42A /* LBCUISuccessNavigationBarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessNavigationBarTests.swift; sourceTree = "<group>"; };
+		8E2B659D28661CB9005BD42A /* LBCUISuccessProgressIndicatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessProgressIndicatorTests.swift; sourceTree = "<group>"; };
+		8E2B659E28661CB9005BD42A /* LBCUIFailureProgressIndicatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureProgressIndicatorTests.swift; sourceTree = "<group>"; };
+		8E2B65AB28661CB9005BD42A /* LBCUIFailureActivityIndicatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureActivityIndicatorTests.swift; sourceTree = "<group>"; };
+		8E2B65AC28661CB9005BD42A /* LBCUISuccessActivityIndicatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessActivityIndicatorTests.swift; sourceTree = "<group>"; };
+		8E2B65AE28661CB9005BD42A /* LBCUISuccessSearchBarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessSearchBarTests.swift; sourceTree = "<group>"; };
+		8E2B65AF28661CB9005BD42A /* LBCUIFailureSearchBarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureSearchBarTests.swift; sourceTree = "<group>"; };
+		8E2B65B128661CB9005BD42A /* LBCUISuccessDatePickerDateAndTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessDatePickerDateAndTimeTests.swift; sourceTree = "<group>"; };
+		8E2B65B228661CB9005BD42A /* LBCUIFailureDatePickerDateAndTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureDatePickerDateAndTimeTests.swift; sourceTree = "<group>"; };
+		8E2B65B428661CB9005BD42A /* LBCUIFailureSegmentedControlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureSegmentedControlTests.swift; sourceTree = "<group>"; };
+		8E2B65B528661CB9005BD42A /* LBCUISuccessSegmentedControlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessSegmentedControlTests.swift; sourceTree = "<group>"; };
+		8E2B65B728661CB9005BD42A /* LBCUIFailureImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureImageTests.swift; sourceTree = "<group>"; };
+		8E2B65B828661CB9005BD42A /* LBCUISuccessImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessImageTests.swift; sourceTree = "<group>"; };
+		8E2B65BA28661CB9005BD42A /* LBCUISuccessDatePickerCountDownTimerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessDatePickerCountDownTimerTests.swift; sourceTree = "<group>"; };
+		8E2B65BB28661CB9005BD42A /* LBCUIFailureDatePickerCountDownTimerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureDatePickerCountDownTimerTests.swift; sourceTree = "<group>"; };
+		8E2B65BD28661CB9005BD42A /* LBCUIFailureCustomPickerViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureCustomPickerViewTests.swift; sourceTree = "<group>"; };
+		8E2B65BE28661CB9005BD42A /* LBCUISuccessCustomPickerViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessCustomPickerViewTests.swift; sourceTree = "<group>"; };
+		8E2B65C028661CB9005BD42A /* LBCUIFailureDatePickerDateTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureDatePickerDateTypeTests.swift; sourceTree = "<group>"; };
+		8E2B65C128661CB9005BD42A /* LBCUISuccessDatePickerDateTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessDatePickerDateTypeTests.swift; sourceTree = "<group>"; };
+		8E2B65C328661CB9005BD42A /* LBCUISuccessPickerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessPickerTests.swift; sourceTree = "<group>"; };
+		8E2B65C428661CB9005BD42A /* LBCUIFailurePickerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailurePickerTests.swift; sourceTree = "<group>"; };
+		8E2B65C628661CB9005BD42A /* LBCUIFailureAlertTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureAlertTests.swift; sourceTree = "<group>"; };
+		8E2B65C728661CB9005BD42A /* LBCUISuccessAlertTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessAlertTests.swift; sourceTree = "<group>"; };
+		8E2B65C928661CB9005BD42A /* LBCUISuccessToolbarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessToolbarTests.swift; sourceTree = "<group>"; };
+		8E2B65CA28661CB9005BD42A /* LBCUIFailureToolbarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureToolbarTests.swift; sourceTree = "<group>"; };
+		8E2B65CC28661CB9005BD42A /* LBCUIFailureTabBarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureTabBarTests.swift; sourceTree = "<group>"; };
+		8E2B65CD28661CB9005BD42A /* LBCUISuccessTabBarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessTabBarTests.swift; sourceTree = "<group>"; };
+		8E2B65CF28661CB9005BD42A /* LBCUIFailureNavigationBarButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureNavigationBarButtonTests.swift; sourceTree = "<group>"; };
+		8E2B65D028661CB9005BD42A /* LBCUISuccessNavigationBarButtonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessNavigationBarButtonTests.swift; sourceTree = "<group>"; };
+		8E2B65D228661CB9005BD42A /* LBCUIFailureViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureViewTests.swift; sourceTree = "<group>"; };
+		8E2B65D328661CB9005BD42A /* LBCUISuccessViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessViewTests.swift; sourceTree = "<group>"; };
+		8E2B65D528661CB9005BD42A /* LBCUISuccessCollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessCollectionViewTests.swift; sourceTree = "<group>"; };
+		8E2B65D628661CB9005BD42A /* LBCUIFailureCollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureCollectionViewTests.swift; sourceTree = "<group>"; };
+		8E2B65D828661CB9005BD42A /* LBCUISuccessTabBarItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISuccessTabBarItemTests.swift; sourceTree = "<group>"; };
+		8E2B65D928661CB9005BD42A /* LBCUIFailureTabBarItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureTabBarItemTests.swift; sourceTree = "<group>"; };
+		8E2B65DB28661CB9005BD42A /* LBCUIFailureCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureCellTests.swift; sourceTree = "<group>"; };
+		8E2B65DC28661CB9005BD42A /* LBCUISucessCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISucessCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +607,7 @@
 		8E2B64F1286614B1005BD42A /* TestKitDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				8E2B656328661CB9005BD42A /* Classes */,
 				8E2B64F2286614B1005BD42A /* TestKitDemoUITests.swift */,
 				8E2B64F4286614B1005BD42A /* TestKitDemoUITestsLaunchTests.swift */,
 			);
@@ -516,6 +673,375 @@
 				8E2B65582866175D005BD42A /* LBCTestKitConfiguratorProtocol.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		8E2B656328661CB9005BD42A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B656428661CB9005BD42A /* DatePickerTimeTester */,
+				8E2B656728661CB9005BD42A /* SecureTextField */,
+				8E2B656A28661CB9005BD42A /* LBCUITestCase.swift */,
+				8E2B656B28661CB9005BD42A /* StepperTester */,
+				8E2B656E28661CB9005BD42A /* PageIndicatorTester */,
+				8E2B657128661CB9005BD42A /* MapTester */,
+				8E2B657428661CB9005BD42A /* ToolbarButtonTester */,
+				8E2B657728661CB9005BD42A /* ButtonTester */,
+				8E2B657A28661CB9005BD42A /* UIControlTester */,
+				8E2B657D28661CB9005BD42A /* TableViewTester */,
+				8E2B658028661CB9005BD42A /* ActionSheetTester */,
+				8E2B658328661CB9005BD42A /* SwitchTester */,
+				8E2B658628661CB9005BD42A /* TextFieldTester */,
+				8E2B658928661CB9005BD42A /* WebViewTester */,
+				8E2B658C28661CB9005BD42A /* LBCUITesterTests.swift */,
+				8E2B658D28661CB9005BD42A /* ScrollViewTester */,
+				8E2B659028661CB9005BD42A /* SliderTester */,
+				8E2B659328661CB9005BD42A /* TextViewTester */,
+				8E2B659628661CB9005BD42A /* LinkTester */,
+				8E2B659928661CB9005BD42A /* NavigationBarTester */,
+				8E2B659C28661CB9005BD42A /* ProgessIndicatorTester */,
+				8E2B65AA28661CB9005BD42A /* ActivityIndicatorTester */,
+				8E2B65AD28661CB9005BD42A /* SearchBarTester */,
+				8E2B65B028661CB9005BD42A /* DatePickerDateAndTimeTester */,
+				8E2B65B328661CB9005BD42A /* SegmentedControlTester */,
+				8E2B65B628661CB9005BD42A /* ImageTester */,
+				8E2B65B928661CB9005BD42A /* DatePickerCountDownTimerTester */,
+				8E2B65BC28661CB9005BD42A /* CustomPickerViewTester */,
+				8E2B65BF28661CB9005BD42A /* DatePickerDateTypeTester */,
+				8E2B65C228661CB9005BD42A /* PickerTester */,
+				8E2B65C528661CB9005BD42A /* AlertTester */,
+				8E2B65C828661CB9005BD42A /* ToolbarTester */,
+				8E2B65CB28661CB9005BD42A /* TabBarTester */,
+				8E2B65CE28661CB9005BD42A /* NavigationBarButtonTester */,
+				8E2B65D128661CB9005BD42A /* ViewTester */,
+				8E2B65D428661CB9005BD42A /* CollectionViewTester */,
+				8E2B65D728661CB9005BD42A /* TabBarItemTester */,
+				8E2B65DA28661CB9005BD42A /* CellTester */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8E2B656428661CB9005BD42A /* DatePickerTimeTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B656528661CB9005BD42A /* LBCUISuccessDatePickerTimeTests.swift */,
+				8E2B656628661CB9005BD42A /* LBCUIFailureDatePickerTimeTests.swift */,
+			);
+			path = DatePickerTimeTester;
+			sourceTree = "<group>";
+		};
+		8E2B656728661CB9005BD42A /* SecureTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B656828661CB9005BD42A /* LBCUISuccessSecuredTextFieldTests.swift */,
+				8E2B656928661CB9005BD42A /* LBCUIFailureSecuredTextFieldTests.swift */,
+			);
+			path = SecureTextField;
+			sourceTree = "<group>";
+		};
+		8E2B656B28661CB9005BD42A /* StepperTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B656C28661CB9005BD42A /* LBCUISuccessStepperTests.swift */,
+				8E2B656D28661CB9005BD42A /* LBCUIFailureStepperTests.swift */,
+			);
+			path = StepperTester;
+			sourceTree = "<group>";
+		};
+		8E2B656E28661CB9005BD42A /* PageIndicatorTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B656F28661CB9005BD42A /* LBCUISuccessPageIndicatorTests.swift */,
+				8E2B657028661CB9005BD42A /* LBCUIFailurePageIndicatorTests.swift */,
+			);
+			path = PageIndicatorTester;
+			sourceTree = "<group>";
+		};
+		8E2B657128661CB9005BD42A /* MapTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B657228661CB9005BD42A /* LBCUISuccessMapTests.swift */,
+				8E2B657328661CB9005BD42A /* LBCUIFailureMapTests.swift */,
+			);
+			path = MapTester;
+			sourceTree = "<group>";
+		};
+		8E2B657428661CB9005BD42A /* ToolbarButtonTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B657528661CB9005BD42A /* LBCUISuccessToolbarButtonTests.swift */,
+				8E2B657628661CB9005BD42A /* LBCUIFailureToolbarButtonTests.swift */,
+			);
+			path = ToolbarButtonTester;
+			sourceTree = "<group>";
+		};
+		8E2B657728661CB9005BD42A /* ButtonTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B657828661CB9005BD42A /* LBCUISuccessButtonTests.swift */,
+				8E2B657928661CB9005BD42A /* LBCUIFailureButtonTests.swift */,
+			);
+			path = ButtonTester;
+			sourceTree = "<group>";
+		};
+		8E2B657A28661CB9005BD42A /* UIControlTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B657B28661CB9005BD42A /* LBCUISuccessUIControlTests.swift */,
+				8E2B657C28661CB9005BD42A /* LBCUIFailureUIControlTests.swift */,
+			);
+			path = UIControlTester;
+			sourceTree = "<group>";
+		};
+		8E2B657D28661CB9005BD42A /* TableViewTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B657E28661CB9005BD42A /* LBCUIFailureTableViewTests.swift */,
+				8E2B657F28661CB9005BD42A /* LBCUISuccessTableViewTests.swift */,
+			);
+			path = TableViewTester;
+			sourceTree = "<group>";
+		};
+		8E2B658028661CB9005BD42A /* ActionSheetTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B658128661CB9005BD42A /* LBCUIFailureActionSheetTests.swift */,
+				8E2B658228661CB9005BD42A /* LBCUISuccessActionSheetTests.swift */,
+			);
+			path = ActionSheetTester;
+			sourceTree = "<group>";
+		};
+		8E2B658328661CB9005BD42A /* SwitchTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B658428661CB9005BD42A /* LBCUISuccessSwitchTests.swift */,
+				8E2B658528661CB9005BD42A /* LBCUIFailureSwitchTests.swift */,
+			);
+			path = SwitchTester;
+			sourceTree = "<group>";
+		};
+		8E2B658628661CB9005BD42A /* TextFieldTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B658728661CB9005BD42A /* LBCUISuccessTextFieldTests.swift */,
+				8E2B658828661CB9005BD42A /* LBCUIFailureTextFieldTests.swift */,
+			);
+			path = TextFieldTester;
+			sourceTree = "<group>";
+		};
+		8E2B658928661CB9005BD42A /* WebViewTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B658A28661CB9005BD42A /* LBCUISuccessWebViewTests.swift */,
+				8E2B658B28661CB9005BD42A /* LBCUIFailureWebViewTests.swift */,
+			);
+			path = WebViewTester;
+			sourceTree = "<group>";
+		};
+		8E2B658D28661CB9005BD42A /* ScrollViewTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B658E28661CB9005BD42A /* LBCUIFailureScrollViewTests.swift */,
+				8E2B658F28661CB9005BD42A /* LBCUISuccessScrollViewTests.swift */,
+			);
+			path = ScrollViewTester;
+			sourceTree = "<group>";
+		};
+		8E2B659028661CB9005BD42A /* SliderTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B659128661CB9005BD42A /* LBCUISuccessSliderTests.swift */,
+				8E2B659228661CB9005BD42A /* LBCUIFailureSliderTests.swift */,
+			);
+			path = SliderTester;
+			sourceTree = "<group>";
+		};
+		8E2B659328661CB9005BD42A /* TextViewTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B659428661CB9005BD42A /* LBCUIFailureTextViewTests.swift */,
+				8E2B659528661CB9005BD42A /* LBCUISuccessTextViewTests.swift */,
+			);
+			path = TextViewTester;
+			sourceTree = "<group>";
+		};
+		8E2B659628661CB9005BD42A /* LinkTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B659728661CB9005BD42A /* LBCUIFailureLinkTests.swift */,
+				8E2B659828661CB9005BD42A /* LBCUISuccessLinkTests.swift */,
+			);
+			path = LinkTester;
+			sourceTree = "<group>";
+		};
+		8E2B659928661CB9005BD42A /* NavigationBarTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B659A28661CB9005BD42A /* LBCUIFailureNavigationBarTests.swift */,
+				8E2B659B28661CB9005BD42A /* LBCUISuccessNavigationBarTests.swift */,
+			);
+			path = NavigationBarTester;
+			sourceTree = "<group>";
+		};
+		8E2B659C28661CB9005BD42A /* ProgessIndicatorTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B659D28661CB9005BD42A /* LBCUISuccessProgressIndicatorTests.swift */,
+				8E2B659E28661CB9005BD42A /* LBCUIFailureProgressIndicatorTests.swift */,
+			);
+			path = ProgessIndicatorTester;
+			sourceTree = "<group>";
+		};
+		8E2B65AA28661CB9005BD42A /* ActivityIndicatorTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65AB28661CB9005BD42A /* LBCUIFailureActivityIndicatorTests.swift */,
+				8E2B65AC28661CB9005BD42A /* LBCUISuccessActivityIndicatorTests.swift */,
+			);
+			path = ActivityIndicatorTester;
+			sourceTree = "<group>";
+		};
+		8E2B65AD28661CB9005BD42A /* SearchBarTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65AE28661CB9005BD42A /* LBCUISuccessSearchBarTests.swift */,
+				8E2B65AF28661CB9005BD42A /* LBCUIFailureSearchBarTests.swift */,
+			);
+			path = SearchBarTester;
+			sourceTree = "<group>";
+		};
+		8E2B65B028661CB9005BD42A /* DatePickerDateAndTimeTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65B128661CB9005BD42A /* LBCUISuccessDatePickerDateAndTimeTests.swift */,
+				8E2B65B228661CB9005BD42A /* LBCUIFailureDatePickerDateAndTimeTests.swift */,
+			);
+			path = DatePickerDateAndTimeTester;
+			sourceTree = "<group>";
+		};
+		8E2B65B328661CB9005BD42A /* SegmentedControlTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65B428661CB9005BD42A /* LBCUIFailureSegmentedControlTests.swift */,
+				8E2B65B528661CB9005BD42A /* LBCUISuccessSegmentedControlTests.swift */,
+			);
+			path = SegmentedControlTester;
+			sourceTree = "<group>";
+		};
+		8E2B65B628661CB9005BD42A /* ImageTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65B728661CB9005BD42A /* LBCUIFailureImageTests.swift */,
+				8E2B65B828661CB9005BD42A /* LBCUISuccessImageTests.swift */,
+			);
+			path = ImageTester;
+			sourceTree = "<group>";
+		};
+		8E2B65B928661CB9005BD42A /* DatePickerCountDownTimerTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65BA28661CB9005BD42A /* LBCUISuccessDatePickerCountDownTimerTests.swift */,
+				8E2B65BB28661CB9005BD42A /* LBCUIFailureDatePickerCountDownTimerTests.swift */,
+			);
+			path = DatePickerCountDownTimerTester;
+			sourceTree = "<group>";
+		};
+		8E2B65BC28661CB9005BD42A /* CustomPickerViewTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65BD28661CB9005BD42A /* LBCUIFailureCustomPickerViewTests.swift */,
+				8E2B65BE28661CB9005BD42A /* LBCUISuccessCustomPickerViewTests.swift */,
+			);
+			path = CustomPickerViewTester;
+			sourceTree = "<group>";
+		};
+		8E2B65BF28661CB9005BD42A /* DatePickerDateTypeTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65C028661CB9005BD42A /* LBCUIFailureDatePickerDateTypeTests.swift */,
+				8E2B65C128661CB9005BD42A /* LBCUISuccessDatePickerDateTypeTests.swift */,
+			);
+			path = DatePickerDateTypeTester;
+			sourceTree = "<group>";
+		};
+		8E2B65C228661CB9005BD42A /* PickerTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65C328661CB9005BD42A /* LBCUISuccessPickerTests.swift */,
+				8E2B65C428661CB9005BD42A /* LBCUIFailurePickerTests.swift */,
+			);
+			path = PickerTester;
+			sourceTree = "<group>";
+		};
+		8E2B65C528661CB9005BD42A /* AlertTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65C628661CB9005BD42A /* LBCUIFailureAlertTests.swift */,
+				8E2B65C728661CB9005BD42A /* LBCUISuccessAlertTests.swift */,
+			);
+			path = AlertTester;
+			sourceTree = "<group>";
+		};
+		8E2B65C828661CB9005BD42A /* ToolbarTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65C928661CB9005BD42A /* LBCUISuccessToolbarTests.swift */,
+				8E2B65CA28661CB9005BD42A /* LBCUIFailureToolbarTests.swift */,
+			);
+			path = ToolbarTester;
+			sourceTree = "<group>";
+		};
+		8E2B65CB28661CB9005BD42A /* TabBarTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65CC28661CB9005BD42A /* LBCUIFailureTabBarTests.swift */,
+				8E2B65CD28661CB9005BD42A /* LBCUISuccessTabBarTests.swift */,
+			);
+			path = TabBarTester;
+			sourceTree = "<group>";
+		};
+		8E2B65CE28661CB9005BD42A /* NavigationBarButtonTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65CF28661CB9005BD42A /* LBCUIFailureNavigationBarButtonTests.swift */,
+				8E2B65D028661CB9005BD42A /* LBCUISuccessNavigationBarButtonTests.swift */,
+			);
+			path = NavigationBarButtonTester;
+			sourceTree = "<group>";
+		};
+		8E2B65D128661CB9005BD42A /* ViewTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65D228661CB9005BD42A /* LBCUIFailureViewTests.swift */,
+				8E2B65D328661CB9005BD42A /* LBCUISuccessViewTests.swift */,
+			);
+			path = ViewTester;
+			sourceTree = "<group>";
+		};
+		8E2B65D428661CB9005BD42A /* CollectionViewTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65D528661CB9005BD42A /* LBCUISuccessCollectionViewTests.swift */,
+				8E2B65D628661CB9005BD42A /* LBCUIFailureCollectionViewTests.swift */,
+			);
+			path = CollectionViewTester;
+			sourceTree = "<group>";
+		};
+		8E2B65D728661CB9005BD42A /* TabBarItemTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65D828661CB9005BD42A /* LBCUISuccessTabBarItemTests.swift */,
+				8E2B65D928661CB9005BD42A /* LBCUIFailureTabBarItemTests.swift */,
+			);
+			path = TabBarItemTester;
+			sourceTree = "<group>";
+		};
+		8E2B65DA28661CB9005BD42A /* CellTester */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B65DB28661CB9005BD42A /* LBCUIFailureCellTests.swift */,
+				8E2B65DC28661CB9005BD42A /* LBCUISucessCellTests.swift */,
+			);
+			path = CellTester;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -596,6 +1122,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8E2B662D28661D4F005BD42A /* PBXTargetDependency */,
 				8E2B64F0286614B1005BD42A /* PBXTargetDependency */,
 			);
 			name = TestKitDemoUITests;
@@ -776,7 +1303,6 @@
 				8E2B655F28661B1A005BD42A /* LBCTestKitUITestsConfiguratorProtocol.swift in Sources */,
 				8E2B653F28661589005BD42A /* ViewControllerWithScrollView.swift in Sources */,
 				8E2B654E28661589005BD42A /* ViewControllerWithProgressView.swift in Sources */,
-				8E2B655E28661B1A005BD42A /* LBCTestKitConfigurationObjectProtocol.swift in Sources */,
 				8E2B656228661B1A005BD42A /* LBCTestKitService.swift in Sources */,
 				8E2B653A28661589005BD42A /* ViewControllerWithStepper.swift in Sources */,
 				8E2B654828661589005BD42A /* ViewControllerWithTextView.swift in Sources */,
@@ -795,6 +1321,7 @@
 				8E2B653D28661589005BD42A /* ViewControllerWithNavigationBar.swift in Sources */,
 				8E2B654D28661589005BD42A /* LBCEmptyViewController.swift in Sources */,
 				8E2B654328661589005BD42A /* ViewControllerWithActionSheet.swift in Sources */,
+				8E2B663028662062005BD42A /* LBCTestKitConfigurationObjectProtocol.swift in Sources */,
 				8E2B654C28661589005BD42A /* ViewControllerWithPageIndicator.swift in Sources */,
 				8E2B653128661589005BD42A /* ViewControllerWithMap.swift in Sources */,
 				8E2B653528661589005BD42A /* ViewControllerWithSwitch.swift in Sources */,
@@ -810,8 +1337,83 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2B662128661CB9005BD42A /* LBCUISuccessTabBarTests.swift in Sources */,
+				8E2B660328661CB9005BD42A /* LBCUISuccessProgressIndicatorTests.swift in Sources */,
+				8E2B65E928661CB9005BD42A /* LBCUIFailureToolbarButtonTests.swift in Sources */,
+				8E2B65FE28661CB9005BD42A /* LBCUISuccessTextViewTests.swift in Sources */,
+				8E2B661E28661CB9005BD42A /* LBCUISuccessToolbarTests.swift in Sources */,
+				8E2B65E428661CB9005BD42A /* LBCUISuccessPageIndicatorTests.swift in Sources */,
+				8E2B65E828661CB9005BD42A /* LBCUISuccessToolbarButtonTests.swift in Sources */,
+				8E2B662328661CB9005BD42A /* LBCUISuccessNavigationBarButtonTests.swift in Sources */,
+				8E2B65FA28661CB9005BD42A /* LBCUISuccessScrollViewTests.swift in Sources */,
+				8E2B65F928661CB9005BD42A /* LBCUIFailureScrollViewTests.swift in Sources */,
+				8E2B660C28661CB9005BD42A /* LBCUISuccessSearchBarTests.swift in Sources */,
+				8E2B661D28661CB9005BD42A /* LBCUISuccessAlertTests.swift in Sources */,
+				8E2B65F728661CB9005BD42A /* LBCUIFailureWebViewTests.swift in Sources */,
 				8E2B64F5286614B1005BD42A /* TestKitDemoUITestsLaunchTests.swift in Sources */,
+				8E2B661328661CB9005BD42A /* LBCUISuccessImageTests.swift in Sources */,
+				8E2B661028661CB9005BD42A /* LBCUIFailureSegmentedControlTests.swift in Sources */,
+				8E2B661228661CB9005BD42A /* LBCUIFailureImageTests.swift in Sources */,
+				8E2B660D28661CB9005BD42A /* LBCUIFailureSearchBarTests.swift in Sources */,
+				8E2B661F28661CB9005BD42A /* LBCUIFailureToolbarTests.swift in Sources */,
+				8E2B660128661CB9005BD42A /* LBCUIFailureNavigationBarTests.swift in Sources */,
+				8E2B661628661CB9005BD42A /* LBCUIFailureCustomPickerViewTests.swift in Sources */,
+				8E2B65EC28661CB9005BD42A /* LBCUISuccessUIControlTests.swift in Sources */,
+				8E2B65E528661CB9005BD42A /* LBCUIFailurePageIndicatorTests.swift in Sources */,
+				8E2B65DE28661CB9005BD42A /* LBCUIFailureDatePickerTimeTests.swift in Sources */,
+				8E2B662428661CB9005BD42A /* LBCUIFailureViewTests.swift in Sources */,
+				8E2B662228661CB9005BD42A /* LBCUIFailureNavigationBarButtonTests.swift in Sources */,
+				8E2B65DF28661CB9005BD42A /* LBCUISuccessSecuredTextFieldTests.swift in Sources */,
+				8E2B661928661CB9005BD42A /* LBCUISuccessDatePickerDateTypeTests.swift in Sources */,
+				8E2B662928661CB9005BD42A /* LBCUIFailureTabBarItemTests.swift in Sources */,
+				8E2B65EF28661CB9005BD42A /* LBCUISuccessTableViewTests.swift in Sources */,
+				8E2B662A28661CB9005BD42A /* LBCUIFailureCellTests.swift in Sources */,
+				8E2B65EE28661CB9005BD42A /* LBCUIFailureTableViewTests.swift in Sources */,
+				8E2B65E728661CB9005BD42A /* LBCUIFailureMapTests.swift in Sources */,
+				8E2B65E128661CB9005BD42A /* LBCUITestCase.swift in Sources */,
+				8E2B65F528661CB9005BD42A /* LBCUIFailureTextFieldTests.swift in Sources */,
+				8E2B662E28661D9C005BD42A /* HomePageTypeEnum.swift in Sources */,
+				8E2B65DD28661CB9005BD42A /* LBCUISuccessDatePickerTimeTests.swift in Sources */,
+				8E2B660A28661CB9005BD42A /* LBCUIFailureActivityIndicatorTests.swift in Sources */,
+				8E2B65E028661CB9005BD42A /* LBCUIFailureSecuredTextFieldTests.swift in Sources */,
+				8E2B660428661CB9005BD42A /* LBCUIFailureProgressIndicatorTests.swift in Sources */,
+				8E2B65E328661CB9005BD42A /* LBCUIFailureStepperTests.swift in Sources */,
+				8E2B661728661CB9005BD42A /* LBCUISuccessCustomPickerViewTests.swift in Sources */,
+				8E2B662028661CB9005BD42A /* LBCUIFailureTabBarTests.swift in Sources */,
+				8E2B661B28661CB9005BD42A /* LBCUIFailurePickerTests.swift in Sources */,
+				8E2B65F328661CB9005BD42A /* LBCUIFailureSwitchTests.swift in Sources */,
+				8E2B65F628661CB9005BD42A /* LBCUISuccessWebViewTests.swift in Sources */,
+				8E2B661828661CB9005BD42A /* LBCUIFailureDatePickerDateTypeTests.swift in Sources */,
 				8E2B64F3286614B1005BD42A /* TestKitDemoUITests.swift in Sources */,
+				8E2B65F128661CB9005BD42A /* LBCUISuccessActionSheetTests.swift in Sources */,
+				8E2B65E628661CB9005BD42A /* LBCUISuccessMapTests.swift in Sources */,
+				8E2B661528661CB9005BD42A /* LBCUIFailureDatePickerCountDownTimerTests.swift in Sources */,
+				8E2B660F28661CB9005BD42A /* LBCUIFailureDatePickerDateAndTimeTests.swift in Sources */,
+				8E2B660028661CB9005BD42A /* LBCUISuccessLinkTests.swift in Sources */,
+				8E2B661428661CB9005BD42A /* LBCUISuccessDatePickerCountDownTimerTests.swift in Sources */,
+				8E2B662628661CB9005BD42A /* LBCUISuccessCollectionViewTests.swift in Sources */,
+				8E2B661128661CB9005BD42A /* LBCUISuccessSegmentedControlTests.swift in Sources */,
+				8E2B661C28661CB9005BD42A /* LBCUIFailureAlertTests.swift in Sources */,
+				8E2B65FB28661CB9005BD42A /* LBCUISuccessSliderTests.swift in Sources */,
+				8E2B65E228661CB9005BD42A /* LBCUISuccessStepperTests.swift in Sources */,
+				8E2B662828661CB9005BD42A /* LBCUISuccessTabBarItemTests.swift in Sources */,
+				8E2B661A28661CB9005BD42A /* LBCUISuccessPickerTests.swift in Sources */,
+				8E2B662B28661CB9005BD42A /* LBCUISucessCellTests.swift in Sources */,
+				8E2B65F428661CB9005BD42A /* LBCUISuccessTextFieldTests.swift in Sources */,
+				8E2B65FD28661CB9005BD42A /* LBCUIFailureTextViewTests.swift in Sources */,
+				8E2B662528661CB9005BD42A /* LBCUISuccessViewTests.swift in Sources */,
+				8E2B660228661CB9005BD42A /* LBCUISuccessNavigationBarTests.swift in Sources */,
+				8E2B65F028661CB9005BD42A /* LBCUIFailureActionSheetTests.swift in Sources */,
+				8E2B65EA28661CB9005BD42A /* LBCUISuccessButtonTests.swift in Sources */,
+				8E2B65F228661CB9005BD42A /* LBCUISuccessSwitchTests.swift in Sources */,
+				8E2B65ED28661CB9005BD42A /* LBCUIFailureUIControlTests.swift in Sources */,
+				8E2B65F828661CB9005BD42A /* LBCUITesterTests.swift in Sources */,
+				8E2B65EB28661CB9005BD42A /* LBCUIFailureButtonTests.swift in Sources */,
+				8E2B662728661CB9005BD42A /* LBCUIFailureCollectionViewTests.swift in Sources */,
+				8E2B660B28661CB9005BD42A /* LBCUISuccessActivityIndicatorTests.swift in Sources */,
+				8E2B65FF28661CB9005BD42A /* LBCUIFailureLinkTests.swift in Sources */,
+				8E2B660E28661CB9005BD42A /* LBCUISuccessDatePickerDateAndTimeTests.swift in Sources */,
+				8E2B65FC28661CB9005BD42A /* LBCUIFailureSliderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +1429,11 @@
 			isa = PBXTargetDependency;
 			target = 8E2B64CE286614AE005BD42A /* TestKitDemo */;
 			targetProxy = 8E2B64EF286614B1005BD42A /* PBXContainerItemProxy */;
+		};
+		8E2B662D28661D4F005BD42A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E2B63F828660A9D005BD42A /* TestKit */;
+			targetProxy = 8E2B662C28661D4F005BD42A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
