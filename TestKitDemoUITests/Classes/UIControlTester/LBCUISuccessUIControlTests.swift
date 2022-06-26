@@ -14,10 +14,10 @@ final class LBCUISuccessUIControlTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithUIControl
         super.setUp()
+        self.startApp(true)
     }
 
     func test_uicontrols() {
-        self.startApp()
         self.tester.getView(with: "enableControldentifier")
             .validate(state: .enable)
             .validate(state: .unselected)

@@ -14,17 +14,16 @@ final class LBCUIFailureDatePickerTimeTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithDatePicker
         super.setUp()
+        self.startApp()
     }
 
     func testGetDatePicker_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeTime(with: "wrongIdentifier")
         }
     }
 
     func test_datePicker_hour_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeTime(with: "datePickerTimeIdentifier")
                 .validate(.hour(value: 2))
@@ -32,7 +31,6 @@ final class LBCUIFailureDatePickerTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_minutes_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeTime(with: "datePickerTimeIdentifier")
                 .validate(.minutes(value: 9))
@@ -40,7 +38,6 @@ final class LBCUIFailureDatePickerTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_meridiem_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeTime(with: "datePickerTimeIdentifier")
                 .validate(.meridiem(type: .am))
@@ -48,7 +45,6 @@ final class LBCUIFailureDatePickerTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_update_hour_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeTime(with: "datePickerTimeIdentifier")
                 .validate(.hour(value: 15))
@@ -58,7 +54,6 @@ final class LBCUIFailureDatePickerTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_update_minutes_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeTime(with: "datePickerTimeIdentifier")
                 .validate(.minutes(value: 30))
@@ -68,7 +63,6 @@ final class LBCUIFailureDatePickerTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_update_meridiem_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeTime(with: "datePickerTimeIdentifier")
                 .validate(.meridiem(type: .am))
@@ -76,6 +70,4 @@ final class LBCUIFailureDatePickerTimeTests: LBCUITestCase {
                 .validate(.meridiem(type: .am))
         }
     }
-
-
 }

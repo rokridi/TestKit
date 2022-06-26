@@ -14,17 +14,16 @@ final class LBCUIFailurePickerTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithPicker
         super.setUp()
+        self.startApp(true)
     }
 
     func test_GetPickerElement_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getPicker(with: "wrongIdentifier")
         }
     }
 
     func test_Picker_UpdateFailure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getPicker(with: "pickerIdentifier")

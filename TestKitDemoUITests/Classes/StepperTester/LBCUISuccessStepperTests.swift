@@ -14,10 +14,12 @@ final class LBCUISuccessStepperTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithStepper
         super.setUp()
+        self.startApp(true)
     }
 
     func test_Stepper_Increment_And_ValidateValue() {
-        self.startApp()
+        self.tester.getCollectionView(with: "collectionViewIdentifier")
+            .swipe(to: .up)
         self.tester
             .getStepper(with: "stepperIdentifier")
             .validate(value: 10.0, throughLabel: "stepperLabelIdentifier")
@@ -26,7 +28,6 @@ final class LBCUISuccessStepperTests: LBCUITestCase {
     }
 
     func test_Stepper_Decrement_And_ValidateValue() {
-        self.startApp()
         self.tester
             .getStepper(with: "stepperIdentifier")
             .validate(value: 10.0, throughLabel: "stepperLabelIdentifier")

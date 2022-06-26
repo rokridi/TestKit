@@ -14,10 +14,11 @@ final class LBCUIFailureTextFieldTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithTextField
         super.setUp()
+        self.startApp(true)
     }
 
     func test_TextField_wrongIdentifier() {
-        self.startApp()
+
         XCTExpectFailure {
             self.tester
                 .getTextField(with: "wrongIdentifier")
@@ -25,7 +26,7 @@ final class LBCUIFailureTextFieldTests: LBCUITestCase {
     }
 
     func test_TextField_validate_text_failure() {
-        self.startApp()
+
         XCTExpectFailure {
             self.tester
                 .getTextField(with: "textFieldIdentifier")
@@ -34,7 +35,7 @@ final class LBCUIFailureTextFieldTests: LBCUITestCase {
     }
 
     func test_TextField_validate_placeholder_failure() {
-        self.startApp()
+
         XCTExpectFailure {
             _ = self.tester
                 .getTextField(with: "textFieldIdentifier")
@@ -43,7 +44,7 @@ final class LBCUIFailureTextFieldTests: LBCUITestCase {
     }
 
     func test_TextField_fill_text_failure() {
-        self.startApp()
+
         XCTExpectFailure {
             self.tester
                 .getTextField(with: "textFieldIdentifier")
@@ -54,7 +55,7 @@ final class LBCUIFailureTextFieldTests: LBCUITestCase {
     }
 
     func test_TextField_clear_text_failure() {
-        self.startApp()
+
         XCTExpectFailure {
             self.tester
                 .getTextField(with: "textFieldIdentifier")
@@ -66,7 +67,7 @@ final class LBCUIFailureTextFieldTests: LBCUITestCase {
     }
 
     func test_focus_text_field_failed() {
-        self.startApp()
+
         XCTExpectFailure {
             self.tester
                 .getTextField(with: "textFieldIdentifier")
@@ -76,7 +77,7 @@ final class LBCUIFailureTextFieldTests: LBCUITestCase {
     }
 
     func test_valide_number_regex_failure() {
-        self.startApp()
+
         XCTExpectFailure {
             self.tester
                 .getTextField(with: "textFieldIdentifier")
@@ -86,7 +87,7 @@ final class LBCUIFailureTextFieldTests: LBCUITestCase {
     }
 
     func test_valide_email_regex_email() {
-        self.startApp()
+
         XCTExpectFailure {
             self.tester
                 .getTextField(with: "textFieldIdentifier")

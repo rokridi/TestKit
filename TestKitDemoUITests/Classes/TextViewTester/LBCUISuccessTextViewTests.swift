@@ -14,10 +14,10 @@ final class LBCUISuccessTextViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithTextView
         super.setUp()
+        self.startApp(true)
     }
 
     func testTextView() {
-        self.startApp()
         self.tester
             .getTextView(with: "textViewIdentifier")
             .validate(value: "")
@@ -28,7 +28,6 @@ final class LBCUISuccessTextViewTests: LBCUITestCase {
     }
 
     func test_focus_text_view() {
-        self.startApp()
         XCTAssert(self.app.keyboards.count == 0)
         self.tester
             .getTextView(with: "textViewIdentifier")

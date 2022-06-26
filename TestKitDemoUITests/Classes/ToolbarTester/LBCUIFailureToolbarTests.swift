@@ -14,10 +14,10 @@ final class LBCUIFailureToolbarTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithToolbar
         super.setUp()
+        self.startApp(true)
     }
 
     func test_Toolbar_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getToolbar(with: "wrongIdentifier")

@@ -14,10 +14,10 @@ final class LBCUIFailureSearchBarTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithSearchBar
         super.setUp()
+        self.startApp(true)
     }
 
     func test_SearchTextField_wrongIdentifier() {
-        self.startApp()
         _ = XCTExpectFailure {
             self.tester
                 .getSearchBar(with: "wrongIdentifier")
@@ -25,7 +25,6 @@ final class LBCUIFailureSearchBarTests: LBCUITestCase {
     }
 
     func test_SearchTextField_wrongGetter() {
-        self.startApp()
         _ = XCTExpectFailure {
             self.tester
                 .getTextField(with: "searchBarIdentifier")

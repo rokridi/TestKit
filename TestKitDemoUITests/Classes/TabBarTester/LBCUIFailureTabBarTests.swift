@@ -14,14 +14,10 @@ final class LBCUIFailureTabBarTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithTabBar
         super.setUp()
+        self.startApp(true)
     }
 
     func test_get_tabBar_with_wrong_identifier() {
-        // GIVEN
-
-        // WHEN
-        self.startApp()
-
         // THEN
         XCTExpectFailure {
             self.tester

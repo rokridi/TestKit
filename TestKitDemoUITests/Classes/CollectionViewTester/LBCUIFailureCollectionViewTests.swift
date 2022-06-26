@@ -14,17 +14,16 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithCollectionView
         super.setUp()
+        self.startApp()
     }
 
     func test_CollectionView_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getCollectionView(with: "wrongIdentifier")
         }
     }
 
     func test_CollectionView_WrongNumberOfCells() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")
@@ -34,7 +33,6 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_ValidateCell_WrongIndex() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")
@@ -43,7 +41,6 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_ValidateCell_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")
@@ -52,7 +49,6 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_TapOnCell_WrongIndex() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")
@@ -61,7 +57,6 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_TapOnCell_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")
@@ -70,7 +65,6 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_DragAndDrop_WrongAtIndex_toIndex() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")
@@ -79,7 +73,6 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_DragAndDrop_AtIndex_WrongToIndex() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")
@@ -88,7 +81,6 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_DragAndDrop_WrongAtIndex_WrongToIndex() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")
@@ -97,7 +89,6 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_DragAndDrop_WrongWithIdentifier_toIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")
@@ -106,7 +97,6 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_DragAndDrop_WithIdentifier_WrongToIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")
@@ -115,7 +105,6 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_DragAndDrop_WrongWithIdentifier_WrongToIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getCollectionView(with: "collectionViewIdentifier")

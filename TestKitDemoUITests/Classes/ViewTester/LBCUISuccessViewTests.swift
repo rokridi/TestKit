@@ -13,10 +13,10 @@ final class LBCUISuccessViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithView
         super.setUp()
+        self.startApp(true)
     }
 
     func test_stackView_content() {
-        self.startApp()
         let stackviewContent = self.tester
             .getView(with: "stackViewIdentifier")
             .content
@@ -26,7 +26,6 @@ final class LBCUISuccessViewTests: LBCUITestCase {
     }
 
     func test_view_tap_actions() {
-        self.startApp()
         let label = self.tester.getLabel(with: "labelIdentifier")
         let view = self.tester.getView(with: "viewIdentifier")
 
@@ -38,7 +37,6 @@ final class LBCUISuccessViewTests: LBCUITestCase {
     }
 
     func test_view_tap_multiple_touches_action() {
-        self.startApp()
         let label = self.tester.getLabel(with: "labelIdentifier")
         let view = self.tester.getView(with: "viewIdentifier")
 
@@ -54,7 +52,6 @@ final class LBCUISuccessViewTests: LBCUITestCase {
     }
 
     func test_view_swipes_action() {
-        self.startApp()
         let label = self.tester.getLabel(with: "labelIdentifier")
         let view = self.tester.getView(with: "viewIdentifier")
 
@@ -70,6 +67,4 @@ final class LBCUISuccessViewTests: LBCUITestCase {
         view.swipe(to: .right)
         label.validate(value: "Swipe Right Action")
     }
-
-
 }

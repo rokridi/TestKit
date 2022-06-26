@@ -14,10 +14,10 @@ final class LBCUISuccessToolbarButtonTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithToolbar
         super.setUp()
+        self.startApp(true)
     }
 
     func test_ToolbarButton() {
-        self.startApp()
         self.tester
             .getToolbarButton(with: "toolbarButtonIdentifier")
             .validate(value: "bouton")

@@ -14,17 +14,16 @@ final class LBCUIFailureDatePickerDateTypeTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithDatePicker
         super.setUp()
+        self.startApp()
     }
 
     func test_get_datePicker_wrong_identifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDate(with: "wrongIdentifier")
         }
     }
 
     func test_datePicker_wrong_day() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDate(with: "datePickerDateTypeIdentifier")
                 .validate(.day(value: 3))
@@ -32,7 +31,6 @@ final class LBCUIFailureDatePickerDateTypeTests: LBCUITestCase {
     }
 
     func test_datePicker_wrong_month() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDate(with: "datePickerDateTypeIdentifier")
                 .validate(.month(value: "March"))
@@ -40,7 +38,6 @@ final class LBCUIFailureDatePickerDateTypeTests: LBCUITestCase {
     }
 
     func test_datePicker_wrong_year() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDate(with: "datePickerDateTypeIdentifier")
                 .validate(.year(value: 2018))
@@ -48,7 +45,6 @@ final class LBCUIFailureDatePickerDateTypeTests: LBCUITestCase {
     }
 
     func test_datePicker_update_day_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDate(with: "datePickerDateTypeIdentifier")
                 .validate(.day(value: 14))
@@ -58,7 +54,6 @@ final class LBCUIFailureDatePickerDateTypeTests: LBCUITestCase {
     }
 
     func test_datePicker_update_month_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDate(with: "datePickerDateTypeIdentifier")
                 .validate(.month(value: "January"))
@@ -68,7 +63,6 @@ final class LBCUIFailureDatePickerDateTypeTests: LBCUITestCase {
     }
 
     func test_datePicker_update_year_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDate(with: "datePickerDateTypeIdentifier")
                 .validate(.year(value: 2021))

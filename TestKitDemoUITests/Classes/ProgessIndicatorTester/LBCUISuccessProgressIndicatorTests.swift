@@ -14,15 +14,10 @@ final class LBCUISuccessProgressIndicatorTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithProgessView
         super.setUp()
+        self.startApp(true)
     }
 
     func testGetProgessView() {
-        // GIVEN
-
-        // WHEN
-        self.startApp()
-
-        // THEN
         self.tester
             .getProgressIndicator(with: "progressViewIdentifier")
             .validate(progressValue: 0.5)

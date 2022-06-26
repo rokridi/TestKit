@@ -14,23 +14,20 @@ final class LBCUIFailureSecuredTextFieldTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithSecuredTextField
         super.setUp()
+        self.startApp(true)
     }
 
     func test_SecuredTextField_wrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getSecuredTextField(with: "wrongIdentifier")
         }
-
     }
 
     func test_SecuredTextField_wrongGetter() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getTextField(with: "textFieldIdentifier")
         }
-
     }
 }

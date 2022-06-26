@@ -14,10 +14,10 @@ final class LBCUISuccessMapTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithMap
         super.setUp()
+        self.startApp()
     }
 
     func test_map_actions() {
-        self.startApp()
         let map = self.tester
             .getMap(with: "mapIdentifier")
         let label = self.tester.getLabel(with: "labelIdentifier")

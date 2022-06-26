@@ -14,10 +14,10 @@ final class LBCUIFailureActivityIndicatorTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithActivityIndicator
         super.setUp()
+        self.startApp()
     }
 
     func testGetActivityIndicator_WithWrongIdentifier_ShouldFail() {
-        self.startApp()
         _ = XCTExpectFailure {
             self.tester
                 .getActivityIndicator(with: "wrongIdentifier")

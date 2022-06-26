@@ -14,16 +14,10 @@ final class LBCUISuccessButtonTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithButton
         super.setUp()
+        self.startApp()
     }
 
     func testButton() {
-        // GIVEN
-        self.homePageType = .homePageWithButton
-
-        // WHEN
-        self.startApp()
-
-        // THEN
         self.tester.getButton(with: "buttonIdentifier")
             .validate(value: "C")
             .validate(isEnabled: true)

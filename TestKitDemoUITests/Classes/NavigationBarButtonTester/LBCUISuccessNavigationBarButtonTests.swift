@@ -13,15 +13,10 @@ final class LBCUISuccessNavigationBarButtonTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithNavigationBar
         super.setUp()
+        self.startApp()
     }
 
     func testNavigationBarButton() {
-        // GIVEN
-        self.homePageType = .homePageWithNavigationBar
-
-        // WHEN
-        self.startApp()
-
         // THEN
         let navigationBar = self.tester.getNavigationBar(with: "navigationBarIdentifier")
             .validate(title: "ABC")
@@ -30,6 +25,4 @@ final class LBCUISuccessNavigationBarButtonTests: LBCUITestCase {
             .tap()
         navigationBar.validate(title: "PRESSED")
     }
-
-
 }

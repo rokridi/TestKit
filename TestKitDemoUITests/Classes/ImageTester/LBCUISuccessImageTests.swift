@@ -14,10 +14,10 @@ final class LBCUISuccessImageTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithImage
         super.setUp()
+        self.startApp()
     }
 
     func test_get_image() {
-        self.startApp()
         self.tester
             .getImage(with: "imageIdentifier")
 

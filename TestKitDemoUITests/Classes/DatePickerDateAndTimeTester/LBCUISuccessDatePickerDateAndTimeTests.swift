@@ -14,10 +14,10 @@ final class LBCUISuccessDatePickerDateAndTimeTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithDatePicker
         super.setUp()
+        self.startApp()
     }
 
     func testGetDatePicker() {
-        self.startApp()
         self.tester.getDatePickerTypeDateAndTime(with: "datePickerDateAndTimeIdentifier")
             .validate(.date(value: "Thu, Jan 14"))
             .validate(.hour(value: 3))
@@ -32,6 +32,4 @@ final class LBCUISuccessDatePickerDateAndTimeTests: LBCUITestCase {
             .validate(.minutes(value: 5))
             .validate(.meridiem(type: .am))
     }
-
-
 }

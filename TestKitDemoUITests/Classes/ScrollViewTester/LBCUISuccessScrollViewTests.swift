@@ -14,10 +14,10 @@ final class LBCUISuccessScrollViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithScrollView
         super.setUp()
+        self.startApp(true)
     }
 
     func test_ScrollView() {
-        self.startApp()
         self.tester
             .getScrollView(with: "scrollViewIdentifier")
             .swipe(to: .up)
@@ -29,7 +29,6 @@ final class LBCUISuccessScrollViewTests: LBCUITestCase {
     }
 
     func test_scrollView_pullToRefresh() {
-        self.startApp()
         let scrollView = self.tester.getScrollView(with: "scrollViewIdentifier")
 
         _ = XCTExpectFailure("New label should not exist at this point") {

@@ -16,10 +16,10 @@ final class LBCUISuccessCustomPickerViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithCustomPickerView
         super.setUp()
+        self.startApp()
     }
 
     func test_custom_picker_view() {
-        self.startApp()
         self.tester
             .getPicker(with: "customPickerView")
             .validate(textValue: "ITEM 1-1", atIndex: 0)

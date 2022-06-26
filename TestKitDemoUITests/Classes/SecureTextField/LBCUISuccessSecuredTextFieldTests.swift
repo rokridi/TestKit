@@ -14,10 +14,10 @@ final class LBCUISuccessSecuredTextFieldTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithSecuredTextField
         super.setUp()
+        self.startApp(true)
     }
 
     func test_SecuredTextField() {
-        self.startApp()
         let securedTextField = self.tester.getSecuredTextField(with: "textFieldIdentifier")
         let label = self.tester.getLabel(with: "labelIdentifier")
 

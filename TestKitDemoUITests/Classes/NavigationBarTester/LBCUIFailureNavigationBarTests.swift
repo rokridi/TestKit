@@ -14,42 +14,22 @@ final class LBCUIFailureNavigationBarTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithNavigationBar
         super.setUp()
+        self.startApp()
     }
 
     func testGetWrongNavigationBar() {
-        // GIVEN
-        self.homePageType = .homePageWithNavigationBar
-
-        // WHEN
-        self.startApp()
-
-        // THEN
         _ = XCTExpectFailure {
             self.tester.getNavigationBar(with: "wrongIdentifier")
         }
     }
 
     func testGetWrongNavigationBarTitle() {
-        // GIVEN
-        self.homePageType = .homePageWithNavigationBar
-
-        // WHEN
-        self.startApp()
-
-        // THEN
         _ = XCTExpectFailure {
             self.tester.getNavigationBar(with: "navigationBarIdentifier").validate(title: "XXX")
         }
     }
 
     func testGetNavigationBar_ChildContentWrongButton() {
-        // GIVEN
-        self.homePageType = .homePageWithNavigationBar
-
-        // WHEN
-        self.startApp()
-
-        // THEN
         _ = XCTExpectFailure {
             self.tester
                 .getNavigationBar(with: "navigationBarIdentifier")
@@ -57,6 +37,4 @@ final class LBCUIFailureNavigationBarTests: LBCUITestCase {
                 .getNavigationBarButton(with: "navigationBarButtonBadIdentifier")
         }
     }
-
-
 }

@@ -14,10 +14,10 @@ final class LBCUIFailureViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithView
         super.setUp()
+        self.startApp(true)
     }
 
     func test_stackView_content_wrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getView(with: "stackViewIdentifier")
@@ -27,14 +27,12 @@ final class LBCUIFailureViewTests: LBCUITestCase {
     }
 
     func testGetView_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getView(with: "wrongIdentifier")
         }
     }
 
     func test_view_tap_action_failure() {
-        self.startApp()
         XCTExpectFailure {
             let label = self.tester.getLabel(with: "labelIdentifier")
             self.tester.getView(with: "viewIdentifier").tap()
@@ -43,7 +41,6 @@ final class LBCUIFailureViewTests: LBCUITestCase {
     }
 
     func test_view_double_tap_action_failure() {
-        self.startApp()
         XCTExpectFailure {
             let label = self.tester.getLabel(with: "labelIdentifier")
             self.tester.getView(with: "viewIdentifier").doubleTap()
@@ -53,7 +50,6 @@ final class LBCUIFailureViewTests: LBCUITestCase {
     }
 
     func test_view_tap_two_finger_action() {
-        self.startApp()
         XCTExpectFailure {
             let label = self.tester.getLabel(with: "labelIdentifier")
             self.tester.getView(with: "viewIdentifier").twoFingerTap()
@@ -62,7 +58,6 @@ final class LBCUIFailureViewTests: LBCUITestCase {
     }
 
     func test_view_tap_multiple_touches_action() {
-        self.startApp()
         XCTExpectFailure {
             let label = self.tester.getLabel(with: "labelIdentifier")
             self.tester.getView(with: "viewIdentifier").tap(withNumberOfTaps: 1, numberOfTouches: 3)
@@ -71,7 +66,6 @@ final class LBCUIFailureViewTests: LBCUITestCase {
     }
 
     func test_view_long_press_action_failure() {
-        self.startApp()
         XCTExpectFailure {
             let label = self.tester.getLabel(with: "labelIdentifier")
             self.tester.getView(with: "viewIdentifier").press(forDuration: 2)
@@ -80,7 +74,6 @@ final class LBCUIFailureViewTests: LBCUITestCase {
     }
 
     func test_view_swipeUp_action_failure() {
-        self.startApp()
         XCTExpectFailure {
             let label = self.tester.getLabel(with: "labelIdentifier")
             self.tester.getView(with: "viewIdentifier").swipe(to: .up)
@@ -89,7 +82,6 @@ final class LBCUIFailureViewTests: LBCUITestCase {
     }
 
     func test_view_swipeDown_action_failure() {
-        self.startApp()
         XCTExpectFailure {
             let label = self.tester.getLabel(with: "labelIdentifier")
             self.tester.getView(with: "viewIdentifier").swipe(to: .down)
@@ -98,7 +90,6 @@ final class LBCUIFailureViewTests: LBCUITestCase {
     }
 
     func test_view_swipeLeft_action_failure() {
-        self.startApp()
         XCTExpectFailure {
             let label = self.tester.getLabel(with: "labelIdentifier")
             self.tester.getView(with: "viewIdentifier").swipe(to: .left)
@@ -107,13 +98,10 @@ final class LBCUIFailureViewTests: LBCUITestCase {
     }
 
     func test_view_swipeRight_action_failure() {
-        self.startApp()
         XCTExpectFailure {
             let label = self.tester.getLabel(with: "labelIdentifier")
             self.tester.getView(with: "viewIdentifier").swipe(to: .right)
             label.validate(value: "Swipe Left Action")
         }
     }
-
-
 }

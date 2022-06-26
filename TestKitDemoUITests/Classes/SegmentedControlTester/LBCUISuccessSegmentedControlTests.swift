@@ -14,10 +14,10 @@ final class LBCUISuccessSegmentedControlTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithSegmentedControl
         super.setUp()
+        self.startApp(true)
     }
 
     func test_SegmentedControl_Tap_AtIndex_ValidateTextValue_ValidateSelectionState() {
-        self.startApp()
         self.tester
             .getSegmentedControl(with: "segmentedControlIdentifier")
             .validate(textValue: "First", at: 0)

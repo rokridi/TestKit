@@ -14,14 +14,10 @@ class LBCUIFailureSwitchTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithSwitch
         super.setUp()
+        self.startApp(true)
     }
 
     func testGetSwitchElementWithWrongIdenfitier() {
-        // GIVEN
-
-        // WHEN
-        self.startApp()
-
         // THEN
         XCTExpectFailure {
             self.tester
@@ -31,11 +27,6 @@ class LBCUIFailureSwitchTests: LBCUITestCase {
     }
 
     func testSwitchWrongDefaultState() {
-        // GIVEN
-
-        // WHEN
-        self.startApp()
-
         // THEN
         XCTExpectFailure {
             self.tester
@@ -45,11 +36,6 @@ class LBCUIFailureSwitchTests: LBCUITestCase {
     }
 
     func testSwitchStateUpdateFailure() {
-        // GIVEN
-
-        // WHEN
-        self.startApp()
-
         // THEN
         XCTExpectFailure {
             self.tester

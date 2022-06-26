@@ -17,8 +17,7 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Validate_And_Tap_Cells() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
             .validateVisibleCells(cellsCount: 6)
@@ -34,7 +33,7 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
 
     func test_TableView_ReorderCell() {
         self.homePageType = .homePageWithTableViewEditMode
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
             .reorderCell(at: 1, to: 4)
@@ -43,7 +42,7 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
 
     func test_TableView_DeleteCell_AtIndex() {
         self.homePageType = .homePageWithTableViewEditMode
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
             .deleteCell(at: 4, withText: "Delete")
@@ -51,47 +50,42 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
 
     func test_TableView_DeleteCell_WithIdentifier() {
         self.homePageType = .homePageWithTableViewEditMode
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
             .deleteCell(with: "cell_4", andText: "Delete")
     }
 
     func test_TableView_Cell_SwipeLeftAndTapOnAction_AtIndex() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
             .swipeOnCell(at: 3, with: .left, andTapOnActionWithText: "Delete")
     }
 
     func test_TableView_Cell_SwipeLeftAndTapOnAction_WithIdentifier() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
             .swipeOnCell(with: "cell_3", and: .left, andTapOnActionWithText: "Delete")
     }
 
     func test_TableView_Cell_SwipeRightAndTapOnAction_AtIndex() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
             .swipeOnCell(at: 3, with: .right, andTapOnActionWithText: "Action")
     }
 
     func test_TableView_Cell_SwipeRightAndTapOnAction_WithIdentifier() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
             .swipeOnCell(with: "cell_3", and: .right, andTapOnActionWithText: "Action")
     }
 
     func test_TableView_Swipe_Action() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
             .swipe(to: .up)
@@ -102,7 +96,7 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
 
     func test_TableView_Scroll_To_Identifier() {
         self.homePageType = .homePageWithTableViewScrollableContent
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
             .scroll(to: "cell_40", with: .up, timeout: 30)
@@ -110,7 +104,7 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
 
     func test_TableView_Empty_PullToRefresh() {
         self.homePageType = .homePageWithTableViewEmptyPullToRefresh
-        self.startApp()
+        self.startApp(true)
         let tableView = self.tester
             .getTableView(with: "tableViewIdentifier")
             .pullToRefresh()
@@ -119,7 +113,7 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
 
     func test_TableView_PullToRefresh() {
         self.homePageType = .homePageWithTableViewPullToRefresh
-        self.startApp()
+        self.startApp(true)
         let tableView = self.tester
             .getTableView(with: "tableViewIdentifier")
             .pullToRefresh()

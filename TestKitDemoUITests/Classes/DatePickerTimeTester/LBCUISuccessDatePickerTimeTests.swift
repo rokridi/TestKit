@@ -14,10 +14,10 @@ final class LBCUISuccessDatePickerTimeTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithDatePicker
         super.setUp()
+        self.startApp()
     }
 
     func testGetDatePicker() {
-        self.startApp()
         self.tester.getDatePickerTypeTime(with: "datePickerTimeIdentifier")
             .validate(.hour(value: 3))
             .validate(.minutes(value: 30))

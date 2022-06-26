@@ -14,15 +14,10 @@ final class LBCUISuccessTabBarItemTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithTabBar
         super.setUp()
+        self.startApp(true)
     }
 
     func test_tabBarItem() {
-        // GIVEN
-
-        // WHEN
-        self.startApp()
-
-        // THEN
         let tabBarItem1 = self.tester
             .getTabBarItem(with: "tabBarItem1Identifier")
             .validateText(value: "Item 1")
