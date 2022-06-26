@@ -17,14 +17,12 @@ final class LBCUIFailureAlertTests: LBCUITestCase {
     }
 
     func test_GetAlert_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getAlert(with: "wrongIdentifier")
         }
     }
 
     func test_Alert_WrongTitle() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getAlert(with: "alertIdentifier")
@@ -33,7 +31,6 @@ final class LBCUIFailureAlertTests: LBCUITestCase {
     }
 
     func test_Alert_WrongMessage() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getAlert(with: "alertIdentifier")
@@ -43,7 +40,6 @@ final class LBCUIFailureAlertTests: LBCUITestCase {
     }
 
     func test_Alert_TapOnAction_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getAlert(with: "alertIdentifier")

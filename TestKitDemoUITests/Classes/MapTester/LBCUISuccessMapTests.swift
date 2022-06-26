@@ -17,7 +17,6 @@ final class LBCUISuccessMapTests: LBCUITestCase {
     }
 
     func test_map_actions() {
-        self.startApp()
         let map = self.tester
             .getMap(with: "mapIdentifier")
         let label = self.tester.getLabel(with: "labelIdentifier")

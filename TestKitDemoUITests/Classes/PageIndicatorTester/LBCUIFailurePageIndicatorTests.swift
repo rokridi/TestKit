@@ -20,7 +20,7 @@ final class LBCUIFailurePageIndicatorTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -34,7 +34,7 @@ final class LBCUIFailurePageIndicatorTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -49,7 +49,7 @@ final class LBCUIFailurePageIndicatorTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -60,6 +60,4 @@ final class LBCUIFailurePageIndicatorTests: LBCUITestCase {
         }
 
     }
-
-
 }

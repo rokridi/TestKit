@@ -16,14 +16,12 @@ final class LBCUIFailureDatePickerCountDownTimerTests: LBCUITestCase {
     }
 
     func testGetDatePicker_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeCountdownTimer(with: "wrongIdentifier")
         }
     }
 
     func testGetDatePicker_WrongHour() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeCountdownTimer(with: "datePickerCountDownTimerIdentifier")
                 .validate(.hour(value: 2))
@@ -31,7 +29,6 @@ final class LBCUIFailureDatePickerCountDownTimerTests: LBCUITestCase {
     }
 
     func testGetDatePicker_WrongMinutes() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeCountdownTimer(with: "datePickerCountDownTimerIdentifier")
                 .validate(.minutes(value: 5))
@@ -39,7 +36,6 @@ final class LBCUIFailureDatePickerCountDownTimerTests: LBCUITestCase {
     }
 
     func testGetDatePicker_UpdateHour_Failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeCountdownTimer(with: "datePickerCountDownTimerIdentifier")
                 .validate(.hour(value: 15))
@@ -49,7 +45,6 @@ final class LBCUIFailureDatePickerCountDownTimerTests: LBCUITestCase {
     }
 
     func testGetDatePicker_UpdateMinutes_Failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeCountdownTimer(with: "datePickerCountDownTimerIdentifier")
                 .validate(.minutes(value: 30))
@@ -57,6 +52,4 @@ final class LBCUIFailureDatePickerCountDownTimerTests: LBCUITestCase {
                 .validate(.minutes(value: 4))
         }
     }
-
-
 }

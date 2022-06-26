@@ -17,8 +17,6 @@ final class LBCUISuccessLinkTests: LBCUITestCase {
     }
 
     func testLink_ShouldDisplayLabel_GivenDefaultTapMethod() {
-        self.startApp()
-
         self.tester
             .getTextView(with: "textViewIdentifier")
             .validate(value: "This is a normal text. This is a link. This is another normal text.")
@@ -48,8 +46,6 @@ final class LBCUISuccessLinkTests: LBCUITestCase {
     }
 
     private func assertWithTapPosition(tapPosition: LBCUIElementTapPosition) {
-        self.startApp()
-
         self.tester
             .getTextView(with: "textViewIdentifier")
             .validate(value: "This is a normal text. This is a link. This is another normal text.")

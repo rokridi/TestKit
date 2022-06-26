@@ -17,7 +17,6 @@ final class LBCUIFailureActivityIndicatorTests: LBCUITestCase {
     }
 
     func testGetActivityIndicator_WithWrongIdentifier_ShouldFail() {
-        self.startApp()
         _ = XCTExpectFailure {
             self.tester
                 .getActivityIndicator(with: "wrongIdentifier")

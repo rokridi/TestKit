@@ -17,7 +17,6 @@ final class LBCUISuccessImageTests: LBCUITestCase {
     }
 
     func test_get_image() {
-        self.startApp()
         self.tester
             .getImage(with: "imageIdentifier")
 

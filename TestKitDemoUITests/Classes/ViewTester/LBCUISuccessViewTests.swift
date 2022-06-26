@@ -16,7 +16,7 @@ final class LBCUISuccessViewTests: LBCUITestCase {
     }
 
     func test_stackView_content() {
-        self.startApp()
+        self.startApp(true)
         let stackviewContent = self.tester
             .getView(with: "stackViewIdentifier")
             .content
@@ -26,7 +26,7 @@ final class LBCUISuccessViewTests: LBCUITestCase {
     }
 
     func test_view_tap_actions() {
-        self.startApp()
+        self.startApp(true)
         let label = self.tester.getLabel(with: "labelIdentifier")
         let view = self.tester.getView(with: "viewIdentifier")
 
@@ -38,7 +38,7 @@ final class LBCUISuccessViewTests: LBCUITestCase {
     }
 
     func test_view_tap_multiple_touches_action() {
-        self.startApp()
+        self.startApp(true)
         let label = self.tester.getLabel(with: "labelIdentifier")
         let view = self.tester.getView(with: "viewIdentifier")
 
@@ -54,7 +54,7 @@ final class LBCUISuccessViewTests: LBCUITestCase {
     }
 
     func test_view_swipes_action() {
-        self.startApp()
+        self.startApp(true)
         let label = self.tester.getLabel(with: "labelIdentifier")
         let view = self.tester.getView(with: "viewIdentifier")
 

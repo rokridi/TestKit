@@ -17,14 +17,14 @@ final class LBCUIFailurePickerTests: LBCUITestCase {
     }
 
     func test_GetPickerElement_WrongIdentifier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester.getPicker(with: "wrongIdentifier")
         }
     }
 
     func test_Picker_UpdateFailure() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getPicker(with: "pickerIdentifier")

@@ -17,7 +17,6 @@ final class LBCUISuccessDatePickerCountDownTimerTests: LBCUITestCase {
     }
 
     func testGetDatePicker() {
-        self.startApp()
         self.tester.getDatePickerTypeCountdownTimer(with: "datePickerCountDownTimerIdentifier")
             .validate(.hour(value: 15))
             .validate(.minutes(value: 30))
@@ -26,6 +25,4 @@ final class LBCUISuccessDatePickerCountDownTimerTests: LBCUITestCase {
             .validate(.hour(value: 20))
             .validate(.minutes(value: 15))
     }
-
-
 }

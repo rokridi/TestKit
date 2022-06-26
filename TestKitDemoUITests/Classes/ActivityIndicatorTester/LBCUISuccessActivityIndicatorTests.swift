@@ -17,7 +17,6 @@ final class LBCUISuccessActivityIndicatorTests: LBCUITestCase {
     }
 
     func testGetActivityIndicator_WithCorrectIdentifier_ShouldSucceed() {
-        self.startApp()
         self.tester
             .getActivityIndicator(with: "activityIndicatorIdentifier")
 

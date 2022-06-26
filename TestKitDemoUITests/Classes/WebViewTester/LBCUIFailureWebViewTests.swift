@@ -16,14 +16,14 @@ final class LBCUIFailureWebViewTests: LBCUITestCase {
     }
 
     func test_get_webView_wrong_identifier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester.getWebView(with: "wrongIdentifier")
         }
     }
 
     func test_webView_find_text_failure() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester.getWebView(with: "webViewIdentifier")
                 .validate(staticText: "XXXX")
@@ -31,7 +31,7 @@ final class LBCUIFailureWebViewTests: LBCUITestCase {
     }
 
     func test_webView_tap_link_text_failure() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester.getWebView(with: "webViewIdentifier")
                 .tap(onLinkText: "XXXXX")
@@ -39,7 +39,7 @@ final class LBCUIFailureWebViewTests: LBCUITestCase {
     }
 
     func test_webView_validate_tap_link_redirection_failure() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester.getWebView(with: "webViewIdentifier")
                 .tap(onLinkText: "Lien externe")

@@ -16,14 +16,12 @@ final class LBCUIFailureDatePickerDateAndTimeTests: LBCUITestCase {
     }
 
     func testGetDatePicker_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDateAndTime(with: "wrongIdentifier")
         }
     }
 
     func test_datePicker_hour_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDateAndTime(with: "datePickerDateAndTimeIdentifier")
                 .validate(.hour(value: 2))
@@ -31,7 +29,6 @@ final class LBCUIFailureDatePickerDateAndTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_minutes_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDateAndTime(with: "datePickerDateAndTimeIdentifier")
                 .validate(.minutes(value: 9))
@@ -39,7 +36,6 @@ final class LBCUIFailureDatePickerDateAndTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_date_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDateAndTime(with: "datePickerDateAndTimeIdentifier")
                 .validate(.date(value: "Fri, Jan 15"))
@@ -47,7 +43,6 @@ final class LBCUIFailureDatePickerDateAndTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_meridiel_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDateAndTime(with: "datePickerDateAndTimeIdentifier")
                 .validate(.meridiem(type: .am))
@@ -55,7 +50,6 @@ final class LBCUIFailureDatePickerDateAndTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_update_hour_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDateAndTime(with: "datePickerDateAndTimeIdentifier")
                 .validate(.hour(value: 15))
@@ -66,7 +60,6 @@ final class LBCUIFailureDatePickerDateAndTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_update_minutes_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDateAndTime(with: "datePickerDateAndTimeIdentifier")
                 .validate(.minutes(value: 30))
@@ -76,7 +69,6 @@ final class LBCUIFailureDatePickerDateAndTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_update_date_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDateAndTime(with: "datePickerDateAndTimeIdentifier")
                 .validate(.date(value: "Thu, Jan 14"))
@@ -86,7 +78,6 @@ final class LBCUIFailureDatePickerDateAndTimeTests: LBCUITestCase {
     }
 
     func test_datePicker_update_merdiem_failure() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getDatePickerTypeDateAndTime(with: "datePickerDateAndTimeIdentifier")
                 .validate(.meridiem(type: .pm))
@@ -94,6 +85,4 @@ final class LBCUIFailureDatePickerDateAndTimeTests: LBCUITestCase {
                 .validate(.meridiem(type: .pm))
         }
     }
-
-
 }

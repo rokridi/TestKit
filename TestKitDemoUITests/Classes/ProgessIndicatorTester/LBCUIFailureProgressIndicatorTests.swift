@@ -19,7 +19,7 @@ final class LBCUIFailureProgressIndicatorTests: LBCUITestCase{
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -33,7 +33,7 @@ final class LBCUIFailureProgressIndicatorTests: LBCUITestCase{
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {

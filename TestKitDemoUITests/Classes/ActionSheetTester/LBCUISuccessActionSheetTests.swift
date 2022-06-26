@@ -17,7 +17,6 @@ final class LBCUISuccessActionSheetTests: LBCUITestCase {
     }
 
     func test_ActionSheet_AssertButtons() {
-        self.startApp()
         self.tester
             .getActionSheet(with: "actionSheetIdentifier")
             .validate(element: .button("Action 1"))
@@ -25,7 +24,6 @@ final class LBCUISuccessActionSheetTests: LBCUITestCase {
     }
 
     func test_ActionSheet_TapOnAction1() {
-        self.startApp()
         self.tester
             .getActionSheet(with: "actionSheetIdentifier")
             .validate(element: .title("Title ABC"))
@@ -34,7 +32,6 @@ final class LBCUISuccessActionSheetTests: LBCUITestCase {
     }
 
     func test_ActionSheet_TapOnAction2() {
-        self.startApp()
         self.tester
             .getActionSheet(with: "actionSheetIdentifier")
             .validate(element: .title("Title ABC"))

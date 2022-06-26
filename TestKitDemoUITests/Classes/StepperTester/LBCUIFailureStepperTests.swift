@@ -17,14 +17,14 @@ final class LBCUIFailureStepperTests: LBCUITestCase {
     }
 
     func test_GetStepperElement_WrongIdentifier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester.getStepper(with: "wrongIdentifier")
         }
     }
 
     func test_Stepper_Wrong_Value() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getStepper(with: "stepperIdentifier")
@@ -33,7 +33,7 @@ final class LBCUIFailureStepperTests: LBCUITestCase {
     }
 
     func test_Stepper_Wrong_WrongLabelIdentifier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getStepper(with: "stepperIdentifier")

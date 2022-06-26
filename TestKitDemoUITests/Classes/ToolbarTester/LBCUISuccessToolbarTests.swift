@@ -17,7 +17,7 @@ final class LBCUISuccessToolbarTests: LBCUITestCase {
     }
 
     func test_Toolbar() {
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getToolbar(with: "toolbarIdentifier")
     }

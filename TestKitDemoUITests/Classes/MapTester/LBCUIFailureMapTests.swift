@@ -17,7 +17,6 @@ final class LBCUIFailureMapTests: LBCUITestCase {
     }
 
     func test_map_wrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getMap(with: "wrongIdentifier")
@@ -25,7 +24,6 @@ final class LBCUIFailureMapTests: LBCUITestCase {
     }
 
     func test_map_pinch_action_failure() {
-        self.startApp()
         XCTExpectFailure {
             let map = self.tester
                 .getMap(with: "mapIdentifier")
@@ -38,7 +36,6 @@ final class LBCUIFailureMapTests: LBCUITestCase {
     }
 
     func test_map_double_tap_action_failure() {
-        self.startApp()
         XCTExpectFailure {
             let map = self.tester
                 .getMap(with: "mapIdentifier")
@@ -51,7 +48,7 @@ final class LBCUIFailureMapTests: LBCUITestCase {
     }
 
     func test_map_swipe_action() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             let map = self.tester
                 .getMap(with: "mapIdentifier")

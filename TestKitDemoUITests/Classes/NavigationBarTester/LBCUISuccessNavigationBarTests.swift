@@ -20,9 +20,6 @@ final class LBCUISuccessNavigationBarTests: LBCUITestCase {
         // GIVEN
         self.homePageType = .homePageWithNavigationBar
 
-        // WHEN
-        self.startApp()
-
         // THEN
         self.tester.getNavigationBar(with: "navigationBarIdentifier")
             .validate(title: "ABC")
@@ -32,15 +29,10 @@ final class LBCUISuccessNavigationBarTests: LBCUITestCase {
         // GIVEN
         self.homePageType = .homePageWithNavigationBar
 
-        // WHEN
-        self.startApp()
-
         // THEN
         self.tester
             .getNavigationBar(with: "navigationBarIdentifier")
             .content
             .getNavigationBarButton(with: "navigationBarButtonIdentifier")
     }
-
-
 }

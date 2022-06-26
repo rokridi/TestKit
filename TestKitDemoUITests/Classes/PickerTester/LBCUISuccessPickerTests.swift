@@ -17,7 +17,7 @@ final class LBCUISuccessPickerTests: LBCUITestCase {
     }
 
     func test_Picker() {
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getPicker(with: "pickerIdentifier")
             .validate(textValue: "First")

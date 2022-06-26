@@ -20,7 +20,7 @@ class LBCUIFailureSwitchTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -34,7 +34,7 @@ class LBCUIFailureSwitchTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -48,7 +48,7 @@ class LBCUIFailureSwitchTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {

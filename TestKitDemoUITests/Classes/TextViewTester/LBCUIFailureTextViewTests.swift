@@ -17,7 +17,7 @@ final class LBCUIFailureTextViewTests: LBCUITestCase {
     }
 
     func test_textView_wrongIdentifier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getTextView(with: "wrongIdentifier")
@@ -25,7 +25,7 @@ final class LBCUIFailureTextViewTests: LBCUITestCase {
     }
 
     func test_textView_validate_text_failure() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getTextView(with: "textViewIdentifier")
@@ -34,7 +34,7 @@ final class LBCUIFailureTextViewTests: LBCUITestCase {
     }
 
     func test_textView_fill_text_failure() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getTextView(with: "textViewIdentifier")
@@ -45,7 +45,7 @@ final class LBCUIFailureTextViewTests: LBCUITestCase {
     }
 
     func test_textView_clear_text_failure() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getTextView(with: "textViewIdentifier")
@@ -58,7 +58,7 @@ final class LBCUIFailureTextViewTests: LBCUITestCase {
     }
 
     func test_focus_text_view_failed() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getTextView(with: "textViewIdentifier")

@@ -20,7 +20,7 @@ final class LBCUIFailureTabBarItemTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -33,7 +33,7 @@ final class LBCUIFailureTabBarItemTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -47,7 +47,7 @@ final class LBCUIFailureTabBarItemTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -61,7 +61,7 @@ final class LBCUIFailureTabBarItemTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {

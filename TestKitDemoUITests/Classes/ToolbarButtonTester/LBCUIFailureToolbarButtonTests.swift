@@ -17,7 +17,7 @@ final class LBCUIFailureToolbarButtonTests: LBCUITestCase {
     }
 
     func test_ToolbarButton_WrongIdentifier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getToolbarButton(with: "wrongIdentifier")
@@ -25,7 +25,7 @@ final class LBCUIFailureToolbarButtonTests: LBCUITestCase {
     }
 
     func test_ToolbarButton_WrongTitle() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getToolbarButton(with: "toolbarButtonIdentifier")
@@ -34,7 +34,7 @@ final class LBCUIFailureToolbarButtonTests: LBCUITestCase {
     }
 
     func test_ToolbarButton_TapFailure() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getToolbarButton(with: "toolbarButtonIdentifier")

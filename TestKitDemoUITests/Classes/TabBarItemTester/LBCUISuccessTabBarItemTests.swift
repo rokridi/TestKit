@@ -20,7 +20,7 @@ final class LBCUISuccessTabBarItemTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         let tabBarItem1 = self.tester

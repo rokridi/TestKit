@@ -17,14 +17,14 @@ final class LBCUIFailureSliderTests: LBCUITestCase {
     }
 
     func test_Slider_WrongIdentifier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester.getSlider(with: "wrongIdentifier")
         }
     }
 
     func test_Slider_WrongSlideToValue() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getSlider(with: "sliderIdentifier")
@@ -34,7 +34,7 @@ final class LBCUIFailureSliderTests: LBCUITestCase {
     }
 
     func test_Slider_WrongValidationValue() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getSlider(with: "sliderIdentifier")

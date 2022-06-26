@@ -17,7 +17,7 @@ final class LBCUIFailureToolbarTests: LBCUITestCase {
     }
 
     func test_Toolbar_WrongIdentifier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getToolbar(with: "wrongIdentifier")

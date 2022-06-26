@@ -20,7 +20,7 @@ final class LBCUISuccessNavigationBarButtonTests: LBCUITestCase {
         self.homePageType = .homePageWithNavigationBar
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         let navigationBar = self.tester.getNavigationBar(with: "navigationBarIdentifier")
@@ -30,6 +30,4 @@ final class LBCUISuccessNavigationBarButtonTests: LBCUITestCase {
             .tap()
         navigationBar.validate(title: "PRESSED")
     }
-
-
 }

@@ -20,9 +20,6 @@ final class LBCUISuccessButtonTests: LBCUITestCase {
         // GIVEN
         self.homePageType = .homePageWithButton
 
-        // WHEN
-        self.startApp()
-
         // THEN
         self.tester.getButton(with: "buttonIdentifier")
             .validate(value: "C")

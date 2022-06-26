@@ -17,7 +17,7 @@ final class LBCUISuccessTextViewTests: LBCUITestCase {
     }
 
     func testTextView() {
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTextView(with: "textViewIdentifier")
             .validate(value: "")
@@ -28,7 +28,7 @@ final class LBCUISuccessTextViewTests: LBCUITestCase {
     }
 
     func test_focus_text_view() {
-        self.startApp()
+        self.startApp(true)
         XCTAssert(self.app.keyboards.count == 0)
         self.tester
             .getTextView(with: "textViewIdentifier")

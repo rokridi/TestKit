@@ -17,14 +17,14 @@ final class LBCUIFailureSegmentedControlTests: LBCUITestCase {
     }
 
     func test_GetSegmentedControlElement_WrongIdenfitier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester.getSegmentedControl(with: "wrongIdentifier")
         }
     }
 
     func test_SegmentedControl_WrongTextValue_AtIndex() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getSegmentedControl(with: "segmentedControlIdentifier")
@@ -33,7 +33,7 @@ final class LBCUIFailureSegmentedControlTests: LBCUITestCase {
     }
 
     func test_SegmentedControl_WrongSelectionState_AtIndex() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getSegmentedControl(with: "segmentedControlIdentifier")
@@ -42,7 +42,7 @@ final class LBCUIFailureSegmentedControlTests: LBCUITestCase {
     }
 
     func test_SegmentedControl_WrongTextValue_AtIndex_And_WrongSelectionState_AtIndex() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getSegmentedControl(with: "segmentedControlIdentifier")

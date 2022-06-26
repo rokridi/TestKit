@@ -17,7 +17,7 @@ final class LBCUISuccessSliderTests: LBCUITestCase {
     }
 
     func test_Slider_SlideToValue_ValidateValue() {
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getSlider(with: "sliderIdentifier")
             .slide(toValue: 80.0)

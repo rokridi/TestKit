@@ -17,14 +17,12 @@ final class LBCUIFailureActionSheetTests: LBCUITestCase {
     }
 
     func test_GetActionSheet_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester.getActionSheet(with: "wrongIdentifier")
         }
     }
 
     func test_GetActionSheet_WrongTitle() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getActionSheet(with: "actionSheetIdentifier")
@@ -33,7 +31,6 @@ final class LBCUIFailureActionSheetTests: LBCUITestCase {
     }
 
     func test_GetActionSheet_WrongMessage() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getActionSheet(with: "actionSheetIdentifier")
@@ -42,7 +39,6 @@ final class LBCUIFailureActionSheetTests: LBCUITestCase {
     }
 
     func test_GetActionSheet_WrongButton() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getActionSheet(with: "actionSheetIdentifier")
@@ -51,7 +47,6 @@ final class LBCUIFailureActionSheetTests: LBCUITestCase {
     }
 
     func test_GetActionSheet_TapOnAction_WrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getActionSheet(with: "wrongIdentifier")

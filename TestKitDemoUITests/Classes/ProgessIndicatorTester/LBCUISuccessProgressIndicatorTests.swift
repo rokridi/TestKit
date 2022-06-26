@@ -20,7 +20,7 @@ final class LBCUISuccessProgressIndicatorTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         self.tester

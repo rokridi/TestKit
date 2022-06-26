@@ -17,7 +17,7 @@ final class LBCUISuccessSecuredTextFieldTests: LBCUITestCase {
     }
 
     func test_SecuredTextField() {
-        self.startApp()
+        self.startApp(true)
         let securedTextField = self.tester.getSecuredTextField(with: "textFieldIdentifier")
         let label = self.tester.getLabel(with: "labelIdentifier")
 

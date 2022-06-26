@@ -17,7 +17,6 @@ final class LBCUISuccessCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_Validate_And_Tap_Cells() {
-        self.startApp()
         self.tester
             .getCollectionView(with: "collectionViewIdentifier")
             .validateVisibleCells(cellsCount: 6)
@@ -30,7 +29,6 @@ final class LBCUISuccessCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_DragAndDropCell() {
-        self.startApp()
         self.tester
             .getCollectionView(with: "collectionViewIdentifier")
             .dragAndDropCell(at: 1, to: 4)
@@ -38,7 +36,6 @@ final class LBCUISuccessCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_Swipe_And_ScrollTo() {
-        self.startApp()
         self.tester
             .getCollectionView(with: "collectionViewIdentifier")
             .swipe(to: .up)
@@ -54,7 +51,6 @@ final class LBCUISuccessCollectionViewTests: LBCUITestCase {
     }
 
     func test_CollectionView_PullToRefresh() {
-        self.startApp()
         self.tester
             .getCollectionView(with: "collectionViewIdentifier")
             .pullToRefresh()

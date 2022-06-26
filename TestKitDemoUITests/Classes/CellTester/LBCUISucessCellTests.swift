@@ -18,7 +18,6 @@ final class LBCUISuccessCellTests: LBCUITestCase {
 
     func test_Cell_ValidateCellWithLabel_DeleteWithButton() {
         self.homePageType = .homePageWithTableViewEditMode
-        self.startApp()
 
         self.tester.getCell(boundBy: 2)
             .validate(withLabel: "Value: 2")
@@ -32,7 +31,6 @@ final class LBCUISuccessCellTests: LBCUITestCase {
 
     func test_Cell_ValidateCellWithLabel_SwipeLeftToAction() {
         self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp()
         let cell = self.tester.getCell(with: "cell_3")
 
         cell.validate(withLabel: "Value: 3")
@@ -45,7 +43,6 @@ final class LBCUISuccessCellTests: LBCUITestCase {
 
     func test_Cell_ValidateCellWithLabel_SwipeRightToAction() {
         self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp()
         let cell = self.tester.getCell(with: "cell_3")
 
         cell.validate(withLabel: "Value: 3")
@@ -58,7 +55,6 @@ final class LBCUISuccessCellTests: LBCUITestCase {
 
     func testGetCollectionViewCell_validateState() {
         self.homePageType = .homePageWithCollectionView
-        self.startApp()
         self.tester.getCell(with: "cell_Three")
             .validate(state: .unselected)
             .tap()

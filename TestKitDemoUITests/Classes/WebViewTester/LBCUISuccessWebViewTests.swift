@@ -17,7 +17,7 @@ final class LBCUISuccessWebViewTests: LBCUITestCase {
     }
 
     func testWebView() {
-        self.startApp()
+        self.startApp(true)
         self.tester.getWebView(with: "webViewIdentifier")
             .validate(staticText: "Paragraph Title")
             .tap(onLinkText: "Lien externe")

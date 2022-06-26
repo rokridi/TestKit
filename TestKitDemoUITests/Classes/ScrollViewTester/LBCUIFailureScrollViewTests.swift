@@ -17,7 +17,7 @@ final class LBCUIFailureScrollViewTests: LBCUITestCase {
     }
 
     func test_GetScrollView_WrongIdentifier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getScrollView(with: "wrongIdentifier")

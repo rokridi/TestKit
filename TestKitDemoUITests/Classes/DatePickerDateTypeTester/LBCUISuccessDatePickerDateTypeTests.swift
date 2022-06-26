@@ -16,7 +16,6 @@ final class LBCUISuccessDatePickerDateTypeTests: LBCUITestCase {
     }
 
     func testDatePicker() {
-        self.startApp()
         self.tester.getDatePickerTypeDate(with: "datePickerDateTypeIdentifier")
             .validate(.day(value: 14))
             .validate(.month(value: "January"))
@@ -28,6 +27,4 @@ final class LBCUISuccessDatePickerDateTypeTests: LBCUITestCase {
             .validate(.month(value: "March"))
             .validate(.year(value: 2010))
     }
-
-
 }

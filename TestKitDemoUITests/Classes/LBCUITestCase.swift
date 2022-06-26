@@ -22,13 +22,16 @@ open class LBCUITestCase: XCTestCase {
         self.startApp()
     }
 
-    public func startApp() {
+    public func startApp(_ swipe: Bool = false) {
         self.app = XCUIApplication()
         self.app.launch()
         self.tester = LBCUITester(context: self.app)
         if let homePageType = homePageType {
-            self.tester.getCollectionView(with: "collectionViewIdentifier")
-                .tapOnCell(with: homePageType.rawValue)
+            let collectionView = self.tester.getCollectionView(with: "collectionViewIdentifier")
+            if swipe {
+                collectionView.swipe(to: .up)
+            }
+            collectionView.tapOnCell(with: homePageType.rawValue)
         }
     }
 }

@@ -21,7 +21,7 @@ final class LBCUIFailureNavigationBarButtonTests: LBCUITestCase {
         self.homePageType = .homePageWithNavigationBar
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -34,7 +34,7 @@ final class LBCUIFailureNavigationBarButtonTests: LBCUITestCase {
         self.homePageType = .homePageWithNavigationBar
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -48,7 +48,7 @@ final class LBCUIFailureNavigationBarButtonTests: LBCUITestCase {
         self.homePageType = .homePageWithNavigationBar
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -61,6 +61,4 @@ final class LBCUIFailureNavigationBarButtonTests: LBCUITestCase {
         }
 
     }
-
-
 }

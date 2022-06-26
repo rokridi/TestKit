@@ -17,7 +17,7 @@ final class LBCUISuccessUIControlTests: LBCUITestCase {
     }
 
     func test_uicontrols() {
-        self.startApp()
+        self.startApp(true)
         self.tester.getView(with: "enableControldentifier")
             .validate(state: .enable)
             .validate(state: .unselected)

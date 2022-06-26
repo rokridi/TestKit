@@ -17,20 +17,18 @@ final class LBCUIFailureSecuredTextFieldTests: LBCUITestCase {
     }
 
     func test_SecuredTextField_wrongIdentifier() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getSecuredTextField(with: "wrongIdentifier")
         }
-
     }
 
     func test_SecuredTextField_wrongGetter() {
-        self.startApp()
+        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getTextField(with: "textFieldIdentifier")
         }
-
     }
 }

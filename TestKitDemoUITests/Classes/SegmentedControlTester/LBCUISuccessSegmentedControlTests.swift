@@ -17,7 +17,7 @@ final class LBCUISuccessSegmentedControlTests: LBCUITestCase {
     }
 
     func test_SegmentedControl_Tap_AtIndex_ValidateTextValue_ValidateSelectionState() {
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getSegmentedControl(with: "segmentedControlIdentifier")
             .validate(textValue: "First", at: 0)

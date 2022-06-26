@@ -17,7 +17,7 @@ final class LBCUISuccessToolbarButtonTests: LBCUITestCase {
     }
 
     func test_ToolbarButton() {
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getToolbarButton(with: "toolbarButtonIdentifier")
             .validate(value: "bouton")

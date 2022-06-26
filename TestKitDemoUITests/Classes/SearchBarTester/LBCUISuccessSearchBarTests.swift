@@ -18,7 +18,7 @@ final class LBCUISuccessSearchBarTests: LBCUITestCase {
     }
 
     func test_SearchTextField() {
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getSearchBar(with: "searchBarIdentifier")
             .fill(with: "updateText")

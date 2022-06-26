@@ -17,7 +17,7 @@ final class LBCUISuccessTextFieldTests: LBCUITestCase {
     }
 
     func test_TextField() {
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTextField(with: "textFieldIdentifier")
             .validate(value: "")
@@ -29,7 +29,7 @@ final class LBCUISuccessTextFieldTests: LBCUITestCase {
     }
 
     func test_focus_text_field() {
-        self.startApp()
+        self.startApp(true)
         XCTAssert(self.app.keyboards.count == 0)
         self.tester
             .getTextField(with: "textFieldIdentifier")
@@ -38,7 +38,7 @@ final class LBCUISuccessTextFieldTests: LBCUITestCase {
     }
 
     func test_valide_number_regex() {
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTextField(with: "textFieldIdentifier")
             .fill(with: "12345")
@@ -46,7 +46,7 @@ final class LBCUISuccessTextFieldTests: LBCUITestCase {
     }
 
     func test_valide_email_regex() {
-        self.startApp()
+        self.startApp(true)
         self.tester
             .getTextField(with: "textFieldIdentifier")
             .fill(with: "firstname@host.com")

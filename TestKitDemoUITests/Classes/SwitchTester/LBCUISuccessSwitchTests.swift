@@ -20,7 +20,7 @@ final class LBCUISuccessSwitchTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         self.tester

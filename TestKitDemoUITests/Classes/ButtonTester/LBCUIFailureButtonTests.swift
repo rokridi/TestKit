@@ -20,9 +20,6 @@ final class LBCUIFailureButtonTests: LBCUITestCase {
         // GIVEN
         self.homePageType = .homePageWithButton
 
-        // WHEN
-        self.startApp()
-
         // THEN
         XCTExpectFailure {
             self.tester.getButton(with: "wrongIdentifier")
@@ -34,7 +31,7 @@ final class LBCUIFailureButtonTests: LBCUITestCase {
         self.homePageType = .homePageWithButton
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -48,7 +45,7 @@ final class LBCUIFailureButtonTests: LBCUITestCase {
         self.homePageType = .homePageWithButton
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {
@@ -62,7 +59,7 @@ final class LBCUIFailureButtonTests: LBCUITestCase {
         self.homePageType = .homePageWithButton
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         XCTExpectFailure {

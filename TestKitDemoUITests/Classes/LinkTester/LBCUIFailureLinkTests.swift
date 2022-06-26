@@ -17,7 +17,6 @@ final class LBCUIFailureLinkTests: LBCUITestCase {
     }
 
     func test_link_wrongIdentifier() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getLink(with: "This is not a link")
@@ -25,7 +24,6 @@ final class LBCUIFailureLinkTests: LBCUITestCase {
     }
 
     func test_link_wrongLabel() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getLink(with: "This is a link")
@@ -34,7 +32,6 @@ final class LBCUIFailureLinkTests: LBCUITestCase {
     }
 
     func test_link_shouldNotShowLabel_GivenTapPositionIsOutsideFrame() {
-        self.startApp()
         XCTExpectFailure {
             self.tester
                 .getLink(with: "This is a link")

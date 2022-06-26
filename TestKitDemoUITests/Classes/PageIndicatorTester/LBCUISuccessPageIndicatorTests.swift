@@ -20,7 +20,7 @@ final class LBCUISuccessPageIndicatorTests: LBCUITestCase {
         // GIVEN
 
         // WHEN
-        self.startApp()
+        self.startApp(true)
 
         // THEN
         self.tester
@@ -28,6 +28,4 @@ final class LBCUISuccessPageIndicatorTests: LBCUITestCase {
             .validate(numberItems: 3)
             .validate(index: 2)
     }
-
-
 }
