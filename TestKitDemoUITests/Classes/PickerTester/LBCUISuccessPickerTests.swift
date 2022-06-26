@@ -14,10 +14,10 @@ final class LBCUISuccessPickerTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithPicker
         super.setUp()
+        self.startApp(true)
     }
 
     func test_Picker() {
-        self.startApp(true)
         self.tester
             .getPicker(with: "pickerIdentifier")
             .validate(textValue: "First")

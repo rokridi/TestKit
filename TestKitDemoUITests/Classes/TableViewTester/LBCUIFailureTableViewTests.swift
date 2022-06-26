@@ -17,7 +17,6 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_WrongIdentifier() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         XCTExpectFailure {
             self.tester
@@ -26,9 +25,8 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_WrongNumberOfCells() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp(true)
         XCTExpectFailure {
+            self.startApp(true)
             self.tester
                 .getTableView(with: "tableViewIdentifier")
                 .validateVisibleCells(cellsCount: 8)
@@ -36,7 +34,6 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_ValidateCell_AtIndex_HasWrongLabel_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         XCTExpectFailure {
             self.tester
@@ -46,7 +43,6 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_ValidateCell_AtWrongIndex_HasWrongLabel_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         XCTExpectFailure {
             self.tester
@@ -56,7 +52,6 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_ValidateCell_AtWrongIndex_HasLabel_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         XCTExpectFailure {
             self.tester
@@ -66,7 +61,6 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_ValidateCell_WithWrongIdentifier_HasWrongLabel_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         XCTExpectFailure {
             self.tester
@@ -76,7 +70,6 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_ValidateCell_WithIdentifier_HasWrongLabel_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         XCTExpectFailure {
             self.tester
@@ -86,7 +79,6 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_ValidateCell_WithWrongIdentifier_HasLabel_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         XCTExpectFailure {
             self.tester
@@ -96,9 +88,8 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_TapOnCell_AtIndex_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp(true)
         XCTExpectFailure {
+            self.startApp(true)
             self.tester
                 .getTableView(with: "tableViewIdentifier")
                 .tapOnCell(at: 8)
@@ -106,9 +97,8 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_TapOnCellFromIdentifier_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp(true)
         XCTExpectFailure {
+            self.startApp(true)
             self.tester
                 .getTableView(with: "tableViewIdentifier")
                 .tapOnCell(with: "cell_8")
@@ -192,9 +182,8 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Cell_SwipeLeftAndTapToAction_AtIndex_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp(true)
         XCTExpectFailure {
+            self.startApp(true)
             _ = self.tester
                 .getTableView(with: "tableViewIdentifier")
                 .swipeOnCell(at: 8, with: .left, andTapOnActionWithText: "Delete")
@@ -202,9 +191,8 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Cell_SwipeLeftAndTapToAction_WithIdentifier_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
-        self.startApp(true)
         XCTExpectFailure {
+            self.startApp(true)
             _ = self.tester
                 .getTableView(with: "tableViewIdentifier")
                 .swipeOnCell(with: "cell_8", and: .left, andTapOnActionWithText: "Delete")
@@ -232,7 +220,6 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Cell_SwipeRightAndTapToAction_AtIndex_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         XCTExpectFailure {
             _ = self.tester
@@ -242,7 +229,6 @@ final class LBCUIFailureTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Cell_SwipeRightAndTapToAction_WithIdentifier_Failure() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         XCTExpectFailure {
             _ = self.tester

@@ -14,43 +14,27 @@ final class LBCUIFailurePageIndicatorTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithPageIndicator
         super.setUp()
+        self.startApp(true)
     }
 
     func testWrongPageIndicator() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
         // THEN
         XCTExpectFailure {
             self.tester
                 .getPageIndicator(with: "wrongIdentifier")
         }
-
     }
 
     func testWrongPageIndicatorItemNumbers() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
         // THEN
         XCTExpectFailure {
             self.tester
                 .getPageIndicator(with: "pageControlIdentifier")
                 .validate(numberItems: 2)
         }
-
     }
 
     func testWrongPageIndicatorSelectIndex() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
         // THEN
         XCTExpectFailure {
             self.tester
@@ -58,6 +42,5 @@ final class LBCUIFailurePageIndicatorTests: LBCUITestCase {
                 .validate(numberItems: 3)
                 .validate(index: 3)
         }
-
     }
 }

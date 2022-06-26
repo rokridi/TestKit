@@ -14,26 +14,16 @@ final class LBCUIFailureButtonTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithButton
         super.setUp()
+        self.startApp()
     }
 
     func testButton_WrongIdentifier() {
-        // GIVEN
-        self.homePageType = .homePageWithButton
-
-        // THEN
         XCTExpectFailure {
             self.tester.getButton(with: "wrongIdentifier")
         }
     }
 
     func testButton_validate_value_failure() {
-        // GIVEN
-        self.homePageType = .homePageWithButton
-
-        // WHEN
-        self.startApp(true)
-
-        // THEN
         XCTExpectFailure {
             self.tester.getButton(with: "buttonIdentifier")
                 .validate(value: "Wrong value")
@@ -41,13 +31,6 @@ final class LBCUIFailureButtonTests: LBCUITestCase {
     }
 
     func testButton_validate_enable_state_failure() {
-        // GIVEN
-        self.homePageType = .homePageWithButton
-
-        // WHEN
-        self.startApp(true)
-
-        // THEN
         XCTExpectFailure {
             self.tester.getButton(with: "disableButtonIdentifier")
                 .validate(isEnabled: true)
@@ -55,19 +38,9 @@ final class LBCUIFailureButtonTests: LBCUITestCase {
     }
 
     func testButton_validate_disable_state_failure() {
-        // GIVEN
-        self.homePageType = .homePageWithButton
-
-        // WHEN
-        self.startApp(true)
-
-        // THEN
         XCTExpectFailure {
             self.tester.getButton(with: "buttonIdentifier")
                 .validate(isEnabled: false)
         }
-
     }
-
-
 }

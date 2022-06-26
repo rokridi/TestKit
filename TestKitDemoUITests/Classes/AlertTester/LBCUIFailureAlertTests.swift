@@ -14,6 +14,7 @@ final class LBCUIFailureAlertTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithAlert
         super.setUp()
+        self.startApp()
     }
 
     func test_GetAlert_WrongIdentifier() {

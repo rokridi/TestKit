@@ -14,6 +14,7 @@ final class LBCUIFailureLinkTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithLink
         super.setUp()
+        self.startApp()
     }
 
     func test_link_wrongIdentifier() {

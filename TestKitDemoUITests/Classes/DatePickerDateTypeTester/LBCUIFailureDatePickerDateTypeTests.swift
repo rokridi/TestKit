@@ -14,6 +14,7 @@ final class LBCUIFailureDatePickerDateTypeTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithDatePicker
         super.setUp()
+        self.startApp()
     }
 
     func test_get_datePicker_wrong_identifier() {

@@ -15,10 +15,10 @@ final class LBCUISuccessSearchBarTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithSearchBar
         super.setUp()
+        self.startApp(true)
     }
 
     func test_SearchTextField() {
-        self.startApp(true)
         self.tester
             .getSearchBar(with: "searchBarIdentifier")
             .fill(with: "updateText")

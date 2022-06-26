@@ -14,6 +14,7 @@ final class LBCUIFailureMapTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithMap
         super.setUp()
+        self.startApp()
     }
 
     func test_map_wrongIdentifier() {
@@ -48,7 +49,6 @@ final class LBCUIFailureMapTests: LBCUITestCase {
     }
 
     func test_map_swipe_action() {
-        self.startApp(true)
         XCTExpectFailure {
             let map = self.tester
                 .getMap(with: "mapIdentifier")

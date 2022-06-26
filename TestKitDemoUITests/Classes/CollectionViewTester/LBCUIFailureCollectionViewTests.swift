@@ -14,6 +14,7 @@ final class LBCUIFailureCollectionViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithCollectionView
         super.setUp()
+        self.startApp()
     }
 
     func test_CollectionView_WrongIdentifier() {

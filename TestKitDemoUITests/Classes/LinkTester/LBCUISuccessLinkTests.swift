@@ -14,6 +14,7 @@ final class LBCUISuccessLinkTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithLink
         super.setUp()
+        self.startApp()
     }
 
     func testLink_ShouldDisplayLabel_GivenDefaultTapMethod() {

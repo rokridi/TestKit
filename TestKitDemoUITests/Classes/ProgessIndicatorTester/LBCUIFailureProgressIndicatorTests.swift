@@ -13,36 +13,23 @@ final class LBCUIFailureProgressIndicatorTests: LBCUITestCase{
     override func setUp() {
         self.homePageType = .homePageWithProgessView
         super.setUp()
+        self.startApp(true)
     }
 
     func testGetWrongProgessView() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
         // THEN
         XCTExpectFailure {
             self.tester
                 .getProgressIndicator(with: "wrongIdentifier")
         }
-
     }
 
     func testCheckWrongProgessViewValue() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
         // THEN
         XCTExpectFailure {
             self.tester
                 .getProgressIndicator(with: "progressViewIdentifier")
                 .validate(progressValue: 0.2)
         }
-
     }
-
-
 }

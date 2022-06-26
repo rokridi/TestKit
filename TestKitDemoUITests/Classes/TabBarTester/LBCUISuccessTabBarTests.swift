@@ -14,15 +14,10 @@ final class LBCUISuccessTabBarTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithTabBar
         super.setUp()
+        self.startApp(true)
     }
 
     func testGetTabBar() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
-        // THEN
         self.tester
             .getTabBar(with: "tabBarIdentifier")
     }

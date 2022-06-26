@@ -14,10 +14,10 @@ final class LBCUIFailureScrollViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithScrollView
         super.setUp()
+        self.startApp(true)
     }
 
     func test_GetScrollView_WrongIdentifier() {
-        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getScrollView(with: "wrongIdentifier")

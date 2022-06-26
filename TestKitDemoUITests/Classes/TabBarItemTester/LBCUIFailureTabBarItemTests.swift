@@ -14,14 +14,10 @@ final class LBCUIFailureTabBarItemTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithTabBar
         super.setUp()
+        self.startApp(true)
     }
 
     func test_get_tabBarItem_with_wrong_identifier() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
         // THEN
         XCTExpectFailure {
             self.tester
@@ -30,11 +26,6 @@ final class LBCUIFailureTabBarItemTests: LBCUITestCase {
     }
 
     func test_get_tabBarItem_state_failure() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
         // THEN
         XCTExpectFailure {
             self.tester
@@ -44,11 +35,6 @@ final class LBCUIFailureTabBarItemTests: LBCUITestCase {
     }
 
     func test_get_tabBarItem_text_failure() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
         // THEN
         XCTExpectFailure {
             self.tester
@@ -58,11 +44,6 @@ final class LBCUIFailureTabBarItemTests: LBCUITestCase {
     }
 
     func test_get_tabBarItem_update_state_failure() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
         // THEN
         XCTExpectFailure {
             let tabBarItem1 = self.tester
@@ -80,6 +61,5 @@ final class LBCUIFailureTabBarItemTests: LBCUITestCase {
             tabBarItem1
                 .validateState(isSelected: true)
         }
-
     }
 }

@@ -14,6 +14,7 @@ final class LBCUISuccessActionSheetTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithActionSheet
         super.setUp()
+        self.startApp()
     }
 
     func test_ActionSheet_AssertButtons() {

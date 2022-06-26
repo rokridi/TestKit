@@ -14,15 +14,10 @@ final class LBCUISuccessSwitchTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithSwitch
         super.setUp()
+        self.startApp(true)
     }
 
     func testSwitchState() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
-        // THEN
         self.tester
             .getSwitch(with: "switchIdentifier")
             .validate(state: false)

@@ -17,7 +17,6 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Validate_And_Tap_Cells() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
@@ -58,7 +57,6 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Cell_SwipeLeftAndTapOnAction_AtIndex() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
@@ -66,7 +64,6 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Cell_SwipeLeftAndTapOnAction_WithIdentifier() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
@@ -74,7 +71,6 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Cell_SwipeRightAndTapOnAction_AtIndex() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
@@ -82,7 +78,6 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Cell_SwipeRightAndTapOnAction_WithIdentifier() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")
@@ -90,7 +85,6 @@ final class LBCUISuccessTableViewTests: LBCUITestCase {
     }
 
     func test_TableView_Swipe_Action() {
-        self.homePageType = .homePageWithTableViewNormalMode
         self.startApp(true)
         self.tester
             .getTableView(with: "tableViewIdentifier")

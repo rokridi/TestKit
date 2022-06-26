@@ -14,6 +14,7 @@ final class LBCUIFailureActionSheetTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithActionSheet
         super.setUp()
+        self.startApp()
     }
 
     func test_GetActionSheet_WrongIdentifier() {

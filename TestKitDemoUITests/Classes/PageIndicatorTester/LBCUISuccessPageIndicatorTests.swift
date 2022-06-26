@@ -14,15 +14,10 @@ final class LBCUISuccessPageIndicatorTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithPageIndicator
         super.setUp()
+        self.startApp(true)
     }
 
     func testPageIndicator() {
-        // GIVEN
-
-        // WHEN
-        self.startApp(true)
-
-        // THEN
         self.tester
             .getPageIndicator(with: "pageControlIdentifier")
             .validate(numberItems: 3)

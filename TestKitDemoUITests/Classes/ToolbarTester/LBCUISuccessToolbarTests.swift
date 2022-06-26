@@ -14,10 +14,10 @@ final class LBCUISuccessToolbarTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithToolbar
         super.setUp()
+        self.startApp(true)
     }
 
     func test_Toolbar() {
-        self.startApp(true)
         self.tester
             .getToolbar(with: "toolbarIdentifier")
     }

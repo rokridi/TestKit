@@ -14,17 +14,16 @@ final class LBCUIFailureStepperTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithStepper
         super.setUp()
+        self.startApp(true)
     }
 
     func test_GetStepperElement_WrongIdentifier() {
-        self.startApp(true)
         XCTExpectFailure {
             self.tester.getStepper(with: "wrongIdentifier")
         }
     }
 
     func test_Stepper_Wrong_Value() {
-        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getStepper(with: "stepperIdentifier")
@@ -33,7 +32,6 @@ final class LBCUIFailureStepperTests: LBCUITestCase {
     }
 
     func test_Stepper_Wrong_WrongLabelIdentifier() {
-        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getStepper(with: "stepperIdentifier")

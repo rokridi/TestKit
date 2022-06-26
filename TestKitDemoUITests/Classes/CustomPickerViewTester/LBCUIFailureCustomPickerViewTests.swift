@@ -14,10 +14,10 @@ final class LBCUIFailureCustomPickerViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithCustomPickerView
         super.setUp()
+        self.startApp()
     }
 
     func test_picker_wrong_identifier() {
-        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getPicker(with: "wrongIdentifier")
@@ -25,7 +25,6 @@ final class LBCUIFailureCustomPickerViewTests: LBCUITestCase {
     }
 
     func test_picker_validate_failure() {
-        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getPicker(with: "customPickerView")
@@ -34,7 +33,6 @@ final class LBCUIFailureCustomPickerViewTests: LBCUITestCase {
     }
 
     func test_picker_update_failure() {
-        self.startApp(true)
         XCTExpectFailure {
             self.tester
                 .getPicker(with: "customPickerView")

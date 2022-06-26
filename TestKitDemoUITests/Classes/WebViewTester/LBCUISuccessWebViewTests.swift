@@ -14,10 +14,10 @@ final class LBCUISuccessWebViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithWebView
         super.setUp()
+        self.startApp(true)
     }
 
     func testWebView() {
-        self.startApp(true)
         self.tester.getWebView(with: "webViewIdentifier")
             .validate(staticText: "Paragraph Title")
             .tap(onLinkText: "Lien externe")

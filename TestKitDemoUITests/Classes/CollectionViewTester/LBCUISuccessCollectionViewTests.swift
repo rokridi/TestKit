@@ -14,6 +14,7 @@ final class LBCUISuccessCollectionViewTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithCollectionView
         super.setUp()
+        self.startApp()
     }
 
     func test_CollectionView_Validate_And_Tap_Cells() {

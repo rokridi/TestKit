@@ -19,7 +19,6 @@ open class LBCUITestCase: XCTestCase {
     override open func setUp() {
         super.setUp()
         self.continueAfterFailure = false
-        self.startApp()
     }
 
     public func startApp(_ swipe: Bool = false) {

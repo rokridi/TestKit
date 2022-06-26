@@ -14,22 +14,15 @@ final class LBCUISuccessNavigationBarTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithNavigationBar
         super.setUp()
+        self.startApp()
     }
 
     func testGetNavigationBar() {
-        // GIVEN
-        self.homePageType = .homePageWithNavigationBar
-
-        // THEN
         self.tester.getNavigationBar(with: "navigationBarIdentifier")
             .validate(title: "ABC")
     }
 
     func testGetNavigationBar_ChildContentButton() {
-        // GIVEN
-        self.homePageType = .homePageWithNavigationBar
-
-        // THEN
         self.tester
             .getNavigationBar(with: "navigationBarIdentifier")
             .content

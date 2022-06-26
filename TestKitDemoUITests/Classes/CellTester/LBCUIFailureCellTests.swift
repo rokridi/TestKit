@@ -14,25 +14,21 @@ final class LBCUIFailureCellTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithTableViewNormalMode
         super.setUp()
+        self.startApp(true)
     }
 
     func test_Cell_WrongIdentifier() {
-        self.homePageType = .homePageWithTableViewNormalMode
-
         XCTExpectFailure()
         self.tester.getCell(with: "wrongIdentifier")
 
     }
 
     func test_GetTableViewCell_WrongIndex() {
-        self.homePageType = .homePageWithTableViewNormalMode
-
         XCTExpectFailure()
         self.tester.getCell(boundBy: 99)
     }
 
     func test_CellWrongLabel() {
-        self.homePageType = .homePageWithTableViewNormalMode
         let cell = self.tester.getCell(with: "cell_3")
 
         XCTExpectFailure()
@@ -40,8 +36,6 @@ final class LBCUIFailureCellTests: LBCUITestCase {
     }
 
     func test_Cell_Tap_WrongIdentifier() {
-        self.homePageType = .homePageWithTableViewNormalMode
-
         XCTExpectFailure()
         self.tester
             .getCell(with: "cell_78")
@@ -49,8 +43,6 @@ final class LBCUIFailureCellTests: LBCUITestCase {
     }
 
     func test_Cell_Delete_WrongIdentifier() {
-        self.homePageType = .homePageWithTableViewEditMode
-
         XCTExpectFailure()
         self.tester
             .getCell(with: "cell_78")
@@ -58,8 +50,6 @@ final class LBCUIFailureCellTests: LBCUITestCase {
     }
 
     func test_Cell_SwipeLeft_WrongIdentifier() {
-        self.homePageType = .homePageWithTableViewNormalMode
-
         XCTExpectFailure()
         self.tester
             .getCell(with: "cell_78")
@@ -67,8 +57,6 @@ final class LBCUIFailureCellTests: LBCUITestCase {
     }
 
     func test_Cell_SwipeRight_WrongIdentifier() {
-        self.homePageType = .homePageWithTableViewNormalMode
-
         XCTExpectFailure()
         self.tester
             .getCell(with: "cell_78")
@@ -76,8 +64,6 @@ final class LBCUIFailureCellTests: LBCUITestCase {
     }
 
     func test_Cell_Delete_WrongText() {
-        self.homePageType = .homePageWithTableViewEditMode
-
         XCTExpectFailure()
         self.tester
             .getCell(with: "cell_3")
@@ -85,8 +71,6 @@ final class LBCUIFailureCellTests: LBCUITestCase {
     }
 
     func test_Cell_SwipeLeft_WrongText() {
-        self.homePageType = .homePageWithTableViewNormalMode
-
         XCTExpectFailure()
         self.tester
             .getCell(with: "cell_3")
@@ -94,8 +78,6 @@ final class LBCUIFailureCellTests: LBCUITestCase {
     }
 
     func test_Cell_SwipeRight_WrongText() {
-        self.homePageType = .homePageWithTableViewNormalMode
-
         XCTExpectFailure()
         self.tester
             .getCell(with: "cell_3")
@@ -103,7 +85,6 @@ final class LBCUIFailureCellTests: LBCUITestCase {
     }
 
     func test_Cell_Content_WrongIdentifier() {
-        self.homePageType = .homePageWithTableViewNormalMode
         let cellContent = self.tester
             .getCell(with: "cell_3")
             .content
@@ -113,15 +94,11 @@ final class LBCUIFailureCellTests: LBCUITestCase {
     }
 
     func test_GetCollectionViewCell_WrongIdentifier() {
-        self.homePageType = .homePageWithCollectionView
-
         XCTExpectFailure()
         self.tester.getCell(with: "cell_xx")
     }
 
     func test_GetCollectionViewCell_WrongIndex() {
-        self.homePageType = .homePageWithCollectionView
-
         XCTExpectFailure()
         self.tester.getCell(boundBy: 99)
     }

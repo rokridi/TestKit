@@ -14,6 +14,7 @@ final class LBCUISuccessActivityIndicatorTests: LBCUITestCase {
     override func setUp() {
         self.homePageType = .homePageWithActivityIndicator
         super.setUp()
+        self.startApp()
     }
 
     func testGetActivityIndicator_WithCorrectIdentifier_ShouldSucceed() {
