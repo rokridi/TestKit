@@ -24,5 +24,5 @@ let package = Package(
         .testTarget(
             name: "TestKitTests",
             dependencies: ["TestKit"]),
-    ],
+    ]
 )
