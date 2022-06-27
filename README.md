@@ -4,13 +4,13 @@
 [![Platforms](https://img.shields.io/badge/Platforms-iOS-yellowgreen?style=flat-square)](https://img.shields.io/badge/Platforms-macOS_iOS_tvOS_watchOS_Linux_Windows-Green?style=flat-square)
 [![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
 
-Every developer hate write UITest. Me too.
-We wanted to make UITest writing more funny.
-Thats why we create TestKit.
+Every developer hates writing UITests. 
+Me too. 
+We wanted to make writing UI tests more fun. That's why we create Test Kit.
 
-With TestKit you can test all your UI Elements by using heplers functions.
+With Test Kit you can test all your UI Elements by using helper functions.
 
-Requirements : All test element must be identified by an accessibility identifier
+Requirements : All test elements must be identified by an accessibility identifier
 
 # Configuration : 
 
