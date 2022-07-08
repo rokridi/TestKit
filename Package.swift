@@ -24,6 +24,5 @@ let package = Package(
         .testTarget(
             name: "TestKitTests",
             dependencies: ["TestKit"]),
-    ],
-    exclude: ["TestKitDemo", "TestKitDemoUITests"]
+    ]
 )
