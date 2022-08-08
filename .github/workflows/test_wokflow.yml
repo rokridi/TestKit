@@ -3,7 +3,7 @@ name: Pull requeston
 on:
   pull_request:
     branches:
-      - master
+      - main
       
 jobs:
   pr-pipeline:
