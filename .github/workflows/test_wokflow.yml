@@ -7,7 +7,7 @@ on:
       
 jobs:
   pr-pipeline:
-    runs-on: macos-12.5
+    runs-on: macos-latest
     steps:
       - name: Cancel previous jobs
         uses: styfle/cancel-workflow-action@0.6.0
