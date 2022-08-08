@@ -18,7 +18,11 @@ jobs:
           ref: ${{ github.ref }}
       - name: Setup - Xcode
         run: sudo xcode-select -s /Applications/Xcode_13.0.app
-      - name: Test - Fastlane build
+      - name: Fastlane build
         run: bundle exec fastlane build_lane
         env:
           scheme: TestKit
+      - name: Fastlane ui tests
+        run: bundle exec fastlane ui_tests
+        env:
+          scheme: TestKitDemoUITests
