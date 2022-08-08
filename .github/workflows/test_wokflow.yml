@@ -1,0 +1,24 @@
+name: Pull requeston
+
+on:
+  pull_request:
+    branches:
+      - master
+      
+jobs:
+  pr-pipeline:
+    steps:
+      - name: Cancel previous jobs
+        uses: styfle/cancel-workflow-action@0.6.0
+        with:
+          access_token: ${{ github.token }}
+      - name: Git - Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+      - name: Setup - Xcode
+        run: sudo xcode-select -s /Applications/Xcode_13.0.app
+      - name: Test - Fastlane build
+        run: bundle exec fastlane build_lane
+        env:
+          scheme: TestKit
