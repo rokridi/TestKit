@@ -21,6 +21,6 @@ jobs:
         with:
           xcode-version: latest-stable
       - name: Fastlane build
-        run: bundle exec fastlane build_lane --scheme "TestKit"
+        run: bundle exec fastlane build_lane scheme:TestKit
       - name: Fastlane ui tests
-        run: bundle exec fastlane ui_tests  --scheme "TestKitDemoUITests"
+        run: bundle exec fastlane ui_tests scheme:TestKitDemoUITests
