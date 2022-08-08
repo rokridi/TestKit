@@ -13,7 +13,6 @@ import XCTest
 
 public class LBCUITestCaseHelper {
     public static func startApp() -> (XCUIApplication, LBCUITester) {
-        
         let app = XCUIApplication()
         let tester = LBCUITester(context: app)
         app.launch()
