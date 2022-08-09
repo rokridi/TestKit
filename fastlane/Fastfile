@@ -18,31 +18,35 @@ default_platform(:ios)
 platform :ios do
   desc "TestKit"
 
-  lane :build_lane do |options|
+  lane :build do |options|
       scheme = options[:scheme]
       build_app(
         scheme: scheme,
         skip_package_ipa: true,
         skip_archive: true,
+        skip_codesigning: true,
         silent: true, # less logs
-        derived_data_path: "build/DerivedData",
+        clean: true,
         sdk: "iphonesimulator",
-        clean: true
+        output_directory: "output/build",
+        derived_data_path: "output/build/DerivedData"
     )
   end
 
   lane :ui_tests do |options|
     scheme = options[:scheme]
-
+    device = options[:device]
     scan(
       scheme: scheme,
-      clean: false,
-      derived_data_path: "build/DerivedData",
       only_testing: scheme,
-      output_directory: "tests_output",
+      clean: false,
       result_bundle: true,
       skip_build: true,
-      sdk: "iphonesimulator"
+      parallel_testing: true,
+      sdk: "iphonesimulator",
+      device: device,
+      derived_data_path: "output/build/DerivedData",
+      output_directory: "output/tests"
     )
   end
 end
