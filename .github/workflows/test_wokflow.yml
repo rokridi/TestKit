@@ -26,6 +26,6 @@ jobs:
         run: bundle exec fastlane ui_tests scheme:TestKitDemoUITests
       - uses: kishikawakatsumi/xcresulttool@v1.4.0
         with:
-          path: output/tests/TestKitDemoUITests.xcresult
+          path: /Users/runner/work/TestKit/TestKit/tests_output/TestKitDemoUITests.xcresult 
         if: success() || failure()
 
