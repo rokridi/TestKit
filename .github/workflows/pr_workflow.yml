@@ -29,7 +29,7 @@ jobs:
         with:
           xcode-version: '12.5.1'
       - name: Clean fastlane output
-        run: bundle exec clean
+        run: bundle exec fastlane clean
       - name: Build
         run: bundle exec fastlane build_framework scheme:TestKit
       - name: Cache DerivedData
