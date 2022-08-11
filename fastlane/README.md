@@ -15,29 +15,93 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
-### ios build
+### ios build_for_testing
 
 ```sh
-[bundle exec] fastlane ios build
-```
-
-TestKit
-
-### ios buildForTesting
-
-```sh
-[bundle exec] fastlane ios buildForTesting
+[bundle exec] fastlane ios build_for_testing
 ```
 
 
 
-### ios ui_tests
+### ios build_framework_for_testing
 
 ```sh
-[bundle exec] fastlane ios ui_tests
+[bundle exec] fastlane ios build_framework_for_testing
 ```
 
 
+
+### ios build_demo_for_testing
+
+```sh
+[bundle exec] fastlane ios build_demo_for_testing
+```
+
+
+
+### ios unit_test_plan_xctestrun
+
+```sh
+[bundle exec] fastlane ios unit_test_plan_xctestrun
+```
+
+
+
+### ios ui_test_plan_xctestrun
+
+```sh
+[bundle exec] fastlane ios ui_test_plan_xctestrun
+```
+
+
+
+### ios demo_ui_test_plan
+
+```sh
+[bundle exec] fastlane ios demo_ui_test_plan
+```
+
+
+
+### ios test_plan_xctestrun
+
+```sh
+[bundle exec] fastlane ios test_plan_xctestrun
+```
+
+
+
+### ios xctestrun_file_path
+
+```sh
+[bundle exec] fastlane ios xctestrun_file_path
+```
+
+
+
+### ios code_coverage
+
+```sh
+[bundle exec] fastlane ios code_coverage
+```
+
+
+
+### ios pipeline
+
+```sh
+[bundle exec] fastlane ios pipeline
+```
+
+
+
+### ios clean
+
+```sh
+[bundle exec] fastlane ios clean
+```
+
+Clean
 
 ----
 

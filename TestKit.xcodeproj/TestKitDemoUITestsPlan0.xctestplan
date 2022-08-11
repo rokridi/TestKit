@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "8F85328B-53CE-40A6-96CE-BDBCACF3B536",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "LBCUISuccessDatePickerTimeTests",
+        "LBCUISuccessMapTests",
+        "LBCUISuccessPageIndicatorTests",
+        "LBCUISuccessSecuredTextFieldTests",
+        "LBCUISuccessStepperTests",
+        "LBCUITestCase",
+        "LBCUITesterTests"
+      ],
+      "target" : {
+        "containerPath" : "container:TestKit.xcodeproj",
+        "identifier" : "8E2176422868E143008DD163",
+        "name" : "TestKitDemoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

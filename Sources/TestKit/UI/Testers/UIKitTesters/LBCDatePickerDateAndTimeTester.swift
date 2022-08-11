@@ -10,7 +10,6 @@ import XCTest
 import UIKit
 
 final class LBCDatePickerDateAndTimeTester {
-
     private let context: XCUIElement
     var element: XCUIElement
 

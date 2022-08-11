@@ -9,67 +9,113 @@
 #
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
-
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
-
 default_platform(:ios)
 
 platform :ios do
-  desc "TestKit"
-
-  lane :build do |options|
-      scheme = options[:scheme]
-      build_app(
-        scheme: scheme,
-        skip_package_ipa: true,
-        skip_archive: true,
-        skip_codesigning: true,
-        silent: true, # less logs
-        clean: true,
-        sdk: "iphonesimulator",
-        output_directory: "output/build",
-        derived_data_path: "output/build/DerivedData"
-    )
-  end
-
-  lane :buildForTesting do |options|
+  lane :build_for_testing do |options|
     scheme = options[:scheme]
-    device = options[:device]
-    testplan = options[:testplan]
     scan(
       scheme: scheme,
-      only_testing: scheme,
-      clean: false,
+      clean: true,
       result_bundle: true,
       skip_build: true,
       parallel_testing: true,
       build_for_testing: true,
       sdk: "iphonesimulator",
       device: "iPhone 11",
-      derived_data_path: "output/build/DerivedData",
-      output_directory: "output/tests",
-      testplan: testplan
+      derived_data_path: "./output/DerivedData",
+      output_directory: "./output/tests"
     )
   end
 
-  lane :ui_tests do |options|
+  lane :build_framework_for_testing do
+    build_for_testing(scheme: "TestKit")
+  end
+
+  lane :build_demo_for_testing do
+    build_for_testing(scheme: "TestKitDemo")
+  end
+
+  lane :unit_test_plan_xctestrun do |options|
     scheme = options[:scheme]
-    device = options[:device]
     testplan = options[:testplan]
+    xctestrun = "./output/DerivedData/Build/Products/"+xctestrun_file_path(testplan: testplan)
+    test_plan_xctestrun(scheme: scheme, onlyTesting: scheme+"Tests", xctestrun: xctestrun)
+  end
+
+  lane :ui_test_plan_xctestrun do |options|
+    scheme = options[:scheme]
+    testplan = options[:testplan]
+    xctestrun = "./output/DerivedData/Build/Products/"+xctestrun_file_path(testplan: testplan)
+    test_plan_xctestrun(scheme: scheme, onlyTesting: scheme+"UITests", xctestrun: xctestrun)
+  end
+
+  lane :demo_ui_test_plan do |options|
+    testplan = options[:testplan]
+    xctestrun = "./output/DerivedData/Build/Products/"+xctestrun_file_path(testplan: testplan)
+    test_plan_xctestrun(scheme: "TestKitDemo", onlyTesting: "TestKitDemoUITests", xctestrun: xctestrun)
+  end
+
+  lane :test_plan_xctestrun do |options|
+    scheme = options[:scheme]
+    testplan = options[:testplan]
+    onlyTesting = options[:onlyTesting]
+    xctestrun = options[:xctestrun]
     scan(
       scheme: scheme,
-      only_testing: scheme,
+      only_testing: onlyTesting,
+      xctestrun: xctestrun,
       clean: false,
       result_bundle: true,
       skip_build: true,
       parallel_testing: true,
       test_without_building: true,
+      code_coverage: true,
       sdk: "iphonesimulator",
       device: "iPhone 11",
-      derived_data_path: "output/build/DerivedData",
-      output_directory: "output/tests",
-      testplan: testplan
+      derived_data_path: "./output/DerivedData",
+      output_directory: "./output/tests"
     )
+  end
+
+
+  lane :xctestrun_file_path do |options|
+    testplan = options[:testplan]
+    xctestrun_directory_path = "./output/DerivedData/Build/Products/"
+    xctestrunFilePath = sh("find ../output/DerivedData/Build/Products -type f -iname *"+testplan+"*.xctestrun")
+    sh("echo $(basename "+xctestrunFilePath+") | tr -d '\n'")
+  end
+
+  lane :code_coverage do |options|
+    xcov(
+      project: "TestKit.xcodeproj",
+      scheme: "TestKitDemo", 
+      derived_data_path: "./output/DerivedData",
+      output_directory: "./output/xcov"
+      )
+  end
+
+  lane :pipeline do
+    clean
+    build_framework_for_testing
+    build_demo_for_testing
+    demo_ui_test_plan(testplan: "TestKitDemoUITestsPlan1")
+    xcov(
+      project: "TestKit.xcodeproj",
+      scheme: "TestKit",
+      include_targets: "TestKit",
+      derived_data_path: "./output/DerivedData",
+      output_directory: "./output/xcov"
+      )
+  end
+
+
+
+  desc "Clean"
+  lane :clean do
+    `rm -rf ../output`
+    UI.user_error!("Fail to 'm -rf output'") unless $?.success?
   end
 end

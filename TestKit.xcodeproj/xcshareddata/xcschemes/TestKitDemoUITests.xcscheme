@@ -27,7 +27,7 @@
             buildForArchiving = "NO"
             buildForAnalyzing = "NO">
             <TestPlanReference
-               reference = "container:TestKitDemoUITests/TestPlans/TestKitDemoUITests.xctestplan">
+               reference = "container:TestKit.xcodeproj/TestKitDemoUITestsPlan0.xctestplan">
             </TestPlanReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -37,7 +37,7 @@
             buildForArchiving = "NO"
             buildForAnalyzing = "NO">
             <TestPlanReference
-               reference = "container:TestKitDemoUITests/TestPlans/TestKitDemoUITestsPlan1.xctestplan">
+               reference = "container:TestKitDemoUITestsPlan1.xctestplan">
             </TestPlanReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,11 +49,11 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:TestKitDemoUITests/TestPlans/TestKitDemoUITests.xctestplan"
+            reference = "container:TestKit.xcodeproj/TestKitDemoUITestsPlan0.xctestplan"
             default = "YES">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:TestKitDemoUITests/TestPlans/TestKitDemoUITestsPlan1.xctestplan">
+            reference = "container:TestKitDemoUITestsPlan1.xctestplan">
          </TestPlanReference>
       </TestPlans>
       <Testables>

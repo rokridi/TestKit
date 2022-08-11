@@ -9,7 +9,6 @@
 import XCTest
 
 final class LBCActivityIndicatorTester {
-
     private let context: XCUIElement
     var element: XCUIElement
 

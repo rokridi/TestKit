@@ -9,7 +9,6 @@
 import XCTest
 
 final class LBCButtonTester {
-
     private let context: XCUIElement
     var element: XCUIElement
 

@@ -23,7 +23,6 @@ public protocol LBCScrollableTesterProtocol {
 }
 
 extension LBCScrollableTesterProtocol where Self: LBCUIElementTester {
-
     func scroll(to identifier: LBCUIElementIdentifier, with direction: LBCUIElementSwipeDirection, timeout: LBCTimeInSecond?) {
         let _timeout: LBCTimeInSecond = timeout ?? 10
         let timeoutWorkItem = DispatchWorkItem(block: {

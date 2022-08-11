@@ -9,7 +9,6 @@
 import UIKit
 
 final class ViewControllerWithUIControl: UIViewController {
-
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [enableControl, disableControl, selectedControl])
         stackView.axis = .vertical

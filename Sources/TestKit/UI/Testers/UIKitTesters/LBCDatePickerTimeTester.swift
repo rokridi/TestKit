@@ -9,7 +9,6 @@
 import XCTest
 
 final class LBCDatePickerTimeTester {
-
     private let context: XCUIElement
     var element: XCUIElement
 
@@ -26,7 +25,6 @@ final class LBCDatePickerTimeTester {
 }
 
 extension LBCDatePickerTimeTester {
-
     private func move(toValue value: String, fromPickerWheelIndex index: Int) {
         let picker = self.element
         let pickerWheel = picker.pickerWheels.element(boundBy: index)
