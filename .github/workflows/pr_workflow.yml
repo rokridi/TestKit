@@ -62,14 +62,14 @@ jobs:
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: '12.5.1'
-      - name: Build demo
-        run: bundle exec fastlane build_demo scheme:TestKitDemo
       - name: Cache DerivedData
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
           path: output/build/DerivedData
           key: derived_data
           restore-keys: ${{ runner.os }}-derived_data
+      - name: Build demo
+        run: bundle exec fastlane build_demo scheme:TestKitDemo
 
   ui_tests:
     runs-on: macos-latest
@@ -97,7 +97,7 @@ jobs:
         with:
           xcode-version: '12.5.1'
       - name: Cache DerivedData
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
           path: output/build/DerivedData
           key: derived_data
