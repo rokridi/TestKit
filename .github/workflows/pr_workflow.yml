@@ -10,7 +10,7 @@ jobs:
     runs-on: macos-latest
     name: build_framework
     strategy:
-      fail-fast: false #if 'true' then one failed job cancels all jobs remaining
+      fail-fast: false
     steps:
       - name: Cancel previous jobs
         uses: styfle/cancel-workflow-action@0.6.0
@@ -33,7 +33,7 @@ jobs:
         with:
           path: output/build/DerivedData
           key: derived_data
-          restore-keys: derived_data
+          restore-keys: ${{ runner.os }}-derived_data
       - name: Build
         run: bundle exec fastlane build_framework scheme:TestKit
 
@@ -42,7 +42,7 @@ jobs:
     name: build_demo
     needs: build_framework
     strategy:
-      fail-fast: false #if 'true' then one failed job cancels all jobs remaining
+      fail-fast: false
     steps:
       - name: Cancel previous jobs
         uses: styfle/cancel-workflow-action@0.6.0
@@ -67,7 +67,7 @@ jobs:
         with:
           path: output/build/DerivedData
           key: derived_data
-          restore-keys: derived_data
+          restore-keys: ${{ runner.os }}-derived_data
 
   ui_tests:
     runs-on: macos-latest
@@ -99,7 +99,7 @@ jobs:
         with:
           path: output/build/DerivedData
           key: derived_data
-          restore-keys: derived_data
+          restore-keys: ${{ runner.os }}-derived_data
       - name: ${{ matrix.testplan }}
         run: bundle exec fastlane ui_tests scheme:TestKitDemoUITests testplan:${{ matrix.testplan }}
       - uses: kishikawakatsumi/xcresulttool@v1.4.0
