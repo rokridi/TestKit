@@ -1,4 +1,4 @@
-name: Pull requeston
+name: pr_workflow
 
 on:
   pull_request:
@@ -35,7 +35,7 @@ jobs:
           key: derived_data
           restore-keys: derived_data
       - name: Build
-        run: bundle exec fastlane build scheme:TestKit
+        run: bundle exec fastlane build_framework scheme:TestKit
 
   build_demo:
     runs-on: macos-latest
@@ -67,7 +67,7 @@ jobs:
           key: derived_data
           restore-keys: derived_data
       - name: Build demo
-        run: bundle exec fastlane buildForTesting scheme:TestKitDemo
+        run: bundle exec fastlane build_Demo scheme:TestKitDemo
 
   ui_tests:
     runs-on: macos-latest
