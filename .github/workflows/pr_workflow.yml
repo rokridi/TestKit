@@ -1,0 +1,98 @@
+name: Pull requeston
+
+on:
+  pull_request:
+    branches:
+      - main
+      
+jobs:
+  build_framework_14:
+    runs-on: macos-latest
+    name: build_framework_14
+    strategy:
+      fail-fast: false #if 'true' then one failed job cancels all jobs remaining
+    steps:
+      - name: Cancel previous jobs
+        uses: styfle/cancel-workflow-action@0.6.0
+        with:
+          access_token: ${{ github.token }}
+      - name: Git - Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: 2.6
+      - run: bundle install
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '12.5.1'
+      - name: Build
+        run: bundle exec fastlane build scheme:TestKit
+
+  build_demo_14:
+    runs-on: macos-latest
+    name: build_demo_14
+    needs: build_framework_14
+    strategy:
+      fail-fast: false #if 'true' then one failed job cancels all jobs remaining
+    steps:
+      - name: Cancel previous jobs
+        uses: styfle/cancel-workflow-action@0.6.0
+        with:
+          access_token: ${{ github.token }}
+      - name: Git - Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: 2.6
+      - run: bundle install
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '12.5.1'
+      - name: Build demo
+        run: bundle exec fastlane buildForTesting scheme:TestKitDemo
+      - uses: actions/upload-artifact@v3
+        with:
+        name: derivedData
+        path: output/build/DerivedData
+
+  test_ios_14_plan10:
+    runs-on: macos-latest
+    name: pr_workflow_ios14
+    needs: build_demo_14
+    strategy:
+      fail-fast: false #if 'true' then one failed job cancels all jobs remaining
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+        name: derivedData
+        path: output/build/DerivedData
+      - name: Test plan
+        run: bundle exec fastlane ui_tests scheme:TestKitDemoUITests testplan:'TestKitDemoUITestsPlan1'
+      - uses: kishikawakatsumi/xcresulttool@v1.4.0
+        with:
+          path: /Users/runner/work/TestKit/TestKit/tests_output/TestKitDemoUITests.xcresult
+        if: success() || failure()
+
+  test_ios_14_plan1:
+    runs-on: macos-latest
+    name: pr_workflow_ios14
+    needs: build_demo_14
+    strategy:
+      fail-fast: false #if 'true' then one failed job cancels all jobs remaining
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+        name: derivedData
+        path: output/build/DerivedData
+      - name: Test plan
+        run: bundle exec fastlane ui_tests scheme:TestKitDemoUITests testplan:'TestKitDemoUITestsPlan1'
+      - uses: kishikawakatsumi/xcresulttool@v1.4.0
+        with:
+          path: /Users/runner/work/TestKit/TestKit/tests_output/TestKitDemoUITests.xcresult
+        if: success() || failure()
