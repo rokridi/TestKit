@@ -34,6 +34,8 @@ jobs:
           path: output/build/DerivedData
           key: derived_data
           restore-keys: ${{ runner.os }}-derived_data
+      - name: Clean output
+        run: bundle exec clean
       - name: Build
         run: bundle exec fastlane build_framework scheme:TestKit
 
