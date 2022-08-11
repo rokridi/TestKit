@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: bundle exec fastlane build_framework scheme:TestKit
       - name: Cache DerivedData
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
           path: output/build/DerivedData
           key: derived_data
