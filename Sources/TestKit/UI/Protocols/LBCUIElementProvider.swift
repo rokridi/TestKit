@@ -9,7 +9,6 @@
 import Foundation
 
 public protocol LBCUIElementProvider {
-
     /// Get the tester protocol of an ActivityIndicator
     /// - Parameter identifier: the identifier of the ActivityIndicator
     @discardableResult

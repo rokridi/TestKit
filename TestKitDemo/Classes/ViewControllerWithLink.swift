@@ -9,7 +9,6 @@
 import UIKit
 
 final class ViewControllerWithLink: UIViewController {
-
     private lazy var textView: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false

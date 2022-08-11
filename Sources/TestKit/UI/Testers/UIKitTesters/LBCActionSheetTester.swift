@@ -15,7 +15,6 @@ public enum LBCActionSheetElementType {
 }
 
 final class LBCActionSheetTester {
-
     private let context: XCUIElement
     var element: XCUIElement
 

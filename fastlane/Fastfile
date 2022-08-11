@@ -9,67 +9,41 @@
 #
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
-
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
-
 default_platform(:ios)
 
 platform :ios do
   desc "TestKit"
 
-  lane :build do |options|
+  lane :build_framework do |options|
       scheme = options[:scheme]
       build_app(
-        scheme: scheme,
         skip_package_ipa: true,
         skip_archive: true,
-        skip_codesigning: true,
         silent: true, # less logs
         clean: true,
+        result_bundle: true,
+        scheme: "TestKit",
+        derived_data_path: "./output/DerivedData",
         sdk: "iphonesimulator",
-        output_directory: "output/build",
-        derived_data_path: "output/build/DerivedData"
+        
     )
   end
 
-  lane :buildForTesting do |options|
-    scheme = options[:scheme]
-    device = options[:device]
+  lane :ui_test_plan do |options|
     testplan = options[:testplan]
     scan(
-      scheme: scheme,
-      only_testing: scheme,
-      clean: false,
+      testplan: testplan,
+      clean: true,
       result_bundle: true,
       skip_build: true,
       parallel_testing: true,
-      build_for_testing: true,
+      only_testing: "TestKitDemoUITests",
+      scheme: "TestKitDemo",
+      output_directory: "./output/tests",
       sdk: "iphonesimulator",
-      device: "iPhone 11",
-      derived_data_path: "output/build/DerivedData",
-      output_directory: "output/tests",
-      testplan: testplan
-    )
-  end
-
-  lane :ui_tests do |options|
-    scheme = options[:scheme]
-    device = options[:device]
-    testplan = options[:testplan]
-    scan(
-      scheme: scheme,
-      only_testing: scheme,
-      clean: false,
-      result_bundle: true,
-      skip_build: true,
-      parallel_testing: true,
-      test_without_building: true,
-      sdk: "iphonesimulator",
-      device: "iPhone 11",
-      derived_data_path: "output/build/DerivedData",
-      output_directory: "output/tests",
-      testplan: testplan
+      derived_data_path: "./output/DerivedData"
     )
   end
 end

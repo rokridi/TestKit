@@ -10,7 +10,6 @@
 import XCTest
 
 final class LBCTestTimeoutTests: XCTestCase {
-
     func test_values() {
         // GIVEN
         let valuesAndExpectations: [TimeInterval: TimeInterval] = [

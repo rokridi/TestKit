@@ -9,9 +9,7 @@
 import UIKit
 
 final class ViewControllerWithSlider: UIViewController {
-
     let step: Float = 10
-
     lazy var slider: UISlider = UISlider()
     lazy var label: UILabel = UILabel()
 
