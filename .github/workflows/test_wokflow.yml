@@ -31,6 +31,12 @@ jobs:
         with:
           xcode-version: '${{ matrix.xcode }}'
       - name: Build
-        run: bundle exec fastlane build scheme:TestKit device:'iPhone 11'
-      - name: UI tests
-        run: bundle exec fastlane ui_tests scheme:TestKitDemoUITests device:'iPhone 11'
+        run: bundle exec fastlane build scheme:TestKit
+      - name: Test plan
+        run: bundle exec fastlane ui_tests scheme:TestKitDemoUITests testplan:'TestKitDemoUITests'
+      - name: Test plan
+        run: bundle exec fastlane ui_tests scheme:TestKitDemoUITests testplan:'TestKitDemoUITestsPlan1'
+      - uses: kishikawakatsumi/xcresulttool@v1.4.0
+        with:
+          path: /Users/runner/work/TestKit/TestKit/tests_output/TestKitDemoUITests.xcresult 
+        if: success() || failure()

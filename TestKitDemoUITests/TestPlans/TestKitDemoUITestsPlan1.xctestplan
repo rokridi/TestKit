@@ -1,0 +1,65 @@
+{
+  "configurations" : [
+    {
+      "id" : "375A3F8C-1183-4169-8C3D-09970D9B2EE8",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "skippedTests" : [
+        "LBCUISuccessActionSheetTests",
+        "LBCUISuccessActivityIndicatorTests",
+        "LBCUISuccessAlertTests",
+        "LBCUISuccessButtonTests",
+        "LBCUISuccessCellTests",
+        "LBCUISuccessCollectionViewTests",
+        "LBCUISuccessCustomPickerViewTests",
+        "LBCUISuccessDatePickerCountDownTimerTests",
+        "LBCUISuccessDatePickerDateAndTimeTests",
+        "LBCUISuccessDatePickerDateTypeTests",
+        "LBCUISuccessDatePickerTimeTests",
+        "LBCUISuccessImageTests",
+        "LBCUISuccessLinkTests",
+        "LBCUISuccessMapTests",
+        "LBCUISuccessNavigationBarButtonTests",
+        "LBCUISuccessNavigationBarTests",
+        "LBCUISuccessPageIndicatorTests",
+        "LBCUISuccessPickerTests",
+        "LBCUISuccessProgressIndicatorTests",
+        "LBCUISuccessScrollViewTests",
+        "LBCUISuccessSearchBarTests",
+        "LBCUISuccessSecuredTextFieldTests",
+        "LBCUISuccessSegmentedControlTests",
+        "LBCUISuccessSliderTests",
+        "LBCUISuccessStepperTests",
+        "LBCUISuccessSwitchTests",
+        "LBCUISuccessTabBarItemTests",
+        "LBCUISuccessTabBarTests",
+        "LBCUISuccessTableViewTests",
+        "LBCUISuccessTextFieldTests",
+        "LBCUISuccessTextViewTests",
+        "LBCUISuccessToolbarButtonTests",
+        "LBCUISuccessToolbarTests",
+        "LBCUISuccessUIControlTests",
+        "LBCUISuccessViewTests",
+        "LBCUISuccessWebViewTests",
+        "LBCUITestCase",
+        "LBCUITesterTests"
+      ],
+      "target" : {
+        "containerPath" : "container:TestKit.xcodeproj",
+        "identifier" : "8E2176422868E143008DD163",
+        "name" : "TestKitDemoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

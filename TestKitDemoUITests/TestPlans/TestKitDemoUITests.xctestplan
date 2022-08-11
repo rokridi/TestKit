@@ -1,0 +1,70 @@
+{
+  "configurations" : [
+    {
+      "id" : "DF42F1C9-409E-45F0-BB57-6808D56527B7",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "skippedTests" : [
+        "LBCUIFailureActionSheetTests\/test_GetActionSheet_TapOnAction_WrongIdentifier()",
+        "LBCUIFailureActionSheetTests\/test_GetActionSheet_WrongButton()",
+        "LBCUIFailureActionSheetTests\/test_GetActionSheet_WrongIdentifier()",
+        "LBCUIFailureActionSheetTests\/test_GetActionSheet_WrongMessage()",
+        "LBCUIFailureActionSheetTests\/test_GetActionSheet_WrongTitle()",
+        "LBCUISuccessActionSheetTests",
+        "LBCUISuccessActivityIndicatorTests",
+        "LBCUISuccessAlertTests",
+        "LBCUISuccessButtonTests",
+        "LBCUISuccessCellTests",
+        "LBCUISuccessCollectionViewTests",
+        "LBCUISuccessCustomPickerViewTests",
+        "LBCUISuccessDatePickerCountDownTimerTests",
+        "LBCUISuccessDatePickerDateAndTimeTests",
+        "LBCUISuccessDatePickerDateTypeTests",
+        "LBCUISuccessDatePickerTimeTests",
+        "LBCUISuccessImageTests",
+        "LBCUISuccessLinkTests",
+        "LBCUISuccessMapTests",
+        "LBCUISuccessNavigationBarButtonTests",
+        "LBCUISuccessNavigationBarTests",
+        "LBCUISuccessPageIndicatorTests",
+        "LBCUISuccessPickerTests",
+        "LBCUISuccessProgressIndicatorTests",
+        "LBCUISuccessScrollViewTests",
+        "LBCUISuccessSearchBarTests",
+        "LBCUISuccessSecuredTextFieldTests",
+        "LBCUISuccessSegmentedControlTests",
+        "LBCUISuccessSliderTests",
+        "LBCUISuccessStepperTests",
+        "LBCUISuccessSwitchTests",
+        "LBCUISuccessTabBarItemTests",
+        "LBCUISuccessTabBarTests",
+        "LBCUISuccessTableViewTests",
+        "LBCUISuccessTextFieldTests",
+        "LBCUISuccessTextViewTests",
+        "LBCUISuccessToolbarButtonTests",
+        "LBCUISuccessToolbarTests",
+        "LBCUISuccessUIControlTests",
+        "LBCUISuccessViewTests",
+        "LBCUISuccessWebViewTests",
+        "LBCUITestCase",
+        "LBCUITesterTests"
+      ],
+      "target" : {
+        "containerPath" : "container:TestKit.xcodeproj",
+        "identifier" : "8E2176422868E143008DD163",
+        "name" : "TestKitDemoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
