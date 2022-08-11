@@ -28,7 +28,7 @@ jobs:
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: '12.5.1'
-      - name: Clean output
+      - name: Clean fastlane output
         run: bundle exec clean
       - name: Build
         run: bundle exec fastlane build_framework scheme:TestKit
