@@ -334,6 +334,8 @@
 		8E2177092868E220008DD163 /* LBCUIFailureTabBarItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureTabBarItemTests.swift; sourceTree = "<group>"; };
 		8E21770B2868E220008DD163 /* LBCUIFailureCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUIFailureCellTests.swift; sourceTree = "<group>"; };
 		8E21770C2868E220008DD163 /* LBCUISucessCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBCUISucessCellTests.swift; sourceTree = "<group>"; };
+		D9F7617728A538BD000DBBB2 /* TestKitDemoUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestKitDemoUITests.xctestplan; sourceTree = "<group>"; };
+		D9F7617828A538DD000DBBB2 /* TestKitDemoUITestsPlan1.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestKitDemoUITestsPlan1.xctestplan; sourceTree = "<group>"; };
 		OBJ_10 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* LBCUITestCaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCUITestCaseHelper.swift; sourceTree = "<group>"; };
@@ -392,7 +394,7 @@
 		OBJ_72 /* LBCTestTimeoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBCTestTimeoutTests.swift; sourceTree = "<group>"; };
 		OBJ_76 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		"testkit::TestKit::Product" /* TestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"testkit::TestKitTests::Product" /* TestKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"testkit::TestKitTests::Product" /* TestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,6 +448,7 @@
 		8E2176462868E143008DD163 /* TestKitDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				D9F7617628A538AD000DBBB2 /* TestPlans */,
 				8E21769E2868E220008DD163 /* Classes */,
 			);
 			path = TestKitDemoUITests;
@@ -873,6 +876,15 @@
 				8E21770C2868E220008DD163 /* LBCUISucessCellTests.swift */,
 			);
 			path = CellTester;
+			sourceTree = "<group>";
+		};
+		D9F7617628A538AD000DBBB2 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				D9F7617728A538BD000DBBB2 /* TestKitDemoUITests.xctestplan */,
+				D9F7617828A538DD000DBBB2 /* TestKitDemoUITestsPlan1.xctestplan */,
+			);
+			path = TestPlans;
 			sourceTree = "<group>";
 		};
 		OBJ_12 /* UI */ = {
@@ -1751,7 +1763,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TestKit.xcodeproj/TestKitTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
@@ -1778,7 +1790,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TestKit.xcodeproj/TestKitTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
