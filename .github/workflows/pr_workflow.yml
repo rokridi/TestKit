@@ -38,7 +38,7 @@ jobs:
       - name: Build
         run: bundle exec fastlane build_framework
       - name: Create txt
-        run: touch ../output/build/DerivedData/${{ github.run_id }}.txt
+        run: touch output/build/DerivedData/${{ github.run_id }}.txt
 
   build_demo:
     runs-on: macos-latest
