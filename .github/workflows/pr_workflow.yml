@@ -28,16 +28,16 @@ jobs:
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: '12.5.1'
-      - name: Clean fastlane output
-        run: bundle exec fastlane clean
-      - name: Build
-        run: bundle exec fastlane build_framework
       - name: Cache DerivedData
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
           key: derived_data
           restore-keys: ${{ runner.os }}-derived_data
+      - name: Clean fastlane output
+        run: bundle exec fastlane clean
+      - name: Build
+        run: bundle exec fastlane build_framework
 
   build_demo:
     runs-on: macos-latest
@@ -101,7 +101,7 @@ jobs:
           key: derived_data
           restore-keys: ${{ runner.os }}-derived_data
       - name: ${{ matrix.testplan }}
-        run: bundle exec fastlane ui_tests scheme:TestKitDemoUITests testplan:${{ matrix.testplan }}
+        run: bundle exec fastlane test_plan_xctestrun scheme:TestKitDemoUITests testplan:${{ matrix.testplan }}
       - uses: kishikawakatsumi/xcresulttool@v1.4.0
         with:
           path: ./output/tests/${{ matrix.testplan }}.xcresult
