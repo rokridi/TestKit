@@ -36,7 +36,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data
+          key: ${{ runner.os }}-framework_derived_data-run_id_${{ github.run_id }}
 
   build_demo_for_testing:
     runs-on: macos-latest
@@ -65,14 +65,14 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data
+          key: ${{ runner.os }}-framework_derived_data-run_id_${{ github.run_id }}
       - name: Build demo
         run: bundle exec fastlane build_demo_for_testing
       - name: Cache DerivedData
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data
+          key: ${{ runner.os }}-demo_derived_data-run_id_${{ github.run_id }}
 
   ui_tests:
     runs-on: macos-latest
@@ -103,7 +103,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data
+          key: ${{ runner.os }}-demo_derived_data-run_id_${{ github.run_id }}
       - name: ------ LS ------
         run: ls ./output/build/DerivedData/Build/Products
       - name: ${{ matrix.testplan }}
