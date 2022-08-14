@@ -37,6 +37,8 @@ jobs:
         run: bundle exec fastlane clean
       - name: Build
         run: bundle exec fastlane build_framework
+      - name: Create txt
+        run: touch ../output/build/DerivedData/${{ github.run_id }}.txt
 
   build_demo:
     runs-on: macos-latest
@@ -67,7 +69,7 @@ jobs:
           path: output/build/DerivedData
           key: ${{ runner.os }}_derived_data-xcode_${{ github.run_id }}
       - name: --- FILES ---
-        run: ls ./output/build/DerivedData/Build/Products/Debug-iphonesimulator
+        run: ls ./output/build/DerivedData/
       - name: Build demo
         run: bundle exec fastlane build_demo scheme:TestKitDemo
 
