@@ -72,7 +72,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data_for_ui_testing
+          key: ${{ runner.os }}_derived_data
 
   ui_tests:
     runs-on: macos-latest
@@ -81,7 +81,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        testplan: ["TestKitDemoUITests", "TestKitDemoUITestsPlan1"]
+        testplan: ["TestKitDemoUITestsPlan0", "TestKitDemoUITestsPlan1"]
     steps:
       - name: Cancel previous jobs
         uses: styfle/cancel-workflow-action@0.6.0
@@ -103,7 +103,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data_for_ui_testing
+          key: ${{ runner.os }}_derived_data
       - name: ------ LS ------
         run: ls ./output/build/DerivedData/Build/Products
       - name: ${{ matrix.testplan }}
