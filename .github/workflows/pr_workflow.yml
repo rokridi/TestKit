@@ -68,6 +68,11 @@ jobs:
           key: ${{ runner.os }}_derived_data
       - name: Build demo
         run: bundle exec fastlane build_demo_for_testing
+      - name: Cache DerivedData
+        uses: actions/cache@v3
+        with:
+          path: output/build/DerivedData
+          key: ${{ runner.os }}_derived_data_for_ui_testing
 
   ui_tests:
     runs-on: macos-latest
@@ -98,7 +103,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data
+          key: ${{ runner.os }}_derived_data_for_ui_testing
       - name: ${{ matrix.testplan }}
         run: bundle exec fastlane ui_tests_test_plan_xctestrun scheme:TestKitDemoUITests testplan:${{ matrix.testplan }}
       - uses: kishikawakatsumi/xcresulttool@v1.4.0
