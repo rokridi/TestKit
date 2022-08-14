@@ -68,6 +68,10 @@ jobs:
           path: output/build/DerivedData
           key: ${{ runner.os }}_derived_data-xcode_${{ matrix.xcode }}
           restore-keys: ${{ runner.os }}-derived_data
+      - name: --- PWD ---
+        run: echo pwd
+      - name: --- PRINT_ALL_FILES ---
+        run: ls
       - name: Build demo
         run: bundle exec fastlane build_demo scheme:TestKitDemo
 
