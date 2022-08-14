@@ -98,7 +98,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data-xcode
+          key: ${{ runner.os }}_derived_data
       - name: ${{ matrix.testplan }}
         run: bundle exec fastlane ui_tests_test_plan_xctestrun scheme:TestKitDemoUITests testplan:${{ matrix.testplan }}
       - uses: kishikawakatsumi/xcresulttool@v1.4.0
