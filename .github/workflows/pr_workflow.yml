@@ -32,7 +32,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: derived_data
+          key: ${{ runner.os }}_derived_data-xcode_${{ matrix.xcode }}
           restore-keys: ${{ runner.os }}-derived_data
       - name: Clean fastlane output
         run: bundle exec fastlane clean
@@ -66,6 +66,8 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
+          key: ${{ runner.os }}_derived_data-xcode_${{ matrix.xcode }}
+          restore-keys: ${{ runner.os }}-derived_data
       - name: Build demo
         run: bundle exec fastlane build_demo scheme:TestKitDemo
 
@@ -98,7 +100,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: derived_data
+          key: ${{ runner.os }}_derived_data-xcode_${{ matrix.xcode }}
           restore-keys: ${{ runner.os }}-derived_data
       - name: ${{ matrix.testplan }}
         run: bundle exec fastlane test_plan_xctestrun scheme:TestKitDemoUITests testplan:${{ matrix.testplan }}
