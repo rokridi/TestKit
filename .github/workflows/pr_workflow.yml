@@ -32,7 +32,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data-xcode_${{ github.ref }}
+          key: ${{ runner.os }}_derived_data-xcode_${{ github.run_id }}
       - name: Clean fastlane output
         run: bundle exec fastlane clean
       - name: Build
@@ -65,7 +65,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data-xcode_${{ github.ref }}
+          key: ${{ runner.os }}_derived_data-xcode_${{ github.run_id }}
       - name: --- FILES ---
         run: ls ./output/build/DerivedData/Build/Products/Debug-iphonesimulator
       - name: Build demo
@@ -100,7 +100,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: output/build/DerivedData
-          key: ${{ runner.os }}_derived_data-xcode_${{ github.ref }}
+          key: ${{ runner.os }}_derived_data-xcode_${{ github.run_id }}
       - name: ${{ matrix.testplan }}
         run: bundle exec fastlane test_plan_xctestrun scheme:TestKitDemoUITests testplan:${{ matrix.testplan }}
       - uses: kishikawakatsumi/xcresulttool@v1.4.0
