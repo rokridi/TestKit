@@ -6,9 +6,37 @@ on:
       - main
       
 jobs:
+  pipeline:
+    runs-on: macos-latest
+    name: build_framework
+    strategy:
+      fail-fast: false
+    steps:
+      - name: Cancel previous jobs
+        uses: styfle/cancel-workflow-action@0.6.0
+        with:
+          access_token: ${{ github.token }}
+      - name: Git - Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: 2.6
+      - run: bundle install
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '12.5.1'
+      - name: Clean fastlane output
+        run: bundle exec fastlane clean
+      - name: Build
+        run: bundle exec fastlane pipeline
+
   build_framework:
     runs-on: macos-latest
     name: build_framework
+    if: ${{ false }}
     strategy:
       fail-fast: false
     steps:
@@ -41,6 +69,7 @@ jobs:
   build_demo:
     runs-on: macos-latest
     name: build_demo
+    if: ${{ false }}
     needs: build_framework
     strategy:
       fail-fast: false
@@ -75,6 +104,7 @@ jobs:
 
   ui_tests:
     runs-on: macos-latest
+    if: ${{ false }}
     name: ui_tests
     needs: build_demo
     strategy:
