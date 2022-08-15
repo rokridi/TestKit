@@ -35,7 +35,7 @@ jobs:
       - name: Cache DerivedData
         uses: actions/cache@v3
         with:
-          path: output/build/DerivedData
+          path: output/DerivedData
           key: ${{ runner.os }}-framework_derived_data-run_id_${{ github.run_id }}
 
   build_demo_for_testing:
@@ -64,14 +64,14 @@ jobs:
       - name: Cache DerivedData
         uses: actions/cache@v3
         with:
-          path: output/build/DerivedData
+          path: output/DerivedData
           key: ${{ runner.os }}-framework_derived_data-run_id_${{ github.run_id }}
       - name: Build demo
         run: bundle exec fastlane build_demo_for_testing
       - name: Cache DerivedData
         uses: actions/cache@v3
         with:
-          path: output/build/DerivedData
+          path: output/DerivedData
           key: ${{ runner.os }}-demo_derived_data-run_id_${{ github.run_id }}
 
   ui_tests:
@@ -102,7 +102,7 @@ jobs:
       - name: Cache DerivedData
         uses: actions/cache@v3
         with:
-          path: output/build/DerivedData
+          path: output/DerivedData
           key: ${{ runner.os }}-demo_derived_data-run_id_${{ github.run_id }}
       - name: ${{ matrix.testplan }}
         run: bundle exec fastlane ui_tests_test_plan_xctestrun scheme:TestKitDemoUITests testplan:${{ matrix.testplan }}
