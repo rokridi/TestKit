@@ -105,20 +105,12 @@ jobs:
           path: output/DerivedData
           key: ${{ runner.os }}-demo_derived_data-run_id_${{ github.run_id }}
       - name: ${{ matrix.testplan }}
-        run: bundle exec fastlane ui_tests_test_plan_xctestrun scheme:TestKitDemoUITests testplan:${{ matrix.testplan }}
-      - name: Coveralls_${{ matrix.testplan }}
-        uses: coverallsapp/github-action@master
+        run: bundle exec fastlane demo_ui_test_plan testplan:${{ matrix.testplan }}
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/composite@v2
+        if: always()
         with:
-          github-token: ${{ secrets.COVERALLS_TOKEN }}
-          flag-name: run-${{ matrix.testplan }}
-          parallel: true
-
-  coveralls_finish:
-    needs: ui_tests
-    runs-on: macos-latest
-    steps:
-      - name: Coveralls final step
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.COVERALLS_TOKEN }}
-          parallel-finished: true
+          junit_files: |
+           output/tests/*.html
+           output/xcov/report.html
+           "output/tests/*.xcresult"
