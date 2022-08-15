@@ -112,5 +112,5 @@ jobs:
         with:
           junit_files: |
            output/tests/*.html
+           output/tests/*.xcresult
            output/xcov/report.html
-           "output/tests/*.xcresult"
