@@ -53,5 +53,5 @@ jobs:
           xcode-version: "12.5.1"
       - uses: kishikawakatsumi/xcresulttool@v1.4.0
         with:
-          path: ./output/tests/TestKitDemo.xcresult
+          path: './output/tests/TestKitDemo.xcresult'
         if: success() || failure()
