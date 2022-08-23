@@ -11,7 +11,6 @@ import XCTest
 
 open class LBCUITestCase: XCTestCase {
     public private(set) var app: XCUIApplication!
-
     var homePageType: HomePageType?
 
     public private(set) var tester: LBCUIElementProvider!

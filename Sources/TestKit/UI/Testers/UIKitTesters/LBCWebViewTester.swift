@@ -9,7 +9,6 @@
 import XCTest
 
 final class LBCWebViewTester {
-
     private let context: XCUIElement
     var element: XCUIElement
 

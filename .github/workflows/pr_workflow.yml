@@ -28,8 +28,6 @@ jobs:
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: "12.5.1"
-      - name: Clean fastlane output
-        run: bundle exec fastlane clean
       - name: Build
         run: bundle exec fastlane build_framework
 
@@ -37,7 +35,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        testplan: ["TestKitDemoSuccessUITests", "TestKitDemoFailureUITests"]
+        testplan: ["TestKitDemoUITestsPlan0", "TestKitDemoUITestsPlan1"]
     steps:
       - name: Cancel previous jobs
         uses: styfle/cancel-workflow-action@0.6.0
@@ -51,7 +49,17 @@ jobs:
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: "12.5.1"
+      - name: ${{ matrix.testplan }}
+        run: bundle exec fastlane ui_test_plan testplan:${{ matrix.testplan }}
+      - name: PWD
+        run: pwd
+      - name: LS
+        run: ls
+      - name: LS output
+        run: ls ./output
+      - name: LS outputTests
+        run: ls ./output/tests
       - uses: kishikawakatsumi/xcresulttool@v1.4.0
         with:
-          path: ./output/tests/TestKitDemo.xcresult
+          path: './output/tests/TestKitDemo.xcresult'
         if: success() || failure()

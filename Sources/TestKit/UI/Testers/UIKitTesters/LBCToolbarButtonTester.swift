@@ -11,7 +11,6 @@ import XCTest
 final class LBCToolbarButtonTester {
     private let context: XCUIElement
     var element: XCUIElement
-
     init(identifier: LBCUIElementIdentifier, in context: XCUIElement) {
         self.context = context
         self.element = LBCToolbarButtonTester.getToolbarButton(with: identifier, in: context)
