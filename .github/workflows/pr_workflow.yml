@@ -51,6 +51,14 @@ jobs:
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: "12.5.1"
+      - name: PWD
+        run: pwd
+      - name: LS
+        run: ls
+      - name: LS output
+        run: ls ./output
+      - name: LS outputTests
+        run: ls ./output/tests
       - uses: kishikawakatsumi/xcresulttool@v1.4.0
         with:
           path: './output/tests/TestKitDemo.xcresult'
