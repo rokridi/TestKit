@@ -9,7 +9,6 @@
 import XCTest
 
 public class LBCUITester {
-
     private var context: XCUIElement
 
     public init(context: XCUIElement) {
@@ -34,7 +33,6 @@ public class LBCUITester {
 // MARK: - LBCUIElementProvider
 
 extension LBCUITester: LBCUIElementProvider {
-
     public func getTextField(with identifier: LBCUIElementIdentifier) -> LBCTextFieldTesterProtocol {
         return LBCTextFieldTester(identifier: identifier, in: self.context)
     }

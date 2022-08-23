@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "DC9BC2F8-F1D9-4BB6-A9A6-AD8ED5380CC1",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "LBCUIFailureDatePickerTimeTests",
+        "LBCUIFailureMapTests",
+        "LBCUIFailurePageIndicatorTests",
+        "LBCUIFailureSecuredTextFieldTests",
+        "LBCUIFailureStepperTests",
+        "LBCUISuccessMapTests",
+        "LBCUISuccessPageIndicatorTests",
+        "LBCUISuccessSecuredTextFieldTests",
+        "LBCUISuccessStepperTests",
+        "LBCUITestCase",
+        "LBCUITesterTests"
+      ],
+      "target" : {
+        "containerPath" : "container:TestKit.xcodeproj",
+        "identifier" : "8E2176422868E143008DD163",
+        "name" : "TestKitDemoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

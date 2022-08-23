@@ -10,7 +10,6 @@ import UIKit
 import MapKit
 
 final class ViewControllerWithMap: UIViewController {
-
     private lazy var label: UILabel = {
         let label = UILabel()
         label.backgroundColor = UIColor.lightGray

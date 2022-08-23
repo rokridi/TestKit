@@ -10,7 +10,6 @@ import XCTest
 import UIKit
 
 final class LBCDatePickerDateAndTimeTester {
-
     private let context: XCUIElement
     var element: XCUIElement
 
@@ -32,7 +31,6 @@ extension LBCDatePickerDateAndTimeTester {
         let pickerWheel = picker.pickerWheels.element(boundBy: index)
         pickerWheel.adjust(toPickerWheelValue: value)
     }
-
     /**
      Validate pickerView hour
      - parameter: value -> time value (hour or minutes)

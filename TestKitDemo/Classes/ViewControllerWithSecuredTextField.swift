@@ -9,7 +9,6 @@
 import UIKit
 
 final class ViewControllerWithSecuredTextField: UIViewController {
-
     private lazy var contentStackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [self.textField, self.label])
         view.translatesAutoresizingMaskIntoConstraints = false

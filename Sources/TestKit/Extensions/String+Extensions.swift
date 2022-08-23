@@ -13,7 +13,6 @@ extension String {
         return "🧨 \(self)"
     }
 
-    ///
     /// Return a boolean to validate a regex pattern.
     ///
     /// - parameter pattern: the regex in string used for validation.

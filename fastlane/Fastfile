@@ -9,40 +9,41 @@
 #
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
-
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
-
 default_platform(:ios)
 
 platform :ios do
   desc "TestKit"
 
-  lane :build_lane do |options|
+  lane :build_framework do |options|
       scheme = options[:scheme]
       build_app(
-        scheme: scheme,
         skip_package_ipa: true,
         skip_archive: true,
         silent: true, # less logs
-        derived_data_path: "build/DerivedData",
+        clean: true,
+        result_bundle: true,
+        scheme: "TestKit",
+        derived_data_path: "./output/DerivedData",
         sdk: "iphonesimulator",
-        clean: true
+        
     )
   end
 
-  lane :ui_tests do |options|
-    scheme = options[:scheme]
-
+  lane :ui_test_plan do |options|
+    testplan = options[:testplan]
     scan(
-      scheme: scheme,
-      clean: false,
-      derived_data_path: "build/DerivedData",
-      only_testing: scheme,
-      output_directory: "tests_output",
+      testplan: testplan,
+      clean: true,
       result_bundle: true,
       skip_build: true,
-      sdk: "iphonesimulator"
+      parallel_testing: true,
+      only_testing: "TestKitDemoUITests",
+      scheme: "TestKitDemo",
+      output_directory: "./output/tests",
+      sdk: "iphonesimulator",
+      derived_data_path: "./output/DerivedData"
     )
   end
 end

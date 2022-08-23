@@ -9,15 +9,12 @@
 import XCTest
 
 final class LBCViewTester {
-
     private let context: XCUIElement
     var element: XCUIElement
-
     init(identifier: LBCUIElementIdentifier, in context: XCUIElement) {
         self.context = context
         self.element = LBCViewTester.getView(with: identifier, in: context)
     }
-
     private static func getView(with identifier: LBCUIElementIdentifier, in context: XCUIElement) -> XCUIElement {
         let view = context.otherElements[identifier].firstMatch
         XCTAssertTrue(view.waitForExistence(timeout: LBCTestTimeout.integration), "View with identifier \"\(identifier)\" does not exist.".logTaggedWithEmoji())
