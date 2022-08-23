@@ -35,7 +35,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        testplan: ["TestKitDemoSuccessUITests", "TestKitDemoFailureUITests"]
+        testplan: ["TestKitDemoUITestsPlan0", "TestKitDemoUITestsPlan1"]
     steps:
       - name: Cancel previous jobs
         uses: styfle/cancel-workflow-action@0.6.0
