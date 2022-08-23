@@ -50,7 +50,7 @@ jobs:
         with:
           xcode-version: "12.5.1"
       - name: ${{ matrix.testplan }}
-        run: bundle exec fastlane ui_tests testplan:${{ matrix.testplan }}
+        run: bundle exec fastlane ui_test_plan testplan:${{ matrix.testplan }}
       - name: PWD
         run: pwd
       - name: LS
